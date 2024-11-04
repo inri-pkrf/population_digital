@@ -1,11 +1,12 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
-import Home from "./Home"
-import Intro from "./Intro"
-import Header from "./Header"
-
 import '../componentsCss/App.css';
+
+import Home from "./Home";
+import Intro from "./Intro";
+import Header from "./Header";
+import Menu from "./Menu"
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Intro/>} />
                 <Route path="/home" element={<Home/>} />
+                <Route path="/menu" element={<Menu/>} />
             </Routes>
         </div>
     );

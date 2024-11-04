@@ -60,13 +60,15 @@ const Intro = () => {
             id="logo-white" 
             className="move-to-center" 
           />
-          <h1 id="welcome-text-intro">צח"י
-          </h1>
-          <h1 id="sub-title">סד"פ לשעת חירום
+          <h1 id="welcome-text-intro">
+          עזר דיגיטלי 
+          <br/>
+          בתחום האוכלוסייה
+          <br/>
+           במפקדות
           </h1>
           <p id="introduction-sub">
-          ברוכים הבאים והבאות לעזר הצח"י שמרכז עבורך סדרי פעולות למצבי חירום שונים ובחלוקה לפי משימות התפקידים בצוות
-
+          הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר 
           </p>
           <img
             src={`${process.env.PUBLIC_URL}/assests/imgs/whiteArrow.png`}

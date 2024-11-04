@@ -16,7 +16,7 @@
   
   #logo-white {
     position: absolute;
-    width: 40vw;
+    width: 48vw;
     height: auto;
     z-index: 5;
     right: 50%;
@@ -27,46 +27,33 @@
   #welcome-text-intro {
     color: white;
     font-family: "karantina";
-    font-size: 6em;
+    font-size: 3.6em;
     transform: translateX(50%);
     right: 50%;
     direction: rtl;
+    width: 96vw;
     POSITION: absolute;
-    margin-top: -22vh;
+    margin-top: -28vh;
 }
 
   #introduction-sub {
     font-family: 'Heebo', sans-serif;
-    font-size: 6vw;
+    font-size: 4.5vw;
     color: white;
     position: absolute;
     direction: rtl;
     margin-top: 5vh;
-    width: 70vw;
+    width: 79vw;
     right: 50%;
     transform: translateX(50%);
   }
-  
-  #sub-title{
-    font-family: 'Karantina';
-    font-size:4em;;
-    color: white;
-    margin-bottom: -5vw;
-    position:absolute;
-    transform: translateX(50%);
-    right: 50%;
-    margin-top: -7vh;
-    width:90vw;
-  }
-
-
   
   .hpArrow-intro {
     position: absolute;
     z-index: 5;
     right: 50%;
     transform: translateX(50%);
-    bottom: 20vh;
+    bottom: 25vh;
     animation: bounce2 2s ease infinite;
     height: 10vh;
     width: auto;
@@ -122,14 +109,14 @@
   
   @keyframes bounce2 {
     0% {
-      bottom: 10vh;
+      bottom: 15vh;
     }
   
     50% {
-      bottom: 8vh;
+      bottom: 10vh;
     }
   
     100% {
-      bottom: 10vh;
+      bottom: 15vh;
     }
   }
