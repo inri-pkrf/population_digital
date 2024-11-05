@@ -28,7 +28,7 @@ function Menu() {
                 <li onClick={() => navigate('/operation')}>תהליכים מבצעים
                 </li>
                 <div className='lineMenu'></div>
-                <li onClick={() => navigate('/agam')}> אגמ"ים ושו"ב
+                <li onClick={() => navigate('/agamim')}> אגמ"ים ושו"ב
                 </li>
                 <div className='lineMenu'></div>
             </ul>
@@ -36,7 +36,7 @@ function Menu() {
             <div className='mashov-menu'>
                 <div className='mashovTextMenu'>
                     <br /> יש הערות על הממשק? יש מחמאות? מלאו את השאלון וצרו איתנו קשר
-                    <br /> <a id='linkMenu' href="https://docs.google.com/forms/d/e/1FAIpQLScvCPjvm6G7IIXdtoeNmcF2COJ3D7xkTfP4n0xaS0T-nRpkPA/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+                    <br /> <a id='linkMenu' href="https://docs.google.com/forms/d/e/1FAIpQLSeAunPlSFfKmqyZhnCQkf8jsxTPsLjr8-vKES_V3UDqqDSFoA/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
                         בקישור הבא
                     </a>
                 </div>
