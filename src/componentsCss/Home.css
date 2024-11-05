@@ -19,7 +19,7 @@
 }
 
 #blackArrow1 {
-    margin-top: 40vh;
+    margin-top: 44vh;
 }
 
 .pages-list {
@@ -28,7 +28,7 @@
     right: 50%;
     display: flex;
     flex-direction: column;
-    margin-top: 53vh;
+    margin-top: 58vh;
     width: 80vw;
 }
 
@@ -54,7 +54,7 @@
 }
 
 #blackArrow2 {
-    margin-top: 99vh;
+    margin-top: 108vh;
 }
 
 .homePageLogos {
@@ -63,7 +63,7 @@
     right: 50%;
     height: auto;
     width: 39vw;
-    margin-top: 114vh;
+    margin-top: 119vh;
 }
 
 

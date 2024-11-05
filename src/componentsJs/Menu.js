@@ -1,22 +1,37 @@
-import React from 'react';
 import '../componentsCss/Menu.css';
-import { useNavigate } from 'react-router-dom';
-
+import React, { useEffect, useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function Menu() {
     const navigate = useNavigate();
+    const location = useLocation();
+    const [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() => {
+        if (location.pathname === '/menu') {
+            setIsOpen(true);
+        } else {
+            setIsOpen(false);
+        }
+    }, [location]);
+
+    const handleClose = () => {
+        setIsOpen(false);
+        navigate(-1);
+    };
+
 
     return (
 
-        <div className="menu" >
+        <div className={`menu ${isOpen ? 'open' : ''}`}>
 
             <img src={process.env.PUBLIC_URL + '/assests/imgs/whiteLogo.png'} alt="Decorative" className="whiteLogo" />
             <h1 className="menu-title">
                 עזר דיגיטלי בתחום האוכלוסייה במפקדות
             </h1>
-            <img src={process.env.PUBLIC_URL + '/assests/imgs/closeBtn.png'} alt="Close" onClick={() => navigate('/home')} className="closeBtn" />
+            <img src={process.env.PUBLIC_URL + '/assests/imgs/closeBtn.png'} alt="Close" onClick={handleClose} className="closeBtn" />
             <ul className="menu-list">
-                <li onClick={() => navigate('/menu')}
+                <li onClick={() => navigate('/home')}
                 >עמוד הבית</li>
                 <div className='lineMenu'></div>
                 <li onClick={() => navigate('/diagram')}>מבני ייעוד ותפקידים

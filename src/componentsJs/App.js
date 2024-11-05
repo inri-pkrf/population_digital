@@ -7,6 +7,12 @@ import Home from "./Home";
 import Intro from "./Intro";
 import Header from "./Header";
 import Menu from "./Menu"
+import Diagram from "./Diagram";
+import Relations from "./Relations";
+import Operation from "./Operation";
+import Agamim from "./Agamim";
+
+
 
 function App() {
     return (
@@ -16,6 +22,10 @@ function App() {
                 <Route path="/" element={<Intro/>} />
                 <Route path="/home" element={<Home/>} />
                 <Route path="/menu" element={<Menu/>} />
+                <Route path="/diagram" element={<Diagram/>} />
+                <Route path="/relations" element={<Relations/>} />
+                <Route path="/operation" element={<Operation/>} />
+                <Route path="/agamim" element={<Agamim/>} />
             </Routes>
         </div>
     );

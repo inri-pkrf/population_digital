@@ -1,9 +1,13 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../componentsCss/Home.css';
 
 
 function Home() {
+    const navigate = useNavigate();
     return (
+        
         <div className="Home">
 
             <div className="title">
@@ -14,7 +18,7 @@ function Home() {
 
             <div className='pages-list'>
 
-                <div className="pages-list-item">
+                <div className="pages-list-item" onClick={() => navigate('/diagram')}>
                     <div className="pages-list-content">
                         <div className="pages-list-title-homepage">
                             מבני ייעוד ותפקידים
@@ -23,9 +27,9 @@ function Home() {
                     </div>
                 </div>
 
-                <div id='line1' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
+                <div id='line1' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </div>
 
-                <div className="pages-list-item" >
+                <div className="pages-list-item" onClick={() => navigate('/relations')}>
                     <div className="pages-list-content">
                         <div className="pages-list-title-homepage">
                             יחסי גומלין במרכז ומכלול אוכלוסייה
@@ -34,9 +38,9 @@ function Home() {
                     </div>
                 </div>
 
-                <div id='line2' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
+                <div id='line2' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
 
-                <div className="pages-list-item">
+                <div className="pages-list-item" onClick={() => navigate('/operation')}>
                     <div className="pages-list-content">
                         <div className="pages-list-title-homepage">
                             תהליכים מבצעים
@@ -45,9 +49,9 @@ function Home() {
                     </div>
                 </div>
 
-                <div id='line3' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
+                <div id='line3' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
 
-                <div className="pages-list-item">
+                <div className="pages-list-item" onClick={() => navigate('/agamim')}>
                     <div className="pages-list-content">
                         <div className="pages-list-title-homepage">
                             אגמ"ים ושו"ב
@@ -66,7 +70,7 @@ function Home() {
                 עזר זה נבנה בשיתוף פעולה בין ... ו... במכללה הלאומית לאיתנות ישראלית
             </div>
 
-            <div id='line5' >. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
+            <div id='line5' >. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   </div>
 
             <div className='date'> דצמבר 2024 </div>
 

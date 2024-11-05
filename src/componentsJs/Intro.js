@@ -38,7 +38,7 @@ const Intro = () => {
   };
 
   return (
-    <div id="intro-lomda">
+    <div id="intro">
       {!isVideoEnded && (
         <>
           {showSkipButton && (
