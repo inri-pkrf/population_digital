@@ -34,7 +34,7 @@ function Menu() {
                 <li onClick={() => navigate('/home')}
                 >עמוד הבית</li>
                 <div className='lineMenu'></div>
-                <li onClick={() => navigate('/diagram')}>מבני ייעוד ותפקידים
+                <li onClick={() => navigate('/DiagramStep1')}> מבנה, ייעוד ותפקידי המכלולים במפקדות
                 </li>
                 <div className='lineMenu'></div>
                 <li onClick={() => navigate('/relations')}> יחסי גומלין במרכז ומכלול אוכלוסייה

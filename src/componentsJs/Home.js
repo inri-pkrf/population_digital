@@ -18,10 +18,10 @@ function Home() {
 
             <div className='pages-list'>
 
-                <div className="pages-list-item" onClick={() => navigate('/diagram')}>
+                <div className="pages-list-item" onClick={() => navigate('/DiagramStep1')}>
                     <div className="pages-list-content">
                         <div className="pages-list-title-homepage">
-                            מבני ייעוד ותפקידים
+                        מבנה, ייעוד ותפקידי המכלולים במפקדות
                         </div>
                         <img src={process.env.PUBLIC_URL + '/assests/imgs/diagram-icon.png'} className="pages-list-image-homepage" alt="diagram" />
                     </div>
