@@ -24,15 +24,15 @@
   
   @keyframes bounce2 {
     0% {
-      bottom: 15vh;
+      bottom: 10vh;
     }
   
     50% {
-      bottom: 12vh;
+      bottom: 8vh;
     }
   
     100% {
-      bottom: 15vh;
+      bottom: 10vh;
     }
   }
   

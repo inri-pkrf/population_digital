@@ -1,0 +1,54 @@
+.agamim-icon{
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    width: 17vw;
+    height: auto;
+    margin-top: 15vh;
+}
+
+.title-agamim{
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    font-family: 'Karantina', cursive;
+    font-size: 15vw;
+    margin-top: 27vh;
+    width: 100%;
+    text-align: center;
+    color: #50565c;
+
+}
+
+.subtitle-agamim{
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    font-family: 'Heebo', sans-serif;
+    font-size: 5vw;
+    color: grey;
+    text-align: center;
+    margin-top: 38vh;
+    width: 82vw;
+    direction: rtl;
+}
+
+.items{
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    font-family: 'Heebo', sans-serif;
+    font-size: 5vw;
+    color: rgb(86, 195, 232);
+    text-decoration: underline;
+}
+
+#item1{
+    margin-top: 58vh;
+
+}
+
+#item2{
+    margin-top: 65vh;
+
+}
