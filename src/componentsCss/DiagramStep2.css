@@ -40,3 +40,26 @@
     font-size: 3.5vw;
     color: grey;
 }
+
+.magnified {
+    width: 143vw;
+    transform: rotate(90deg);
+    margin-top: 59vw;
+    margin-right: -74vw;
+    z-index: 3;
+}
+
+.shadow {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(24, 22, 22, 0.575);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.shadow-active {
+    display: block;
+}
