@@ -7,10 +7,10 @@ import Intro from "./Intro";
 import Header from "./Header";
 import Menu from "./Menu"
 import DiagramStep1 from "./DiagramStep1";
+import DiagramStep2 from "./DiagramStep2";
 import Relations from "./Relations";
 import Operation from "./Operation";
 import Agamim from "./Agamim";
-
 
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
                 <Route path="/home" element={<Home/>} />
                 <Route path="/menu" element={<Menu/>} />
                 <Route path="/DiagramStep1" element={<DiagramStep1/>} />
+                <Route path="/DiagramStep2" element={<DiagramStep2/>} />
                 <Route path="/relations" element={<Relations/>} />
                 <Route path="/operation" element={<Operation/>} />
                 <Route path="/agamim" element={<Agamim/>} />

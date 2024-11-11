@@ -1,0 +1,42 @@
+.title-DiagramStep2{
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    font-family: 'Karantina', cursive;
+    font-size: 14vw;
+    margin-top: 27vh;
+    width: 100%;
+    text-align: center;
+    color: #50565c;
+}
+
+.subText-step2{
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    font-family: 'Heebo', sans-serif;
+    font-size: 5vw;
+    color: grey;
+    text-align: center;
+    margin-top: 48vh;
+    width: 82vw;
+    direction: rtl;
+}
+
+.stpe2Img{
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    margin-top: 63vh;
+    height: auto;
+    width: 88vw;
+}
+.text-img{
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    margin-top: 93vh;
+    font-family: 'Heebo', sans-serif;
+    font-size: 3.5vw;
+    color: grey;
+}
