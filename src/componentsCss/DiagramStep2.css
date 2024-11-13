@@ -47,6 +47,7 @@
     margin-top: 59vw;
     margin-right: -74vw;
     z-index: 3;
+    position: fixed;
 }
 
 .shadow {
@@ -63,3 +64,81 @@
 .shadow-active {
     display: block;
 }
+
+.blackArrow-step2{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    height: auto;
+    width: 17vw;
+    margin-top: 101vh;
+}
+
+.all-diagram {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100vw;
+    margin-top: 301vh;
+    font-family: 'Karantina', cursive;
+        color: white;
+  }
+  
+  .line {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    border-left: 2vw solid #595959;
+    height: 119vh;
+    margin-top: -186vh;
+}
+
+.small-line{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    border-left: 2vw solid #595959;
+    height: 6vh;
+    margin-top: -163vh;
+    margin-right: 5vw;
+    transform: rotate(90deg);
+}
+
+  .first-frame{
+    width: 80vw;
+    height: 10vh;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    text-align: center;
+    position: relative;
+    margin-top: -187vh;
+    margin-left: 10vw;
+    font-size: 12vw;
+  }
+
+  .second-frame{
+    width: 39vw;
+    height: 12vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-align: center;
+    position: relative;
+    margin-left: 3vw;
+    margin-top: 6vh;
+    font-size: 9vw;
+  }
+
+  .frame{
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    position: relative;
+    width: 69vw;
+    height: 7vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-bottom: 4vh;
+    top: 5vh;
+    left: 15vw;
+    font-size: 11vw;
+ }

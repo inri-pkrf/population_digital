@@ -13,13 +13,32 @@ function DiagramStep2() {
 
     const color = selectedOption === 'נפה' ? '#1cb4e3' : '#ff9900';
 
-    // State to track if image is magnified
     const [isMagnified, setIsMagnified] = useState(false);
 
-    // Function to toggle magnification and rotation
     const magnifyPic = () => {
         setIsMagnified(!isMagnified);
     };
+
+    const arrMahoz = {
+        strings: [
+            'מפקד מרכז אוכלוסייה', "ס' מ' מרכז אכלוסייה", "מ' מכלול הנדסה", "מ' מכלול חומ''ס ",
+            "מ' מכלול הסברה", "מ' מכלול התנהגות", "מ' מכלול רצ''ת", "מ' מכלול אוכלוסייה"
+        ],
+        
+        colors: ["#ff9900", "#e69138", "#fbbc6d"]
+    };
+    
+    const arrNafa = {
+        strings: [
+            'מפקד מכלול אוכלוסייה', "ס' מ' מכלול אוכלוסייה", "מ' תא הנדסה", "מ' תא חומ''ס",
+            "מ' תא הסברה", "מ' תא התנהגות", "מ' תא רשויות", "מ' תא מבצעים"
+        ],
+        colors: ["#053859", "#3d7ca5", "#1cb4e3"]
+
+    };
+
+    const selectedData = selectedOption === 'נפה' ? arrNafa : arrMahoz;
+    const [firstColor, secondColor, restColor] = selectedData.colors;
 
     return (
         <div className="DiagramStep2">
@@ -32,7 +51,7 @@ function DiagramStep2() {
             </div>
 
             <div className='subText-step2'>
-                לפניכם עץ מבנה למפקדה בנפה.
+                לפניכם עץ מבנה למפקדה ב{selectedOption === 'נפה' ? 'נפה' : 'מחוז'}.
                 בהמשך הדף יש לבחור את המכלולים לקבלת פירוט הגדרות ומשימות התפקיד -
             </div>
 
@@ -43,10 +62,32 @@ function DiagramStep2() {
                 onClick={magnifyPic}
             />
             <div className={`shadow ${isMagnified ? 'shadow-active' : ''}`}></div>
-            {/* <img src={process.env.PUBLIC_URL + '/assests/imgs/closeBtn.png'} className="closeBtn-img" alt="closeBtn" ></img> */}
             <div className='text-img'>אפשר להגדיל בלחיצה</div>
 
-            {/* <img src={process.env.PUBLIC_URL + '/assests/imgs/blackArrow.png'} className="blackArrow" alt="blackArrow" ></img> */}
+            <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow-step2" alt="blackArrow" />
+
+            <div className='all-diagram'>
+                <div className="line"></div>
+                <div className="small-line"></div>
+
+                <div className='first-frame' style={{ backgroundColor: firstColor }}>
+                    {selectedData.strings[0]}
+                </div>
+
+                <div className='second-frame' style={{ backgroundColor: secondColor }}>
+                    {selectedData.strings[1]}
+                </div>
+
+                {selectedData.strings.slice(2).map((text, index) => (
+                    <div 
+                        key={index} 
+                        className='frame' 
+                        style={{ backgroundColor: restColor }}
+                    >
+                        {text}
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
