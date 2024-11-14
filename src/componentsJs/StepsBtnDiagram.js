@@ -22,6 +22,11 @@ function StepsBtnDiagram({ currentStep }) {
                     className='btn-steps-diagram'
                     id='step2-diagram'
                     style={{ backgroundColor: currentStep === 2 || currentStep === 3 ? '#595959' : '#d9d9d9' }}
+                    onClick={() => {
+                        if (currentStep === 3) {
+                            navigate('/DiagramStep2');
+                        }
+                    }}
                 >
                     מבנה
                     <div className='arrow-down-diagram' id='arrow-down2-diagram' style={{ borderTop: currentStep === 2 || currentStep === 3 ? '12px solid #595959' : '12px solid #d9d9d9' }}></div>
@@ -29,9 +34,10 @@ function StepsBtnDiagram({ currentStep }) {
                 <div
                     className='btn-steps-diagram'
                     id='step3-diagram'
+                    style={{ backgroundColor: currentStep === 3 ? '#595959' : '#d9d9d9' }}
                 >
                     תפקידים
-                    <div className='arrow-down-diagram' id='arrow-down3-diagram' ></div>
+                    <div className='arrow-down-diagram' id='arrow-down3-diagram' style={{ borderTop: currentStep === 3 ? '12px solid #595959' : '12px solid #d9d9d9' }}></div>
                 </div>
             </div>
         </div>
