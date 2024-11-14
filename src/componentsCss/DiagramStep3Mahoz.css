@@ -1,0 +1,54 @@
+.title-DiagramStep3Mahoz{
+    position: absolute;
+    right: 3vh;
+    /* right: 50%; */
+    /* transform: translateX(50%); */
+    margin-top: 28vh;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    width: 69vw;
+    height: 7vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 11vw;
+    font-family: 'Karantina', cursive;
+    color: white;
+    background-color:#fbbc6d;
+}
+
+.role-DiagramStep3Mahoz{
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-family: 'Karantina', cursive;
+    position: relative;
+    width: 69vw;
+    height: 10vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 8vw;
+    top: 42vh;
+    right: -25vw;
+    margin-bottom: 2vh;
+    background-color: "#e69138";
+}
+
+.blackArrow-DiagramStep3Mahoz{
+    position: relative;
+    height: auto;
+    width: 17vw;
+    top: 47vh;
+}
+
+.item-image-DiagramStep3Mahoz{
+    position: relative;
+    height: auto;
+    width: 88vw;
+    top: 53vh;
+}
+
+/* .explanation-DiagramStep3Nafa{
+    position: relative;
+    top: 54vh;
+} */

@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import '../componentsCss/DiagramStep2.css';
 import StepsBtnDiagram from "./StepsBtnDiagram";
-import { useLocation } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function DiagramStep2() {
     const location = useLocation();
@@ -28,7 +26,6 @@ function DiagramStep2() {
             'מפקד מרכז אוכלוסייה', "ס' מ' מרכז אכלוסייה", "מ' מכלול הנדסה", "מ' מכלול חומ''ס ",
             "מ' מכלול הסברה", "מ' מכלול התנהגות", "מ' מכלול רצ''ת", "מ' מכלול אוכלוסייה"
         ],
-
         colors: ["#ff9900", "#e69138", "#fbbc6d"]
     };
 
@@ -38,7 +35,6 @@ function DiagramStep2() {
             "מ' תא הסברה", "מ' תא התנהגות", "מ' תא רשויות", "מ' תא מבצעים"
         ],
         colors: ["#053859", "#3d7ca5", "#1cb4e3"]
-
     };
 
     const selectedData = selectedOption === 'נפה' ? arrNafa : arrMahoz;
@@ -87,13 +83,15 @@ function DiagramStep2() {
                         key={index}
                         className='frame'
                         style={{ backgroundColor: restColor }}
-                        onClick={() => navigate('/DiagramStep3', { state: { title: text, selectedOption } })}
-                        >
+                        onClick={() => {
+                            const targetComponent = selectedOption === 'נפה' ? '/DiagramStep3Nafa' : '/DiagramStep3Mahoz';
+                            navigate(targetComponent, { state: { title: text, selectedOption } });
+                        }}
+                    >
                         {text}
                     </div>
                 ))}
             </div>
-            <div className='try'></div>
         </div>
     );
 }

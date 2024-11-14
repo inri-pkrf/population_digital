@@ -3,7 +3,7 @@ import '../componentsCss/StepsBtnDiagram.css';
 import { useNavigate } from 'react-router-dom';
 
 
-function StepsBtnDiagram({ currentStep }) {
+function StepsBtnDiagram({ currentStep, selectedOption }) {
     const navigate = useNavigate();
 
     return (
@@ -12,24 +12,24 @@ function StepsBtnDiagram({ currentStep }) {
                 <div
                     className='btn-steps-diagram'
                     id='step1-diagram'
-                    style={{ backgroundColor: currentStep === 1 || currentStep === 2 || currentStep === 3 ? '#595959' : '#d9d9d9' }}
+                    style={{ backgroundColor: currentStep >= 1 ? '#595959' : '#d9d9d9' }}
                     onClick={() => navigate('/DiagramStep1')}
                 >
                     מפקדה
-                    <div className='arrow-down-diagram' id='arrow-down1-diagram' style={{ borderTop: currentStep === 1 || currentStep === 2 || currentStep === 3 ? '12px solid #595959' : '12px solid #d9d9d9' }}></div>
+                    <div className='arrow-down-diagram' id='arrow-down1-diagram' style={{ borderTop: currentStep >= 1 ? '12px solid #595959' : '12px solid #d9d9d9' }}></div>
                 </div>
                 <div
                     className='btn-steps-diagram'
                     id='step2-diagram'
-                    style={{ backgroundColor: currentStep === 2 || currentStep === 3 ? '#595959' : '#d9d9d9' }}
+                    style={{ backgroundColor: currentStep >= 2 ? '#595959' : '#d9d9d9' }}
                     onClick={() => {
-                        if (currentStep === 3) {
-                            navigate('/DiagramStep2');
+                        if (currentStep >= 2) {
+                            navigate('/DiagramStep2', { state: { selectedOption } });
                         }
                     }}
                 >
                     מבנה
-                    <div className='arrow-down-diagram' id='arrow-down2-diagram' style={{ borderTop: currentStep === 2 || currentStep === 3 ? '12px solid #595959' : '12px solid #d9d9d9' }}></div>
+                    <div className='arrow-down-diagram' id='arrow-down2-diagram' style={{ borderTop: currentStep >= 2 ? '12px solid #595959' : '12px solid #d9d9d9' }}></div>
                 </div>
                 <div
                     className='btn-steps-diagram'

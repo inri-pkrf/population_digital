@@ -9,7 +9,7 @@ function DiagramStep1() {
 
     return (
         <div className="DiagramStep1" >
-            <StepsBtnDiagram currentStep={1} />
+            <StepsBtnDiagram currentStep={1}/>
 
             <div className='title-DiagramStep1'>
                 מבנה, ייעוד ותפקידי מכלול האוכלוסייה במפקדות
