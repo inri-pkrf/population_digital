@@ -3,9 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #ffffff;
-    /* z-index: 2000;  */
     text-align: right;
     padding-top: 2vh;
     overflow-y: scroll;
@@ -18,7 +17,7 @@
     right: 50%;
     font-family: 'Karantina', cursive;
     font-size: 14vw;
-    margin-top: 27vh;
+    top: 27vh;
     width: 100%;
     text-align: center;
     color: #50565c;
@@ -32,7 +31,7 @@
     font-size: 5vw;
     color: grey;
     text-align: center;
-    margin-top: 48vh;
+    top: 46vh;
     width: 82vw;
     direction: rtl;
 }
@@ -41,7 +40,7 @@
     position: absolute;
     transform: translateX(50%);
     right: 50%;
-    margin-top: 63vh;
+    top: 63vh;
     height: auto;
     width: 88vw;
 }
@@ -50,7 +49,7 @@
     position: absolute;
     transform: translateX(50%);
     right: 50%;
-    margin-top: 93vh;
+    top: 93vh;
     font-family: 'Heebo', sans-serif;
     font-size: 3.5vw;
     color: grey;
@@ -59,8 +58,8 @@
 .magnified {
     width: 143vw;
     transform: rotate(90deg);
-    margin-top: 59vw;
-    margin-right: -74vw;
+    top: 59vw;
+    right: -22vw;
     z-index: 3;
     position: fixed;
 }
@@ -86,7 +85,7 @@
     transform: translateX(50%);
     height: auto;
     width: 17vw;
-    margin-top: 101vh;
+    top: 101vh;
 }
 
 .all-diagram {
@@ -94,9 +93,11 @@
     right: 50%;
     transform: translateX(50%);
     width: 100vw;
-    margin-top: 301vh;
     font-family: 'Karantina', cursive;
     color: white;
+    top: 112vh;
+    margin-bottom: 31vh;
+    height: 130vh;
 }
 
 .line {
@@ -105,29 +106,27 @@
     transform: translateX(50%);
     border-left: 2vw solid #595959;
     height: 119vh;
-    margin-top: -186vh;
+    top: 2vh;
 }
 
 .small-line {
     position: absolute;
-    right: 50%;
-    transform: translateX(50%);
     border-left: 2vw solid #595959;
     height: 6vh;
-    margin-top: -163vh;
-    margin-right: 5vw;
     transform: rotate(90deg);
+    left: 43vw;
+    top: 23vh;
 }
 
 .first-frame {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
     width: 80vw;
     height: 10vh;
     padding-top: 3vh;
     padding-bottom: 1vh;
     text-align: center;
-    position: relative;
-    margin-top: -187vh;
-    margin-left: 10vw;
     font-size: 12vw;
 }
 
@@ -138,8 +137,8 @@
     padding-bottom: 1vh;
     text-align: center;
     position: relative;
-    margin-left: 3vw;
-    margin-top: 6vh;
+    left: 3vw;
+    top: 19vh;
     font-size: 9vw;
 }
 
@@ -153,7 +152,7 @@
     padding-top: 2vh;
     padding-bottom: 2vh;
     margin-bottom: 4vh;
-    top: 5vh;
+    top: 25vh;
     left: 15vw;
     font-size: 11vw;
 }
