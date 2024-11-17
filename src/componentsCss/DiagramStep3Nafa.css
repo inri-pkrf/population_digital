@@ -48,7 +48,52 @@
     top: 53vh;
 }
 
-/* .explanation-DiagramStep3Nafa{
+
+.explanation-div-DiagramStep3Nafa{
     position: relative;
-    top: 54vh;
-} */
+    top: 58vh;
+}
+
+.explanation-title-DiagramStep3Nafa{
+    font-family: 'Karantina', cursive;
+    font-size: 8vw;
+    text-align: right;
+    padding-right: 7vh;
+    margin-top: 6vh;
+}
+
+.explanation-text-DiagramStep3Nafa{
+    font-family: 'Heebo', sans-serif;
+    font-size: 5vw;
+    color: grey;
+    direction: rtl;
+    padding-right: 7vh;
+    padding-left: 5vh;
+    text-align: right;
+    top: 2vh;
+    position: relative;
+    line-height: 5vh;
+}
+
+.step1Btn{
+    position: relative;
+    top: 71vh;
+    left: 5vw;
+    color: white;
+    background-color: #1cb4e3;
+    font-family: 'Karantina', cursive;
+    font-size: 7vmin;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    height: 5vh;
+    width: 46vw;
+    border-radius: 20vw;
+}
+
+.margin{
+    position: relative;
+    top: 75vh;
+    height: 3vh;
+    width: 100vw;
+    background-color: transparent;
+}

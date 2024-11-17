@@ -2,11 +2,23 @@ import React, { useState } from 'react';
 import '../componentsCss/DiagramStep2.css';
 import StepsBtnDiagram from "./StepsBtnDiagram";
 import { useLocation, useNavigate } from 'react-router-dom';
+import PopUp from './PopUp';
 
 function DiagramStep2() {
+    const [isPopupVisible, setPopupVisible] = useState(false);
+    const [popupContent, setPopupContent] = useState({ title: '', content: '' });
+
+    const handleBoxClick = (title, content) => {
+        setPopupContent({ title, content });
+        setPopupVisible(true);
+    };
+
+    const closePopup = () => {
+        setPopupVisible(false);
+    };
+
     const location = useLocation();
     const navigate = useNavigate();
-
     const selectedOption = location.state?.selectedOption || '';
 
     const imagePath = selectedOption === 'נפה'
@@ -40,6 +52,35 @@ function DiagramStep2() {
     const selectedData = selectedOption === 'נפה' ? arrNafa : arrMahoz;
     const [firstColor, secondColor, restColor] = selectedData.colors;
 
+    const frameContent = (
+        <>
+            1. פיקוד ושליטה על מכלול האוכלוסייה.<br /><br />
+            2. גיבוש תמונת מצב וביצוע הערכת מצב אוכלוסייה.<br /><br />
+            3. איתור מגמות מרכזיות במרחב האזרחי, ולאורן (וכמובן לאור צי"חי מפקד הנפה) - הגדרת צי"חי עבודה למכלול.<br /><br />
+            4. אישור המלצות התאים במכלול באשר לפעולות הנדרשות לצורך מענה לאתגרים במרחב האזרחי:<br /><br />
+            א. תכנית מענה לדרישות ומיצוי יכולות המרחב
+            <br />
+            ב. תכנית מענה לרשות מתקשה
+            <br />
+            ג. תכנית מענה לרשות במשבר אנרגיה
+            <br />
+            ד. תכנית מענה למפונים- מתפנים
+            <br />
+            ה. תכנית לתמיכה בחוסן
+            <br />
+            ו. דרישה מבצעית לתכנית הסברה
+            <br />
+            ז. תכנית לשיפור המענה המיגוני
+            <br /><br />
+            5. הכנת הפורומים הנפתיים - מדיניות התגוננות ומיצוי יכולות המרחב.
+        </>
+    );
+
+    const handleFirstFrameClick = () => {
+        const title = selectedOption === 'נפה' ? 'מפקד המכלול/סגן' : 'מפקד המרכז / סגן';
+        handleBoxClick(title, frameContent);
+    };
+
     return (
         <div className="DiagramStep2">
             <StepsBtnDiagram currentStep={2} />
@@ -70,11 +111,19 @@ function DiagramStep2() {
                 <div className="line"></div>
                 <div className="small-line"></div>
 
-                <div className='first-frame' style={{ backgroundColor: firstColor }}>
+                <div
+                    className='first-frame'
+                    style={{ backgroundColor: firstColor }}
+                    onClick={handleFirstFrameClick}
+                >
                     {selectedData.strings[0]}
                 </div>
 
-                <div className='second-frame' style={{ backgroundColor: secondColor }}>
+                <div
+                    className='second-frame'
+                    style={{ backgroundColor: secondColor }}
+                    onClick={handleFirstFrameClick}
+                >
                     {selectedData.strings[1]}
                 </div>
 
@@ -92,6 +141,13 @@ function DiagramStep2() {
                     </div>
                 ))}
             </div>
+
+            <PopUp
+                isVisible={isPopupVisible}
+                onClose={closePopup}
+                title={popupContent.title}
+                content={popupContent.content}
+            />
         </div>
     );
 }
