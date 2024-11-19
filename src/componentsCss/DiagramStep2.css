@@ -1,4 +1,4 @@
-.DiagramStep2 {
+/* .DiagramStep2 {
     position: fixed;
     top: 0;
     left: 0;
@@ -9,7 +9,7 @@
     padding-top: 2vh;
     overflow-y: scroll;
     overflow-x: hidden;
-}
+} */
 
 .title-DiagramStep2 {
     position: absolute;

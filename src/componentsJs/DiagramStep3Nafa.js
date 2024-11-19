@@ -16,6 +16,9 @@ function DiagramStep3Nafa() {
     const [isPopupVisible, setPopupVisible] = useState(false);
     const [popupContent, setPopupContent] = useState({ title: '', content: '' });
 
+    // מצב לאחסון אילו כותרות נפתחות
+    const [expandedExplanation, setExpandedExplanation] = useState(null);
+
     const handleRoleClick = (roleName, notes) => {
         setPopupContent({
             title: roleName,
@@ -26,6 +29,11 @@ function DiagramStep3Nafa() {
 
     const handleClosePopup = () => {
         setPopupVisible(false);
+    };
+
+    // פונקציה להרחבת והסתרת הטקסט של ההסבר
+    const handleToggleExplanation = (index) => {
+        setExpandedExplanation(expandedExplanation === index ? null : index);
     };
 
     return (
@@ -50,25 +58,38 @@ function DiagramStep3Nafa() {
                 ))}
             </div>
 
-            <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow-DiagramStep3Nafa" alt="blackArrow" />
+            <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow-DiagramStep3Nafa" alt="Next arrow" />
 
             <img src={selectedItem.src} alt={selectedItem.name} className="item-image-DiagramStep3Nafa" />
 
             {selectedItem.explanation.map((explanation, index) => (
                 <div key={index} className="explanation-div-DiagramStep3Nafa">
-                    <div className="explanation-title-DiagramStep3Nafa">{explanation.titleExplanation}</div>
-                    <div className="explanation-text-DiagramStep3Nafa">
-                        {Array.isArray(explanation.textExplanation)
-                            ? explanation.textExplanation.map((text, idx) => <div key={idx}>{text}</div>)
-                            : explanation.textExplanation}
+                    <div 
+                        className="explanation-title-wrapper-DiagramStep3Nafa"
+                        onClick={() => handleToggleExplanation(index)} // לחיצה על הכותרת והחץ
+                    >
+                        <div className="explanation-title-DiagramStep3Nafa">
+                            {explanation.titleExplanation}
+                        </div>
+                        <img
+                            src={`${process.env.PUBLIC_URL}/assests/imgs/nextBlack.png`}
+                            className={`arrow-icon ${expandedExplanation === index ? 'rotated' : ''}`}
+                            alt="Arrow"
+                        />
                     </div>
+                    {expandedExplanation === index && ( // מציג את התוכן רק אם הכותרת נפתחה
+                        <div className="explanation-text-DiagramStep3Nafa">
+                            {Array.isArray(explanation.textExplanation)
+                                ? explanation.textExplanation.map((text, idx) => <div key={idx}>{text}</div>)
+                                : explanation.textExplanation}
+                        </div>
+                    )}
                 </div>
             ))}
 
-            <div className='step1Btn'  onClick={() => navigate('/DiagramStep1')}>חזרה לבחירת מפקדה</div>
+            <div className='step1Btn' onClick={() => navigate('/DiagramStep1')}>חזרה לבחירת מפקדה</div>
 
             <div className='margin'></div>
-
 
             <PopUp
                 isVisible={isPopupVisible}

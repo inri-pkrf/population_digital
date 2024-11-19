@@ -14,6 +14,7 @@ function DiagramStep3Mahoz() {
 
     const [isPopupVisible, setPopupVisible] = useState(false);
     const [popupContent, setPopupContent] = useState({ title: '', content: '' });
+    const [expandedExplanation, setExpandedExplanation] = useState(null);
 
     const handleRoleClick = (roleName, notes) => {
         setPopupContent({
@@ -27,13 +28,18 @@ function DiagramStep3Mahoz() {
         setPopupVisible(false);
     };
 
+    const handleToggleExplanation = (index) => {
+        setExpandedExplanation(expandedExplanation === index ? null : index);
+    };
+
+
     return (
         <div className="DiagramStep3Mahoz">
             <StepsBtnDiagram currentStep={3} selectedOption={selectedOption} />
 
             <div
                 className="title-DiagramStep3Mahoz"
-                // onClick={() => handleRoleClick(selectedItem.name, selectedItem.nameNote)}
+            // onClick={() => handleRoleClick(selectedItem.name, selectedItem.nameNote)}
             >
                 {title}
             </div>
@@ -43,7 +49,7 @@ function DiagramStep3Mahoz() {
                     <div
                         key={role.idRole}
                         className="role-DiagramStep3Mahoz"
-                        // onClick={() => handleRoleClick(role.roleName, role.notes)}
+                    // onClick={() => handleRoleClick(role.roleName, role.notes)}
                     >
                         {role.roleName}
                     </div>
@@ -64,14 +70,29 @@ function DiagramStep3Mahoz() {
 
             {selectedItem.explanation.map((explanation, index) => (
                 <div key={index} className="explanation-div-DiagramStep3Mahoz">
-                    <div className="explanation-title-DiagramStep3Mahoz">{explanation.titleExplanation}</div>
-                    <div className="explanation-text-DiagramStep3Mahoz">
-                        {Array.isArray(explanation.textExplanation)
-                            ? explanation.textExplanation.map((text, idx) => <div key={idx}>{text}</div>)
-                            : explanation.textExplanation}
+                    <div
+                        className="explanation-title-wrapper-DiagramStep3Mahoz"
+                        onClick={() => handleToggleExplanation(index)} // לחיצה על הכותרת והחץ
+                    >
+                        <div className="explanation-title-DiagramStep3Mahoz">
+                            {explanation.titleExplanation}
+                        </div>
+                        <img
+                            src={`${process.env.PUBLIC_URL}/assests/imgs/nextBlack.png`}
+                            className={`arrow-icon ${expandedExplanation === index ? 'rotated' : ''}`}
+                            alt="Arrow"
+                        />
                     </div>
+                    {expandedExplanation === index && ( // מציג את התוכן רק אם הכותרת נפתחה
+                        <div className="explanation-text-DiagramStep3Mahoz">
+                            {Array.isArray(explanation.textExplanation)
+                                ? explanation.textExplanation.map((text, idx) => <div key={idx}>{text}</div>)
+                                : explanation.textExplanation}
+                        </div>
+                    )}
                 </div>
             ))}
+
 
             <div className='step1Btn' onClick={() => navigate('/DiagramStep1')}>
                 חזרה לבחירת מפקדה

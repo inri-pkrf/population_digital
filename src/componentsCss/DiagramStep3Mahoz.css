@@ -48,9 +48,14 @@
     top: 53vh;
 }
 
+
 .explanation-div-DiagramStep3Mahoz{
     position: relative;
     top: 58vh;
+    background-color: #d9d9d9;
+    width: 90vw;
+    right: -5vw;
+    border-radius: 6vw;
 }
 
 .explanation-title-DiagramStep3Mahoz{
@@ -59,19 +64,23 @@
     text-align: right;
     padding-right: 7vh;
     margin-top: 6vh;
+    padding-top: 1vh;
+    color: rgb(58, 57, 57);
 }
+
 
 .explanation-text-DiagramStep3Mahoz{
     font-family: 'Heebo', sans-serif;
-    font-size: 5vw;
-    color: grey;
+    font-size: 4vw;
+    color: rgb(0, 0, 0);
     direction: rtl;
-    padding-right: 7vh;
-    padding-left: 5vh;
+    padding-right: 4vh;
+    padding-left: 4vh;
     text-align: right;
     top: 2vh;
     position: relative;
     line-height: 5vh;
+    padding-bottom: 3vh;
 }
 
 .step1Btn{
@@ -96,3 +105,17 @@
     width: 100vw;
     background-color: transparent;
 }
+
+.arrow-icon {
+    height: 3vh;
+    width: auto;
+    position: relative;
+    top: -3.3vh;
+    margin-left: -5px;
+    transform: rotate(180deg);
+}
+
+.arrow-icon.rotated {
+    transform: rotate(90deg); /* סיבוב החץ */
+}
+

@@ -369,7 +369,7 @@ const mahoz = [
                     ]
             }
         ],
-        src: `${process.env.PUBLIC_URL}/assests/imgs/mahoz/ratzat1.svg`,
+        src: `${process.env.PUBLIC_URL}/assests/imgs/mahoz/raztat.svg`,
     },
     {
         id: 6,
