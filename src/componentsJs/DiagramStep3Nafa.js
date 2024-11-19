@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../componentsCss/DiagramStep3Nafa.css';
 import StepsBtnDiagram from "./StepsBtnDiagram";
 import { useLocation } from 'react-router-dom';
@@ -10,14 +10,14 @@ function DiagramStep3Nafa() {
     const location = useLocation();
     const navigate = useNavigate();
     const { title, selectedOption } = location.state || {};
-
     const selectedItem = nafa.find(item => item.name === title);
-
     const [isPopupVisible, setPopupVisible] = useState(false);
     const [popupContent, setPopupContent] = useState({ title: '', content: '' });
-
-    // מצב לאחסון אילו כותרות נפתחות
     const [expandedExplanation, setExpandedExplanation] = useState(null);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
     const handleRoleClick = (roleName, notes) => {
         setPopupContent({
@@ -31,9 +31,12 @@ function DiagramStep3Nafa() {
         setPopupVisible(false);
     };
 
-    // פונקציה להרחבת והסתרת הטקסט של ההסבר
     const handleToggleExplanation = (index) => {
         setExpandedExplanation(expandedExplanation === index ? null : index);
+    };
+
+    const handleImageClick = () => {
+        navigate('/MagnifyPic', { state: { imagePath: selectedItem.src } });
     };
 
     return (
@@ -60,11 +63,16 @@ function DiagramStep3Nafa() {
 
             <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow-DiagramStep3Nafa" alt="Next arrow" />
 
-            <img src={selectedItem.src} alt={selectedItem.name} className="item-image-DiagramStep3Nafa" />
+            <img
+                src={selectedItem.src}
+                className="item-image-DiagramStep3Nafa"
+                alt={selectedItem.name}
+                onClick={handleImageClick}
+            />
 
             {selectedItem.explanation.map((explanation, index) => (
                 <div key={index} className="explanation-div-DiagramStep3Nafa">
-                    <div 
+                    <div
                         className="explanation-title-wrapper-DiagramStep3Nafa"
                         onClick={() => handleToggleExplanation(index)} // לחיצה על הכותרת והחץ
                     >

@@ -10,6 +10,7 @@ import DiagramStep1 from "./DiagramStep1";
 import DiagramStep2 from "./DiagramStep2";
 import DiagramStep3Nafa from "./DiagramStep3Nafa";
 import DiagramStep3Mahoz from "./DiagramStep3Mahoz";
+import MagnifyPic from "./MagnifyPic";
 import Relations from "./Relations";
 import Operation from "./Operation";
 import Agamim from "./Agamim";
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/DiagramStep2" element={<DiagramStep2/>} />
                 <Route path="/DiagramStep3Nafa" element={<DiagramStep3Nafa/>} />
                 <Route path="/DiagramStep3Mahoz" element={<DiagramStep3Mahoz/>} />
+                <Route path="/MagnifyPic" element={<MagnifyPic/>} />
                 <Route path="/relations" element={<Relations/>} />
                 <Route path="/operation" element={<Operation/>} />
                 <Route path="/agamim" element={<Agamim/>} />

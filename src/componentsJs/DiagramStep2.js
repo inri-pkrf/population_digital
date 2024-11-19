@@ -17,6 +17,10 @@ function DiagramStep2() {
         setPopupVisible(false);
     };
 
+    const handleImageClick = () => {
+        navigate('/MagnifyPic', { state: { imagePath } });
+    };
+
     const location = useLocation();
     const navigate = useNavigate();
     const selectedOption = location.state?.selectedOption || '';
@@ -27,11 +31,11 @@ function DiagramStep2() {
 
     const color = selectedOption === 'נפה' ? '#1cb4e3' : '#ff9900';
 
-    const [isMagnified, setIsMagnified] = useState(false);
+    // const [isMagnified, setIsMagnified] = useState(false);
 
-    const magnifyPic = () => {
-        setIsMagnified(!isMagnified);
-    };
+    // const magnifyPic = () => {
+    //     setIsMagnified(!isMagnified);
+    // };
 
     const arrMahoz = {
         strings: [
@@ -98,11 +102,12 @@ function DiagramStep2() {
 
             <img
                 src={imagePath}
-                className={`stpe2Img ${isMagnified ? 'magnified' : ''}`}
-                alt="stpe2Img"
-                onClick={magnifyPic}
+                className="stpe2Img"
+                alt="Structure Diagram"
+                onClick={handleImageClick}
             />
-            <div className={`shadow ${isMagnified ? 'shadow-active' : ''}`}></div>
+
+            {/* <div className={`shadow ${isMagnified ? 'shadow-active' : ''}`}></div> */}
             <div className='text-img'>אפשר להגדיל בלחיצה</div>
 
             <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow-step2" alt="blackArrow" />

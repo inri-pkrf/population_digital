@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../componentsCss/DiagramStep3Mahoz.css';
 import StepsBtnDiagram from "./StepsBtnDiagram";
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -16,6 +16,10 @@ function DiagramStep3Mahoz() {
     const [popupContent, setPopupContent] = useState({ title: '', content: '' });
     const [expandedExplanation, setExpandedExplanation] = useState(null);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     const handleRoleClick = (roleName, notes) => {
         setPopupContent({
             title: roleName,
@@ -32,6 +36,9 @@ function DiagramStep3Mahoz() {
         setExpandedExplanation(expandedExplanation === index ? null : index);
     };
 
+    const handleImageClick = () => {
+        navigate('/MagnifyPic', { state: { imagePath: selectedItem.src } });
+    };
 
     return (
         <div className="DiagramStep3Mahoz">
@@ -64,8 +71,9 @@ function DiagramStep3Mahoz() {
 
             <img
                 src={selectedItem.src}
-                alt={selectedItem.name}
                 className="item-image-DiagramStep3Mahoz"
+                alt={selectedItem.name}
+                onClick={handleImageClick}
             />
 
             {selectedItem.explanation.map((explanation, index) => (

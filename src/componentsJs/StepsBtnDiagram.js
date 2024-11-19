@@ -23,7 +23,7 @@ function StepsBtnDiagram({ currentStep, selectedOption }) {
                     id='step2-diagram'
                     style={{ backgroundColor: currentStep >= 2 ? '#595959' : '#d9d9d9' }}
                     onClick={() => {
-                        if (currentStep >= 2) {
+                        if (currentStep > 2) {
                             navigate('/DiagramStep2', { state: { selectedOption } });
                         }
                     }}
