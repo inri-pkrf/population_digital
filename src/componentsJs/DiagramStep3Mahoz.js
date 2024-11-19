@@ -33,7 +33,7 @@ function DiagramStep3Mahoz() {
 
             <div
                 className="title-DiagramStep3Mahoz"
-                onClick={() => handleRoleClick(selectedItem.name, selectedItem.nameNote)}
+                // onClick={() => handleRoleClick(selectedItem.name, selectedItem.nameNote)}
             >
                 {title}
             </div>
@@ -43,7 +43,7 @@ function DiagramStep3Mahoz() {
                     <div
                         key={role.idRole}
                         className="role-DiagramStep3Mahoz"
-                        onClick={() => handleRoleClick(role.roleName, role.notes)}
+                        // onClick={() => handleRoleClick(role.roleName, role.notes)}
                     >
                         {role.roleName}
                     </div>
@@ -62,7 +62,7 @@ function DiagramStep3Mahoz() {
                 className="item-image-DiagramStep3Mahoz"
             />
 
-            {/* {selectedItem.explanation.map((explanation, index) => (
+            {selectedItem.explanation.map((explanation, index) => (
                 <div key={index} className="explanation-div-DiagramStep3Mahoz">
                     <div className="explanation-title-DiagramStep3Mahoz">{explanation.titleExplanation}</div>
                     <div className="explanation-text-DiagramStep3Mahoz">
@@ -71,7 +71,7 @@ function DiagramStep3Mahoz() {
                             : explanation.textExplanation}
                     </div>
                 </div>
-            ))} */}
+            ))}
 
             <div className='step1Btn' onClick={() => navigate('/DiagramStep1')}>
                 חזרה לבחירת מפקדה
