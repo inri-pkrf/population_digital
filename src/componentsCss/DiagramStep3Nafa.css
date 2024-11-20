@@ -48,6 +48,14 @@
     top: 53vh;
 }
 
+.text-img-nafa{
+    position: relative;
+    top: 55vh;
+    font-family: 'Heebo', sans-serif;
+    font-size: 3.5vw;
+    color: grey;
+}
+
 
 .explanation-div-DiagramStep3Nafa{
     position: relative;
@@ -118,3 +126,4 @@
 .arrow-icon.rotated {
     transform: rotate(90deg); /* סיבוב החץ */
 }
+

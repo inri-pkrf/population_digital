@@ -17,12 +17,13 @@ function DiagramStep3Nafa() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
 
-    const handleRoleClick = (roleName, notes) => {
+    const handleRoleClick = (roleName, notes, imgSrc) => {
         setPopupContent({
             title: roleName,
             content: notes,
+            imgSrc: imgSrc
         });
         setPopupVisible(true);
     };
@@ -54,8 +55,8 @@ function DiagramStep3Nafa() {
                     <div
                         key={role.idRole}
                         className="role-DiagramStep3Nafa"
-                        onClick={() => handleRoleClick(role.roleName, role.notes)}
-                    >
+                        onClick={title === "מ' תא רשויות" ? () => handleRoleClick(role.roleName, role.notes, role.imgSrc) : () => handleRoleClick(role.roleName, role.notes)}
+                        >
                         {role.roleName}
                     </div>
                 ))}
@@ -69,6 +70,8 @@ function DiagramStep3Nafa() {
                 alt={selectedItem.name}
                 onClick={handleImageClick}
             />
+            <div className='text-img-nafa'>אפשר להגדיל בלחיצה</div>
+
 
             {selectedItem.explanation.map((explanation, index) => (
                 <div key={index} className="explanation-div-DiagramStep3Nafa">
@@ -104,6 +107,7 @@ function DiagramStep3Nafa() {
                 onClose={handleClosePopup}
                 title={popupContent.title}
                 content={popupContent.content}
+                imgSrc={popupContent.imgSrc} 
             />
         </div>
     );

@@ -224,7 +224,13 @@ const mahoz = [
         roles: [
             {
                 idRole: 1,
-                roleName: 'סגן מפקד מכלול רצ"ת'
+                roleName: 'סגן מפקד מכלול רצ"ת',
+                notes: [
+                    <>
+                       חסר מידע
+                    </>
+
+                ],
             },
             {
                 idRole: 2,
@@ -247,6 +253,7 @@ const mahoz = [
                     </>
 
                 ],
+                imgSrc: '/assests/imgs/mahoz/raztat1marsel.svg'
             },
             {
                 idRole: 3,
@@ -269,6 +276,7 @@ const mahoz = [
                         5. גיבוש המלצות משרדי הממשלה והנחייתם בתחומי ההתגוננות האזרחית.<br />
                     </>
                 ],
+                imgSrc: '/assests/imgs/mahoz/raztat2memshala.svg'
             },
             {
                 idRole: 4,
@@ -293,6 +301,7 @@ const mahoz = [
                         7. הצגת תמונת המצב הארצית של המענה שהוגדר על ידי מרכז הסיוע לאזרח ושניתן לעורף.<br />
                     </>
                 ],
+                imgSrc: '/assests/imgs/mahoz/raztat2rasoiot.svg'
             }
         ],
         explanation: [

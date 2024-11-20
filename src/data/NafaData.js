@@ -356,6 +356,7 @@ const nafa = [
                 notes: [
                     'חסר מידע'
                 ],
+                imgSrc: '/assests/imgs/nafa/rashoiot3kaman.svg'
             },
             {
                 idRole: 3,
@@ -372,6 +373,7 @@ const nafa = [
                     7. בקרה ומעקב אחר סטטוס מימוש הנחיות מפקדים בתחום רשויות המגזר, אשר מרוכזות ע"י מש"ק הרשויות.<br /><br />
                 </>
                 ],
+                imgSrc: '/assests/imgs/nafa/rashoiot2migzar.svg'
             },
             {
                 idRole: 4,
@@ -393,6 +395,7 @@ const nafa = [
 
                 </>
                 ],
+                imgSrc: '/assests/imgs/nafa/rashoiot1marsel.svg'
             }
         ],
         src: `${process.env.PUBLIC_URL}/assests/imgs/nafa/rashoiot.svg`,

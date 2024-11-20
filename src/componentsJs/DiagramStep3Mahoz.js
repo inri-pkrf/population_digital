@@ -18,12 +18,13 @@ function DiagramStep3Mahoz() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
 
-    const handleRoleClick = (roleName, notes) => {
+    const handleRoleClick = (roleName, notes, imgSrc) => {
         setPopupContent({
             title: roleName,
             content: notes,
+            imgSrc: imgSrc,
         });
         setPopupVisible(true);
     };
@@ -44,6 +45,15 @@ function DiagramStep3Mahoz() {
         <div className="DiagramStep3Mahoz">
             <StepsBtnDiagram currentStep={3} selectedOption={selectedOption} />
 
+            {title === "מ' מכלול רצ''ת" && (
+                <>
+                    <div className="top-message">
+                        לחץ על הריבועים ולמד על המבנה של כל מכלול
+                    </div>
+                </>
+            )}
+
+
             <div
                 className="title-DiagramStep3Mahoz"
             // onClick={() => handleRoleClick(selectedItem.name, selectedItem.nameNote)}
@@ -56,7 +66,7 @@ function DiagramStep3Mahoz() {
                     <div
                         key={role.idRole}
                         className="role-DiagramStep3Mahoz"
-                    // onClick={() => handleRoleClick(role.roleName, role.notes)}
+                        onClick={title === "מ' מכלול רצ''ת" ? () => handleRoleClick(role.roleName, role.notes, role.imgSrc) : undefined}
                     >
                         {role.roleName}
                     </div>
@@ -75,6 +85,8 @@ function DiagramStep3Mahoz() {
                 alt={selectedItem.name}
                 onClick={handleImageClick}
             />
+            <div className='text-img-mahoz'>אפשר להגדיל בלחיצה</div>
+
 
             {selectedItem.explanation.map((explanation, index) => (
                 <div key={index} className="explanation-div-DiagramStep3Mahoz">
@@ -113,6 +125,7 @@ function DiagramStep3Mahoz() {
                 onClose={handleClosePopup}
                 title={popupContent.title}
                 content={popupContent.content}
+                imgSrc={popupContent.imgSrc} 
             />
         </div>
     );
