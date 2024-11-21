@@ -161,8 +161,8 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
     const selectedData = data[selectedItemStep1] || [];
     const currentIndex = selectedData.findIndex(item => item.name === selectedItemsStep2);
     const itemData = selectedData[currentIndex];
-    const [give, setGive] = useState(`מקבל ממכלול ${selectedItemsStep2}`);
-    const [receives, setReceives] = useState(`נותן ממכלול ${selectedItemStep1}`);
+    const [give, setGive] = useState(`מקבל ממכלול ${selectedItemStep1}`);
+    const [receives, setReceives] = useState(`מקבל ממכלול ${selectedItemsStep2}`);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -192,14 +192,8 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
         }
     };
 
-    // const handlePrintRelationsClick = () => {
-    //     window.open(`${process.env.PUBLIC_URL}/ממשקים בין מכלולים.pdf`, '_blank');
-    // };
-
-
     return (
         <div className="Interfaces">
-            {/* <div className='sub-Interfaces'>הממשקים בין המכלולים</div> */}
 
             <div className='Interfaces-contect'>
                 <div className='title-Interfaces' id='title2-Interfaces'>{receives} </div>
@@ -223,15 +217,6 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
                     חזרה לבחירת מכלול ראשון
                 </div>
             </div>
-
-            {/* <div id='btn-print-relations2' onClick={handlePrintRelationsClick}>
-                <div className='relationsPrintDiv'>
-                    <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-gallery" alt="print"></img>
-                    <p className='text-print'>הורדת גרסה להדפסה</p>
-                </div>
-            </div> */}
-
-
         </div>
     );
 }

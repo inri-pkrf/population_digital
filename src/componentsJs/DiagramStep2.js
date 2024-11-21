@@ -90,7 +90,7 @@ function DiagramStep2() {
             </div>
 
             <div className='subText-step2'>
-                לפניכם עץ מבנה למפקדה ב{selectedOption === 'נפה' ? 'נפה' : 'מחוז'}.
+                לפניכם עץ מבנה מכלול אוכלוסייה ב{selectedOption === 'נפה' ? 'נפה' : 'מחוז'}.
                 בהמשך הדף יש לבחור את המכלולים לקבלת פירוט הגדרות ומשימות התפקיד -
             </div>
 
@@ -101,8 +101,7 @@ function DiagramStep2() {
                 onClick={handleImageClick}
             />
 
-            {/* <div className={`shadow ${isMagnified ? 'shadow-active' : ''}`}></div> */}
-            <div className='text-img'>אפשר להגדיל בלחיצה</div>
+            <div className='text-img'>אפשר להגדיל את עץ המבנה בלחיצה</div>
 
             <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow-step2" alt="blackArrow" />
 

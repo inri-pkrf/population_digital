@@ -21,7 +21,7 @@ function Home() {
                 <div className="pages-list-item" onClick={() => navigate('/DiagramStep1')}>
                     <div className="pages-list-content">
                         <div className="pages-list-title-homepage">
-                        מבנה, ייעוד ותפקידי המכלולים במפקדות
+                        מבנה, ייעוד ותפקידי אוכלוסייה במפקדות
                         </div>
                         <img src={process.env.PUBLIC_URL + '/assests/imgs/diagram-icon.png'} className="pages-list-image-homepage" alt="diagram" />
                     </div>
@@ -67,7 +67,7 @@ function Home() {
             <img src={process.env.PUBLIC_URL + '/assests/imgs/twoLogos.png'} className="homePageLogos" alt="homePageLogos"></img>
 
             <div className="subtitle">
-                עזר זה נבנה בשיתוף פעולה בין ... ו... במכללה הלאומית לאיתנות ישראלית
+                עזר זה נבנה בשיתוף פעולה בין מחלקת אוכלוסייה ומגמת מפקדות במכללה הלאומית לאיתנות ישראלית
             </div>
 
             <div id='line5' >. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   </div>
