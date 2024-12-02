@@ -174,8 +174,8 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
             const nextItem = selectedData[nextIndex].name;
             setSelectedItemsStep2(nextItem);
             setTitle(`ממשק בין ${selectedItemStep1} ו${nextItem}`);
-            setGive(`מקבל ממכלול ${nextItem}`);
-            setReceives(`נותן ממכלול ${selectedItemStep1}`);
+            setGive(`מקבל ממכלול ${selectedItemStep1}`);
+            setReceives(`מקבל ממכלול ${nextItem}`);
             window.scrollTo(0, 0);
         }
     };
@@ -186,8 +186,8 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
             const prevItem = selectedData[prevIndex].name;
             setSelectedItemsStep2(prevItem);
             setTitle(`ממשק בין ${selectedItemStep1} ו${prevItem}`);
-            setGive(`מקבל ממכלול ${prevItem}`);
-            setReceives(`נותן ממכלול ${selectedItemStep1}`);
+            setGive(`מקבל ממכלול ${selectedItemStep1}`);
+            setReceives(`מקבל ממכלול ${prevItem}`);
             window.scrollTo(0, 0);
         }
     };

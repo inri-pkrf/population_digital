@@ -10,14 +10,13 @@ function StepsBtnDiagram({ currentStep, selectedOption }) {
         <div className="StepsBtnDiagram" >
             <div className='all-steps-diagram'>
                 <div
-                    className='btn-steps-diagram'
+                    className='step1-diagram'
                     id='step1-diagram'
-                    style={{ backgroundColor: currentStep >= 1 ? '#595959' : '#d9d9d9' }}
                     onClick={() => navigate('/DiagramStep1')}
                 >
-                    מפקדה
-                    <div className='arrow-down-diagram' id='arrow-down1-diagram' style={{ borderTop: currentStep >= 1 ? '12px solid #595959' : '12px solid #d9d9d9' }}></div>
+                    לבחירת מפקדה
                 </div>
+
                 <div
                     className='btn-steps-diagram'
                     id='step2-diagram'

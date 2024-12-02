@@ -11,6 +11,7 @@
     right: 3vh;
     /* right: 50%; */
     /* transform: translateX(50%); */
+    font-family: 'Karantina', cursive;
     margin-top: 28vh;
     cursor: pointer;
     text-align: center;
@@ -20,12 +21,11 @@
     padding-top: 2vh;
     padding-bottom: 2vh;
     font-size: 11vw;
-    font-family: 'Karantina', cursive;
     color: white;
     background-color:#fbbc6d;
 }
 
-.role-DiagramStep3Mahoz{
+.role-DiagramStep3Mahoz{  
     cursor: pointer;
     text-align: center;
     color: white;
@@ -62,6 +62,7 @@
     font-family: 'Heebo', sans-serif;
     font-size: 3.5vw;
     color: grey;
+    width: 60vw;
 }
 
 

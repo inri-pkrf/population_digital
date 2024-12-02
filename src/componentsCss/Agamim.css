@@ -49,6 +49,26 @@
 }
 
 #item2{
-    margin-top: 65vh;
+    margin-top: 67vh;
 
+}
+
+.agaminLogo{
+    position: absolute;
+    /* transform: translateX(50%); */
+    /* right: 50%; */
+    width: 12vw;
+    height: auto;
+    margin-top: 56vh;
+    right: 7vh;
+}
+
+.shoalLogo{
+    position: absolute;
+    /* transform: translateX(50%); */
+    /* right: 50%; */
+    width: 14vw;
+    height: auto;
+    margin-top: 66vh;
+    right: 7vh;
 }

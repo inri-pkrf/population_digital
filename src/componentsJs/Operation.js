@@ -17,9 +17,9 @@ function Operation() {
             <div className='title-operation'>
                 תהליכים מבצעים
             </div>
-            <div className='subtitle-operation'>
+            {/* <div className='subtitle-operation'>
                 כותרת משנה
-            </div>
+            </div> */}
 
             <div className='items-operation' id='item1-operation'>
                 הערכת מצב מרחב אזרחי

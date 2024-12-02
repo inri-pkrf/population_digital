@@ -33,16 +33,28 @@ function DiagramStep2() {
 
     const arrMahoz = {
         strings: [
-            'מפקד מרכז אוכלוסייה', "ס' מ' מרכז אכלוסייה", "מ' מכלול הנדסה", "מ' מכלול חומ''ס",
-            "מ' מכלול הסברה", "מ' מכלול התנהגות", "מ' מכלול רצ''ת", "מ' אג''ם אוכלוסייה"
+            'מפקד מרכז אוכלוסייה', 
+            "סגן מפקד מרכז אכלוסייה", 
+            "אג''ם אוכלוסייה", 
+            "מכלול רצ''ת", 
+            "מכלול התנהגות", 
+            "מכלול הסברה", 
+            "מכלול חומ''ס", 
+            "מכלול הנדסה"
         ],
         colors: ["#ff9900", "#e69138", "#fbbc6d"]
     };
 
     const arrNafa = {
         strings: [
-            'מפקד מכלול אוכלוסייה', "ס' מ' מכלול אוכלוסייה", "מ' תא הנדסה", "מ' תא חומ''ס",
-            "מ' תא הסברה", "מ' תא התנהגות", "מ' תא רשויות", "מ' תא מבצעים"
+            'מפקד מכלול אוכלוסייה', 
+            "סגן מפקד מכלול אוכלוסייה", 
+            "תא מבצעים", 
+            "תא רשויות", 
+            "תא התנהגות", 
+            "תא הסברה", 
+            "תא חומ''ס", 
+            "תא הנדסה"
         ],
         colors: ["#053859", "#3d7ca5", "#1cb4e3"]
     };
@@ -89,65 +101,67 @@ function DiagramStep2() {
                 <span style={{ color }}> ב{selectedOption}</span>
             </div>
 
-            <div className='subText-step2'>
-                לפניכם עץ מבנה מכלול אוכלוסייה ב{selectedOption === 'נפה' ? 'נפה' : 'מחוז'}.
-                בהמשך הדף יש לבחור את המכלולים לקבלת פירוט הגדרות ומשימות התפקיד -
-            </div>
-
-            <img
-                src={imagePath}
-                className="stpe2Img"
-                alt="Structure Diagram"
-                onClick={handleImageClick}
-            />
-
-            <div className='text-img'>אפשר להגדיל את עץ המבנה בלחיצה</div>
-
-            <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow-step2" alt="blackArrow" />
-
-            <div className='all-diagram'>
-                <div className="line"></div>
-                <div className="small-line"></div>
-
-                <div
-                    className='first-frame'
-                    style={{ backgroundColor: firstColor }}
-                    onClick={handleFirstFrameClick}
-                >
-                    {selectedData.strings[0]}
+                <div className='subText-step2'>
+                    {selectedOption === 'נפה'
+                        ? "לפניכם עץ מבנה מכלול אוכלוסיייה בנפה. בהמשך הדף יש לבחור את המכלולים לקבלת פירוט הגדרות ומשימות התפקיד."
+                        : "לפניכם עץ מבנה תא אוכלוסיייה במחוז. בהמשך הדף יש לבחור את התאים לקבלת פירוט הגדרות ומשימות התפקיד."
+                    }
                 </div>
 
-                <div
-                    className='second-frame'
-                    style={{ backgroundColor: secondColor }}
-                    onClick={handleFirstFrameClick}
-                >
-                    {selectedData.strings[1]}
-                </div>
+                <img
+                    src={imagePath}
+                    className="stpe2Img"
+                    alt="Structure Diagram"
+                    onClick={handleImageClick}
+                />
 
-                {selectedData.strings.slice(2).map((text, index) => (
+                <div className='text-img'>אפשר להגדיל את עץ המבנה בלחיצה</div>
+
+                <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow-step2" alt="blackArrow" />
+
+                <div className='all-diagram'>
+                    <div className="line"></div>
+                    <div className="small-line"></div>
+
                     <div
-                        key={index}
-                        className='frame'
-                        style={{ backgroundColor: restColor }}
-                        onClick={() => {
-                            const targetComponent = selectedOption === 'נפה' ? '/DiagramStep3Nafa' : '/DiagramStep3Mahoz';
-                            navigate(targetComponent, { state: { title: text, selectedOption } });
-                        }}
+                        className='first-frame'
+                        style={{ backgroundColor: firstColor }}
+                        onClick={handleFirstFrameClick}
                     >
-                        {text}
+                        {selectedData.strings[0]}
                     </div>
-                ))}
-            </div>
 
-            <PopUp
-                isVisible={isPopupVisible}
-                onClose={closePopup}
-                title={popupContent.title}
-                content={popupContent.content}
-            />
-        </div>
-    );
+                    <div
+                        className='second-frame'
+                        style={{ backgroundColor: secondColor }}
+                        onClick={handleFirstFrameClick}
+                    >
+                        {selectedData.strings[1]}
+                    </div>
+
+                    {selectedData.strings.slice(2).map((text, index) => (
+                        <div
+                            key={index}
+                            className='frame'
+                            style={{ backgroundColor: restColor }}
+                            onClick={() => {
+                                const targetComponent = selectedOption === 'נפה' ? '/DiagramStep3Nafa' : '/DiagramStep3Mahoz';
+                                navigate(targetComponent, { state: { title: text, selectedOption } });
+                            }}
+                        >
+                            {text}
+                        </div>
+                    ))}
+                </div>
+
+                <PopUp
+                    isVisible={isPopupVisible}
+                    onClose={closePopup}
+                    title={popupContent.title}
+                    content={popupContent.content}
+                />
+            </div>
+            );
 }
 
-export default DiagramStep2;
+            export default DiagramStep2;

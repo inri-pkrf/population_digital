@@ -5,7 +5,8 @@ import '../componentsCss/App.css';
 import Home from "./Home";
 import Intro from "./Intro";
 import Header from "./Header";
-import Menu from "./Menu"
+import Menu from "./Menu";
+import Diagram from "./Diagram";
 import DiagramStep1 from "./DiagramStep1";
 import DiagramStep2 from "./DiagramStep2";
 import DiagramStep3Nafa from "./DiagramStep3Nafa";
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/" element={<Intro/>} />
                 <Route path="/home" element={<Home/>} />
                 <Route path="/menu" element={<Menu/>} />
+                <Route path="/Diagram" element={<Diagram/>} />
                 <Route path="/DiagramStep1" element={<DiagramStep1/>} />
                 <Route path="/DiagramStep2" element={<DiagramStep2/>} />
                 <Route path="/DiagramStep3Nafa" element={<DiagramStep3Nafa/>} />

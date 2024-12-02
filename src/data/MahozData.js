@@ -2,15 +2,15 @@
 const mahoz = [
     {
         id: 1,
-        name: "מ' מכלול הנדסה",
+        name: "מפקד מכלול הנדסה",
         roles: [
             {
                 idRole: 1,
-                roleName: 'מהנדס מקלוט, בקרת נזקים ומיגון X 3'
+                roleName: 'מהנדס מקלוט, בקרת נזקים ומיגון'
             },
             {
                 idRole: 2,
-                roleName: 'סמב"ץ ומש"ק פרויקטים X 2'
+                roleName: 'סמב"ץ ומש"ק פרויקטים'
             }
         ],
         explanation: [
@@ -48,15 +48,15 @@ const mahoz = [
     },
     {
         id: 2,
-        name: "מ' מכלול חומ''ס",
+        name: "מכלול חומ''ס",
         roles: [
             {
                 idRole: 1,
-                roleName: 'קצין חומ"ס וביקורות X 1'
+                roleName: 'קצין חומ"ס וביקורות'
             },
             {
                 idRole: 2,
-                roleName: 'מש"ק חומ"ס X 2'
+                roleName: 'מש"ק חומ"ס'
             }
         ],
         explanation: [
@@ -93,7 +93,7 @@ const mahoz = [
     },
     {
         id: 3,
-        name: "מ' מכלול הסברה",
+        name: "מכלול הסברה",
         roles: [
             {
                 idRole: 1,
@@ -105,7 +105,7 @@ const mahoz = [
             },
             {
                 idRole: 3,
-                roleName: 'מש"ק ניו מדיה X 4'
+                roleName: 'מש"ק ניו מדיה'
             },
             {
                 idRole: 4,
@@ -163,7 +163,7 @@ const mahoz = [
     },
     {
         id: 4,
-        name: "מ' מכלול התנהגות",
+        name: "מכלול התנהגות",
         roles: [
             {
                 idRole: 1,
@@ -171,7 +171,7 @@ const mahoz = [
             },
             {
                 idRole: 2,
-                roleName: 'מש"ק התנהגות X 2'
+                roleName: 'מש"ק התנהגות'
             },
         ],
         explanation: [
@@ -220,7 +220,7 @@ const mahoz = [
     },
     {
         id: 5,
-        name: "מ' מכלול רצ''ת",
+        name: "מכלול רצ''ת",
         roles: [
             {
                 idRole: 1,
@@ -382,7 +382,7 @@ const mahoz = [
     },
     {
         id: 6,
-        name: "מ' אג''ם אוכלוסייה",
+        name: "אג''ם אוכלוסייה",
         roles: [
             {
                 idRole: 1,

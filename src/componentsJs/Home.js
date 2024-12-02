@@ -18,7 +18,7 @@ function Home() {
 
             <div className='pages-list'>
 
-                <div className="pages-list-item" onClick={() => navigate('/DiagramStep1')}>
+                <div className="pages-list-item" onClick={() => navigate('/Diagram')}>
                     <div className="pages-list-content">
                         <div className="pages-list-title-homepage">
                         מבנה, ייעוד ותפקידי אוכלוסייה במפקדות

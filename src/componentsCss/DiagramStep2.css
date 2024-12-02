@@ -17,7 +17,7 @@
     right: 50%;
     font-family: 'Karantina', cursive;
     font-size: 14vw;
-    top: 27vh;
+    top: 35vh;
     width: 100%;
     text-align: center;
     color: #50565c;
@@ -31,7 +31,7 @@
     font-size: 5vw;
     color: grey;
     text-align: center;
-    top: 46vh;
+    top: 55vh;
     width: 82vw;
     direction: rtl;
 }
@@ -40,7 +40,7 @@
     position: absolute;
     transform: translateX(50%);
     right: 50%;
-    top: 63vh;
+    top: 78vh;
     height: auto;
     width: 88vw;
 }
@@ -49,10 +49,11 @@
     position: absolute;
     transform: translateX(50%);
     right: 50%;
-    top: 93vh;
+    top: 108vh;
     font-family: 'Heebo', sans-serif;
     font-size: 3.5vw;
     color: grey;
+    width: 60vw;
 }
 
 /* .magnified {
@@ -85,7 +86,7 @@
     transform: translateX(50%);
     height: auto;
     width: 17vw;
-    top: 101vh;
+    top: 120vh;
 }
 
 .all-diagram {
@@ -95,7 +96,7 @@
     width: 100vw;
     font-family: 'Karantina', cursive;
     color: white;
-    top: 112vh;
+    top: 132vh;
     margin-bottom: 31vh;
     height: 130vh;
 }

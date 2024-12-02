@@ -203,13 +203,7 @@ function Relations() {
                             ))}
                         </div>
 
-                        {/* <div id='btn-print-relations1' onClick={handlePrintRelationsClick} style={{ display: step === 3 ? 'none' : 'block', marginTop: step === 1 ? '99vh' : "89vh" }}>
-              <div className='relationsPrintDiv'>
-                <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-gallery" alt="print"></img>
-                <p className='text-print'>הורדת גרסה להדפסה</p>
-              </div>
-            </div> */}
-
+        
                         {newComponent && <Interfaces
                             selectedItemStep1={selectedItemStep1}
                             selectedItemsStep2={selectedItemsStep2}
