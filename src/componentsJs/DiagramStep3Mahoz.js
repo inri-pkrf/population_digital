@@ -104,11 +104,12 @@ function DiagramStep3Mahoz() {
                 onClick={handleImageClick}
             />
             <div className='text-img-mahoz'>אפשר להגדיל את עץ המבנה בלחיצה</div>
+            <img
+                src={`${process.env.PUBLIC_URL}/assests/imgs/glass.png`}
+                className="glass-mahoz"
+                alt="glass"
+            />
 
-            {/* 
-            <div className='step1Btn' onClick={() => navigate('/DiagramStep1')}>
-                חזרה לבחירת מפקדה
-            </div> */}
 
             <div className="margin"></div>
 

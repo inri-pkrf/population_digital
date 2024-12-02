@@ -1,5 +1,3 @@
-
-
 .title-DiagramStep2 {
     position: absolute;
     transform: translateX(50%);
@@ -12,7 +10,7 @@
     color: #50565c;
 }
 
-.explanation-div-DiagramStep2{
+.explanation-div-DiagramStep2 {
     position: relative;
     top: 55vh;
     background-color: #d9d9d9;
@@ -21,7 +19,7 @@
     border-radius: 6vw;
 }
 
-.explanation-title-DiagramStep2{
+.explanation-title-DiagramStep2 {
     font-family: 'Karantina', cursive;
     font-size: 8vw;
     text-align: right;
@@ -32,7 +30,7 @@
 }
 
 
-.explanation-text-DiagramStep2{
+.explanation-text-DiagramStep2 {
     font-family: 'Heebo', sans-serif;
     font-size: 4vw;
     color: rgb(0, 0, 0);
@@ -55,8 +53,32 @@
     transform: rotate(180deg);
 }
 
-.arrow-icon.rotated {
-    transform: rotate(90deg); 
+.arrow-icon1.rotated {
+    transform: rotate(90deg);
+}
+
+.arrow-icon1-diagram {
+    height: 4vh;
+    width: auto;
+    position: absolute;
+    top: 4.5vh;
+    left: 3vh;
+}
+
+.arrow-icon2-diagram {
+    height: 4vh;
+    width: auto;
+    position: absolute;
+    top: 7vh;
+    left: 4vh;
+}
+
+.arrow-icon3-diagram {
+    height: 4vh;
+    width: auto;
+    position: absolute;
+    top: 3vh;
+    left: 4vh;
 }
 
 
@@ -82,12 +104,20 @@
 
 .text-img {
     position: relative;
-    right: -20vw;
-    top: 67vh;
+    right: -16vw;
+    top: 65vh;
     font-family: 'Heebo', sans-serif;
     font-size: 3.5vw;
     color: grey;
     width: 60vw;
+}
+
+.glass{
+    position: relative;
+    right: -35vw;
+    top: 57vh;
+    height: auto;
+    width: 7vw;
 }
 
 
@@ -101,8 +131,6 @@
 
 .all-diagram {
     position: relative;
-    /* right: 50%; */
-    /* transform: translateX(50%); */
     width: 100vw;
     font-family: 'Karantina', cursive;
     color: white;
@@ -133,24 +161,26 @@
     position: absolute;
     right: 50%;
     transform: translateX(50%);
-    width: 80vw;
+    width: 72vw;
     height: 10vh;
     padding-top: 3vh;
     padding-bottom: 1vh;
-    text-align: center;
-    font-size: 12vw;
+    text-align: right;
+    font-size: 11.5vw;
+    padding-right: 4vh;
 }
 
 .second-frame {
-    width: 39vw;
+    width: 36vw;
     height: 12vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
-    text-align: center;
+    text-align: right;
     position: relative;
     left: 3vw;
     top: 19vh;
-    font-size: 9vw;
+    padding-right: 2vh;
+    font-size: 8vw;
 }
 
 .frame {
@@ -167,14 +197,3 @@
     left: 15vw;
     font-size: 11vw;
 }
-
-/* .try{
-    height: 38vh;
-    width: 100vw;
-    background-color: navy;
-    margin-bottom: -45vh;
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    margin-top: 400vh;
-} */

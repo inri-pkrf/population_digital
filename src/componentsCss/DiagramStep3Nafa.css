@@ -15,22 +15,41 @@
     background-color: #1cb4e3;
 }
 
+.arrow-icon1-DiagramStep3Nafa{
+    height: 4vh;
+    width: auto;
+    position: absolute;
+    top: 3.5vh;
+    left: 4vh;
+}
+
+.arrow-icon2-DiagramStep3Nafa{
+    height: 4vh;
+    width: auto;
+    position: relative;
+    top: 51.7vh;
+    left: -8vh;
+}
+
 .role-DiagramStep3Nafa{
     cursor: pointer;
     text-align: center;
     color: white;
     font-family: 'Karantina', cursive;
     position: relative;
-    width: 69vw;
+    width: 41vw;
     height: 10vh;
     padding-top: 2vh;
     padding-bottom: 2vh;
     font-size: 8vw;
+    padding-left: 8vh;
     top: 65vh;
+    padding-right: 8vh;
     right: -25vw;
     margin-bottom: 2vh;
     background-color: #3d7ca5;
 }
+
 
 .blackArrow1-DiagramStep3Nafa{
     position: relative;
@@ -56,14 +75,21 @@
 
 .text-img-nafa{
     position: relative;
-    right: -19vw;
-    top: 71vh;
+    right: -18vw;
+    top: 69vh;
     font-family: 'Heebo', sans-serif;
     font-size: 3.5vw;
     color: grey;
     width: 60vw;
 }
 
+.glass-nafa{
+    position: relative;
+    right: -28vw;
+    top: 65vh;
+    height: auto;
+    width: 7vw;
+}
 
 .explanation-div-DiagramStep3Nafa{
     position: relative;

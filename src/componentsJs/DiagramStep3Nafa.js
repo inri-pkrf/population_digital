@@ -44,11 +44,11 @@ function DiagramStep3Nafa() {
         <div className="DiagramStep3Nafa">
             <StepsBtnDiagram currentStep={3} selectedOption={selectedOption} />
 
-             {selectedItem.explanation.map((explanation, index) => (
+            {selectedItem.explanation.map((explanation, index) => (
                 <div key={index} className="explanation-div-DiagramStep3Nafa">
                     <div
                         className="explanation-title-wrapper-DiagramStep3Nafa"
-                        onClick={() => handleToggleExplanation(index)} 
+                        onClick={() => handleToggleExplanation(index)}
                     >
                         <div className="explanation-title-DiagramStep3Nafa">
                             {explanation.titleExplanation}
@@ -59,7 +59,7 @@ function DiagramStep3Nafa() {
                             alt="Arrow"
                         />
                     </div>
-                    {expandedExplanation === index && ( 
+                    {expandedExplanation === index && (
                         <div className="explanation-text-DiagramStep3Nafa">
                             {Array.isArray(explanation.textExplanation)
                                 ? explanation.textExplanation.map((text, idx) => <div key={idx}>{text}</div>)
@@ -75,19 +75,37 @@ function DiagramStep3Nafa() {
                 className='title-DiagramStep3Nafa'
                 onClick={() => handleRoleClick(selectedItem.name, selectedItem.nameNote)}>
                 {title}
+                <img
+                    src={`${process.env.PUBLIC_URL}/assests/imgs/left-arrow.png`}
+                    className='arrow-icon1-DiagramStep3Nafa'
+                    alt="Arrow"
+                />
             </div>
 
             <div className="roles-div-DiagramStep3Nafa">
                 {selectedItem.roles.map(role => (
                     <div
                         key={role.idRole}
-                        className="role-DiagramStep3Nafa"
-                        onClick={title === "תא רשויות" ? () => handleRoleClick(role.roleName, role.notes, role.imgSrc) : () => handleRoleClick(role.roleName, role.notes)}
+                        className="role-container-DiagramStep3Nafa"
+                    >
+                        <div
+                            className="role-DiagramStep3Nafa"
+                            onClick={title === "תא רשויות"
+                                ? () => handleRoleClick(role.roleName, role.notes, role.imgSrc)
+                                : () => handleRoleClick(role.roleName, role.notes)
+                            }
                         >
-                        {role.roleName}
+                            {role.roleName}
+                        </div>
+                        <img
+                            src={`${process.env.PUBLIC_URL}/assests/imgs/left-arrow.png`}
+                            className="arrow-icon2-DiagramStep3Nafa"
+                            alt="Arrow"
+                        />
                     </div>
                 ))}
             </div>
+
 
             <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow2-DiagramStep3Nafa" alt="Next arrow" />
 
@@ -98,8 +116,12 @@ function DiagramStep3Nafa() {
                 onClick={handleImageClick}
             />
             <div className='text-img-nafa'>אפשר להגדיל את עץ המבנה בלחיצה</div>
-
-
+            <img
+                src={`${process.env.PUBLIC_URL}/assests/imgs/glass.png`}
+                className="glass-nafa"
+                alt="glass"
+            />
+    
             <div className='margin'></div>
 
             <PopUp
@@ -107,7 +129,7 @@ function DiagramStep3Nafa() {
                 onClose={handleClosePopup}
                 title={popupContent.title}
                 content={popupContent.content}
-                imgSrc={popupContent.imgSrc} 
+                imgSrc={popupContent.imgSrc}
             />
         </div>
     );

@@ -30,14 +30,14 @@
     color: white;
     transition: background-color 0.3s;
     font-weight: bold;
-    background-color: rgb(86, 195, 232);
-    width: 40vw;
-    height: 5vh;
-    border-radius: 20vw;
+    background-color: #175a85;
+    width: 54vw;
+    height: 4vh;
     padding-top: 1vh;
+    padding-bottom: 1vh;
     position: absolute;
-    top: -1vh;
-    right: -6vw;
+    right: 50%;
+    transform: translateX(50%);
   }
 
   .arrow-down-diagram {
@@ -48,5 +48,5 @@
     border-top: 12px solid #d9d9d9;
     position: relative;
     top: 0vh;
-    right: 8vw;
+    right: 10vw;
   }

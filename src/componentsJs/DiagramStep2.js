@@ -179,6 +179,11 @@ function DiagramStep2() {
             />
 
             <div className='text-img'>אפשר להגדיל את עץ המבנה בלחיצה</div>
+            <img
+                src={`${process.env.PUBLIC_URL}/assests/imgs/glass.png`}
+                className="glass"
+                alt="glass"
+            />
 
             <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow-step2" alt="blackArrow" />
 
@@ -192,6 +197,11 @@ function DiagramStep2() {
                     onClick={handleFirstFrameClick}
                 >
                     {selectedData.strings[0]}
+                    <img
+                            src={`${process.env.PUBLIC_URL}/assests/imgs/left-arrow.png`}
+                            className='arrow-icon1-diagram'
+                            alt="Arrow"
+                        />
                 </div>
 
                 <div
@@ -200,6 +210,11 @@ function DiagramStep2() {
                     onClick={handleFirstFrameClick}
                 >
                     {selectedData.strings[1]}
+                    <img
+                            src={`${process.env.PUBLIC_URL}/assests/imgs/left-arrow.png`}
+                            className='arrow-icon2-diagram'
+                            alt="Arrow"
+                        />
                 </div>
 
                 {selectedData.strings.slice(2).map((text, index) => (
@@ -213,6 +228,11 @@ function DiagramStep2() {
                         }}
                     >
                         {text}
+                        <img
+                            src={`${process.env.PUBLIC_URL}/assests/imgs/left-arrow.png`}
+                            className='arrow-icon3-diagram'
+                            alt="Arrow"
+                        />
                     </div>
                 ))}
             </div>
