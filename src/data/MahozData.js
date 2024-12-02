@@ -2,7 +2,7 @@
 const mahoz = [
     {
         id: 1,
-        name: "מפקד מכלול הנדסה",
+        name: "מכלול הנדסה",
         roles: [
             {
                 idRole: 1,

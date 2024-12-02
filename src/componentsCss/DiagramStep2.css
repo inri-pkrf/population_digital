@@ -6,7 +6,7 @@
     right: 50%;
     font-family: 'Karantina', cursive;
     font-size: 14vw;
-    top: 39vh;
+    top: 42vh;
     width: 100%;
     text-align: center;
     color: #50565c;
@@ -14,7 +14,7 @@
 
 .explanation-div-DiagramStep2{
     position: relative;
-    top: 50vh;
+    top: 55vh;
     background-color: #d9d9d9;
     width: 90vw;
     right: -5vw;
@@ -56,37 +56,34 @@
 }
 
 .arrow-icon.rotated {
-    transform: rotate(90deg); /* סיבוב החץ */
+    transform: rotate(90deg); 
 }
 
 
 .subText-step2 {
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
+    position: relative;
+    right: -9vw;
     font-family: 'Heebo', sans-serif;
     font-size: 5vw;
     color: grey;
     text-align: center;
-    top: 85vh;
+    top: 62vh;
     width: 82vw;
     direction: rtl;
 }
 
 .stpe2Img {
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
-    top: 105vh;
+    position: relative;
+    right: 0vw;
+    top: 65vh;
     height: auto;
     width: 88vw;
 }
 
 .text-img {
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
-    top: 133vh;
+    position: relative;
+    right: -20vw;
+    top: 67vh;
     font-family: 'Heebo', sans-serif;
     font-size: 3.5vw;
     color: grey;
@@ -95,22 +92,21 @@
 
 
 .blackArrow-step2 {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
+    position: relative;
+    right: 0vw;
+    top: 73vh;
     height: auto;
     width: 17vw;
-    top: 141vh;
 }
 
 .all-diagram {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
+    position: relative;
+    /* right: 50%; */
+    /* transform: translateX(50%); */
     width: 100vw;
     font-family: 'Karantina', cursive;
     color: white;
-    top: 153vh;
+    top: 77vh;
     margin-bottom: 31vh;
     height: 130vh;
 }

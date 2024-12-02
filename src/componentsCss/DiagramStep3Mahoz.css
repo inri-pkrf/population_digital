@@ -1,18 +1,16 @@
-.top-message{
+/* .top-message{
     position: relative;
     top: 26vh;
     font-family: 'Heebo', sans-serif;
     font-size: 3.5vw;
     color: grey;
-}
+} */
 
 .title-DiagramStep3Mahoz{
     position: absolute;
     right: 3vh;
-    /* right: 50%; */
-    /* transform: translateX(50%); */
     font-family: 'Karantina', cursive;
-    margin-top: 38vh;
+    margin-top: 54vh;
     cursor: pointer;
     text-align: center;
     color: white;
@@ -36,30 +34,39 @@
     padding-top: 2vh;
     padding-bottom: 2vh;
     font-size: 8vw;
-    top: 51vh;
+    top: 67vh;
     right: -25vw;
     margin-bottom: 2vh;
     background-color: #e69138;
 }
 
-.blackArrow-DiagramStep3Mahoz{
+.blackArrow1-DiagramStep3Mahoz{
     position: relative;
     height: auto;
     width: 17vw;
-    top: 54vh;
+    top: 11vh;
+    right: -6vh
 }
+
+.blackArrow2-DiagramStep3Mahoz{
+    position: relative;
+    height: auto;
+    width: 17vw;
+    top: 67vh;
+    right: 4vh;
+}
+
 
 .item-image-DiagramStep3Mahoz{
     position: relative;
     height: auto;
     width: 88vw;
-    top: 56vh;
-}
+    top: 69vh;}
 
 .text-img-mahoz{
     position: relative;
     right: -19vw;
-    top: 57vh;
+    top: 71vh;
     font-family: 'Heebo', sans-serif;
     font-size: 3.5vw;
     color: grey;
@@ -69,7 +76,7 @@
 
 .explanation-div-DiagramStep3Mahoz{
     position: relative;
-    top: 58vh;
+    top: 39vh;
     background-color: #d9d9d9;
     width: 90vw;
     right: -5vw;
@@ -101,7 +108,7 @@
     padding-bottom: 3vh;
 }
 
-.step1Btn{
+/* .step1Btn{
     position: relative;
     top: 71vh;
     left: 5vw;
@@ -114,7 +121,7 @@
     height: 5vh;
     width: 46vw;
     border-radius: 20vw;
-}
+} */
 
 .margin{
     position: relative;
@@ -129,12 +136,12 @@
     width: auto;
     position: relative;
     top: -3.3vh;
-    margin-left: -5px;
+    margin-left: -98px;
     transform: rotate(180deg);
 }
 
 .arrow-icon.rotated {
-    transform: rotate(90deg); /* סיבוב החץ */
+    transform: rotate(90deg); 
 }
 
 

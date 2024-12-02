@@ -1,15 +1,14 @@
 import React from 'react';
 import '../componentsCss/DiagramStep1.css';
 import { useNavigate } from 'react-router-dom';
-import StepsBtnDiagram from "./StepsBtnDiagram";
+// import StepsBtnDiagram from "./StepsBtnDiagram";
 
 function DiagramStep1() {
     const navigate = useNavigate();
-    const mifkada = '';
 
     return (
         <div className="DiagramStep1" >
-            {/* <StepsBtnDiagram currentStep={1}/> */}
+            {/* <StepsBtnDiagram /> */}
 
       
             <div className='title-DiagramStep1'>בחר/י במפקדה הרצוייה</div>

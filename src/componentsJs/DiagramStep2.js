@@ -131,7 +131,7 @@ function DiagramStep2() {
 
     return (
         <div className="DiagramStep2">
-            <StepsBtnDiagram currentStep={2} />
+            <StepsBtnDiagram currentStep={2} selectedOption />
             <div className='title-DiagramStep2'>
                 מבנה ייעוד ותפקידי
                 <br />

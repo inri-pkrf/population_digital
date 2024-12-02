@@ -9,9 +9,7 @@ function DiagramStep3Mahoz() {
     const location = useLocation();
     const navigate = useNavigate();
     const { title, selectedOption } = location.state || {};
-
     const selectedItem = mahoz.find(item => item.name === title);
-
     const [isPopupVisible, setPopupVisible] = useState(false);
     const [popupContent, setPopupContent] = useState({ title: '', content: '' });
     const [expandedExplanation, setExpandedExplanation] = useState(null);
@@ -45,19 +43,33 @@ function DiagramStep3Mahoz() {
         <div className="DiagramStep3Mahoz">
             <StepsBtnDiagram currentStep={3} selectedOption={selectedOption} />
 
-            {title === "מכלול רצ''ת" && (
-                <>
-                    <div className="top-message">
-                        לחץ על הריבועים ולמד על המבנה של כל מכלול
+            {selectedItem.explanation.map((explanation, index) => (
+                <div key={index} className="explanation-div-DiagramStep3Mahoz">
+                    <div
+                        className="explanation-title-wrapper-DiagramStep3Mahoz"
+                        onClick={() => handleToggleExplanation(index)}
+                    >
+                        <div className="explanation-title-DiagramStep3Mahoz">
+                            {explanation.titleExplanation}
+                        </div>
+                        <img
+                            src={`${process.env.PUBLIC_URL}/assests/imgs/nextBlack.png`}
+                            className={`arrow-icon ${expandedExplanation === index ? 'rotated' : ''}`}
+                            alt="Arrow"
+                        />
                     </div>
-                </>
-            )}
-
+                    {expandedExplanation === index && (
+                        <div className="explanation-text-DiagramStep3Mahoz">
+                            {Array.isArray(explanation.textExplanation)
+                                ? explanation.textExplanation.map((text, idx) => <div key={idx}>{text}</div>)
+                                : explanation.textExplanation}
+                        </div>
+                    )}
+                </div>
+            ))}
 
             <div
-                className="title-DiagramStep3Mahoz"
-            // onClick={() => handleRoleClick(selectedItem.name, selectedItem.nameNote)}
-            >
+                className='title-DiagramStep3Mahoz'>
                 {title}
             </div>
 
@@ -75,7 +87,13 @@ function DiagramStep3Mahoz() {
 
             <img
                 src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`}
-                className="blackArrow-DiagramStep3Mahoz"
+                className="blackArrow1-DiagramStep3Mahoz"
+                alt="blackArrow"
+            />
+
+            <img
+                src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`}
+                className="blackArrow2-DiagramStep3Mahoz"
                 alt="blackArrow"
             />
 
@@ -87,36 +105,10 @@ function DiagramStep3Mahoz() {
             />
             <div className='text-img-mahoz'>אפשר להגדיל את עץ המבנה בלחיצה</div>
 
-
-            {selectedItem.explanation.map((explanation, index) => (
-                <div key={index} className="explanation-div-DiagramStep3Mahoz">
-                    <div
-                        className="explanation-title-wrapper-DiagramStep3Mahoz"
-                        onClick={() => handleToggleExplanation(index)} // לחיצה על הכותרת והחץ
-                    >
-                        <div className="explanation-title-DiagramStep3Mahoz">
-                            {explanation.titleExplanation}
-                        </div>
-                        <img
-                            src={`${process.env.PUBLIC_URL}/assests/imgs/nextBlack.png`}
-                            className={`arrow-icon ${expandedExplanation === index ? 'rotated' : ''}`}
-                            alt="Arrow"
-                        />
-                    </div>
-                    {expandedExplanation === index && ( // מציג את התוכן רק אם הכותרת נפתחה
-                        <div className="explanation-text-DiagramStep3Mahoz">
-                            {Array.isArray(explanation.textExplanation)
-                                ? explanation.textExplanation.map((text, idx) => <div key={idx}>{text}</div>)
-                                : explanation.textExplanation}
-                        </div>
-                    )}
-                </div>
-            ))}
-
-
+            {/* 
             <div className='step1Btn' onClick={() => navigate('/DiagramStep1')}>
                 חזרה לבחירת מפקדה
-            </div>
+            </div> */}
 
             <div className="margin"></div>
 
@@ -125,7 +117,7 @@ function DiagramStep3Mahoz() {
                 onClose={handleClosePopup}
                 title={popupContent.title}
                 content={popupContent.content}
-                imgSrc={popupContent.imgSrc} 
+                imgSrc={popupContent.imgSrc}
             />
         </div>
     );

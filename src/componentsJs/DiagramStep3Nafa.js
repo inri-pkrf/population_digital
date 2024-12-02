@@ -44,6 +44,33 @@ function DiagramStep3Nafa() {
         <div className="DiagramStep3Nafa">
             <StepsBtnDiagram currentStep={3} selectedOption={selectedOption} />
 
+             {selectedItem.explanation.map((explanation, index) => (
+                <div key={index} className="explanation-div-DiagramStep3Nafa">
+                    <div
+                        className="explanation-title-wrapper-DiagramStep3Nafa"
+                        onClick={() => handleToggleExplanation(index)} 
+                    >
+                        <div className="explanation-title-DiagramStep3Nafa">
+                            {explanation.titleExplanation}
+                        </div>
+                        <img
+                            src={`${process.env.PUBLIC_URL}/assests/imgs/nextBlack.png`}
+                            className={`arrow-icon ${expandedExplanation === index ? 'rotated' : ''}`}
+                            alt="Arrow"
+                        />
+                    </div>
+                    {expandedExplanation === index && ( 
+                        <div className="explanation-text-DiagramStep3Nafa">
+                            {Array.isArray(explanation.textExplanation)
+                                ? explanation.textExplanation.map((text, idx) => <div key={idx}>{text}</div>)
+                                : explanation.textExplanation}
+                        </div>
+                    )}
+                </div>
+            ))}
+
+            <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow1-DiagramStep3Nafa" alt="Next arrow" />
+
             <div
                 className='title-DiagramStep3Nafa'
                 onClick={() => handleRoleClick(selectedItem.name, selectedItem.nameNote)}>
@@ -62,7 +89,7 @@ function DiagramStep3Nafa() {
                 ))}
             </div>
 
-            <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow-DiagramStep3Nafa" alt="Next arrow" />
+            <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow2-DiagramStep3Nafa" alt="Next arrow" />
 
             <img
                 src={selectedItem.src}
@@ -72,33 +99,6 @@ function DiagramStep3Nafa() {
             />
             <div className='text-img-nafa'>אפשר להגדיל את עץ המבנה בלחיצה</div>
 
-
-            {selectedItem.explanation.map((explanation, index) => (
-                <div key={index} className="explanation-div-DiagramStep3Nafa">
-                    <div
-                        className="explanation-title-wrapper-DiagramStep3Nafa"
-                        onClick={() => handleToggleExplanation(index)} // לחיצה על הכותרת והחץ
-                    >
-                        <div className="explanation-title-DiagramStep3Nafa">
-                            {explanation.titleExplanation}
-                        </div>
-                        <img
-                            src={`${process.env.PUBLIC_URL}/assests/imgs/nextBlack.png`}
-                            className={`arrow-icon ${expandedExplanation === index ? 'rotated' : ''}`}
-                            alt="Arrow"
-                        />
-                    </div>
-                    {expandedExplanation === index && ( // מציג את התוכן רק אם הכותרת נפתחה
-                        <div className="explanation-text-DiagramStep3Nafa">
-                            {Array.isArray(explanation.textExplanation)
-                                ? explanation.textExplanation.map((text, idx) => <div key={idx}>{text}</div>)
-                                : explanation.textExplanation}
-                        </div>
-                    )}
-                </div>
-            ))}
-
-            <div className='step1Btn' onClick={() => navigate('/DiagramStep1')}>חזרה לבחירת מפקדה</div>
 
             <div className='margin'></div>
 

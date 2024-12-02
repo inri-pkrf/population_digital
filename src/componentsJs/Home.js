@@ -14,7 +14,7 @@ function Home() {
                 עזר דיגיטלי בתחום האוכלוסיה במפקדות  
             </div>
 
-            <img src={process.env.PUBLIC_URL + '/assests/imgs/blackArrow.png'} className="blackArrow" id="blackArrow1" alt="blackArrow"></img>
+            {/* <img src={process.env.PUBLIC_URL + '/assests/imgs/blackArrow.png'} className="blackArrow" id="blackArrow1" alt="blackArrow"></img> */}
 
             <div className='pages-list'>
 
@@ -62,7 +62,7 @@ function Home() {
 
             </div>
 
-            <img src={process.env.PUBLIC_URL + '/assests/imgs/blackArrow.png'} className="blackArrow" id="blackArrow2" alt="blackArrow"></img>
+            {/* <img src={process.env.PUBLIC_URL + '/assests/imgs/blackArrow.png'} className="blackArrow" id="blackArrow2" alt="blackArrow"></img> */}
 
             <img src={process.env.PUBLIC_URL + '/assests/imgs/twoLogos.png'} className="homePageLogos" alt="homePageLogos"></img>
 

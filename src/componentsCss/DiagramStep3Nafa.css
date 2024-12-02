@@ -1,9 +1,7 @@
 .title-DiagramStep3Nafa{
     position: absolute;
     right: 3vh;
-    /* right: 50%; */
-    /* transform: translateX(50%); */
-    margin-top: 38vh;
+    margin-top: 50vh;
     cursor: pointer;
     text-align: center;
     color: white;
@@ -28,30 +26,38 @@
     padding-top: 2vh;
     padding-bottom: 2vh;
     font-size: 8vw;
-    top: 51vh;
+    top: 65vh;
     right: -25vw;
     margin-bottom: 2vh;
     background-color: #3d7ca5;
 }
 
-.blackArrow-DiagramStep3Nafa{
+.blackArrow1-DiagramStep3Nafa{
     position: relative;
     height: auto;
     width: 17vw;
-    top: 54vh;
+    top: 45vh;
 }
+
+.blackArrow2-DiagramStep3Nafa{
+    position: relative;
+    height: auto;
+    width: 17vw;
+    top: 66vh;
+}
+
 
 .item-image-DiagramStep3Nafa{
     position: relative;
     height: auto;
     width: 88vw;
-    top: 56vh;
+    top: 69vh;
 }
 
 .text-img-nafa{
     position: relative;
     right: -19vw;
-    top: 57vh;
+    top: 71vh;
     font-family: 'Heebo', sans-serif;
     font-size: 3.5vw;
     color: grey;
@@ -61,7 +67,7 @@
 
 .explanation-div-DiagramStep3Nafa{
     position: relative;
-    top: 58vh;
+    top: 39vh;
     background-color: #d9d9d9;
     width: 90vw;
     right: -5vw;
@@ -121,11 +127,11 @@
     width: auto;
     position: relative;
     top: -3.3vh;
-    margin-left: -5px;
+    margin-left: -98px;
     transform: rotate(180deg);
 }
 
 .arrow-icon.rotated {
-    transform: rotate(90deg); /* סיבוב החץ */
+    transform: rotate(90deg); 
 }
 
