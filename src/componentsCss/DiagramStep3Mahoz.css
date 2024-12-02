@@ -12,7 +12,7 @@
     /* right: 50%; */
     /* transform: translateX(50%); */
     font-family: 'Karantina', cursive;
-    margin-top: 28vh;
+    margin-top: 38vh;
     cursor: pointer;
     text-align: center;
     color: white;
@@ -36,7 +36,7 @@
     padding-top: 2vh;
     padding-bottom: 2vh;
     font-size: 8vw;
-    top: 42vh;
+    top: 51vh;
     right: -25vw;
     margin-bottom: 2vh;
     background-color: #e69138;
@@ -46,19 +46,20 @@
     position: relative;
     height: auto;
     width: 17vw;
-    top: 47vh;
+    top: 54vh;
 }
 
 .item-image-DiagramStep3Mahoz{
     position: relative;
     height: auto;
     width: 88vw;
-    top: 53vh;
+    top: 56vh;
 }
 
 .text-img-mahoz{
     position: relative;
-    top: 55vh;
+    right: -19vw;
+    top: 57vh;
     font-family: 'Heebo', sans-serif;
     font-size: 3.5vw;
     color: grey;

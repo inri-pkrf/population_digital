@@ -1,15 +1,4 @@
-/* .DiagramStep2 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    text-align: right;
-    padding-top: 2vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-} */
+
 
 .title-DiagramStep2 {
     position: absolute;
@@ -17,11 +6,59 @@
     right: 50%;
     font-family: 'Karantina', cursive;
     font-size: 14vw;
-    top: 35vh;
+    top: 39vh;
     width: 100%;
     text-align: center;
     color: #50565c;
 }
+
+.explanation-div-DiagramStep2{
+    position: relative;
+    top: 50vh;
+    background-color: #d9d9d9;
+    width: 90vw;
+    right: -5vw;
+    border-radius: 6vw;
+}
+
+.explanation-title-DiagramStep2{
+    font-family: 'Karantina', cursive;
+    font-size: 8vw;
+    text-align: right;
+    padding-right: 7vh;
+    margin-top: 6vh;
+    padding-top: 1vh;
+    color: rgb(58, 57, 57);
+}
+
+
+.explanation-text-DiagramStep2{
+    font-family: 'Heebo', sans-serif;
+    font-size: 4vw;
+    color: rgb(0, 0, 0);
+    direction: rtl;
+    padding-right: 4vh;
+    padding-left: 4vh;
+    text-align: right;
+    top: 2vh;
+    position: relative;
+    line-height: 5vh;
+    padding-bottom: 3vh;
+}
+
+.arrow-icon1 {
+    height: 3vh;
+    width: auto;
+    position: relative;
+    top: -3.3vh;
+    margin-left: -206px;
+    transform: rotate(180deg);
+}
+
+.arrow-icon.rotated {
+    transform: rotate(90deg); /* סיבוב החץ */
+}
+
 
 .subText-step2 {
     position: absolute;
@@ -31,7 +68,7 @@
     font-size: 5vw;
     color: grey;
     text-align: center;
-    top: 55vh;
+    top: 85vh;
     width: 82vw;
     direction: rtl;
 }
@@ -40,7 +77,7 @@
     position: absolute;
     transform: translateX(50%);
     right: 50%;
-    top: 78vh;
+    top: 105vh;
     height: auto;
     width: 88vw;
 }
@@ -49,36 +86,13 @@
     position: absolute;
     transform: translateX(50%);
     right: 50%;
-    top: 108vh;
+    top: 133vh;
     font-family: 'Heebo', sans-serif;
     font-size: 3.5vw;
     color: grey;
     width: 60vw;
 }
 
-/* .magnified {
-    width: 143vw;
-    transform: rotate(90deg);
-    top: 59vw;
-    right: -22vw;
-    z-index: 3;
-    position: fixed;
-}
-
-.shadow {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(24, 22, 22, 0.575);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: none;
-}
-
-.shadow-active {
-    display: block;
-} */
 
 .blackArrow-step2 {
     position: absolute;
@@ -86,7 +100,7 @@
     transform: translateX(50%);
     height: auto;
     width: 17vw;
-    top: 120vh;
+    top: 141vh;
 }
 
 .all-diagram {
@@ -96,7 +110,7 @@
     width: 100vw;
     font-family: 'Karantina', cursive;
     color: white;
-    top: 132vh;
+    top: 153vh;
     margin-bottom: 31vh;
     height: 130vh;
 }

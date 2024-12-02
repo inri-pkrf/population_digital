@@ -45,7 +45,7 @@ function DiagramStep3Mahoz() {
         <div className="DiagramStep3Mahoz">
             <StepsBtnDiagram currentStep={3} selectedOption={selectedOption} />
 
-            {title === "מ' מכלול רצ''ת" && (
+            {title === "מכלול רצ''ת" && (
                 <>
                     <div className="top-message">
                         לחץ על הריבועים ולמד על המבנה של כל מכלול
@@ -66,7 +66,7 @@ function DiagramStep3Mahoz() {
                     <div
                         key={role.idRole}
                         className="role-DiagramStep3Mahoz"
-                        onClick={title === "מ' מכלול רצ''ת" ? () => handleRoleClick(role.roleName, role.notes, role.imgSrc) : undefined}
+                        onClick={title === "מכלול רצ''ת" ? () => handleRoleClick(role.roleName, role.notes, role.imgSrc) : undefined}
                     >
                         {role.roleName}
                     </div>
@@ -85,7 +85,7 @@ function DiagramStep3Mahoz() {
                 alt={selectedItem.name}
                 onClick={handleImageClick}
             />
-            <div className='text-img-mahoz'>אפשר להגדיל בלחיצה</div>
+            <div className='text-img-mahoz'>אפשר להגדיל את עץ המבנה בלחיצה</div>
 
 
             {selectedItem.explanation.map((explanation, index) => (

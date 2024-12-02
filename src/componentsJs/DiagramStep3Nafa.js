@@ -55,7 +55,7 @@ function DiagramStep3Nafa() {
                     <div
                         key={role.idRole}
                         className="role-DiagramStep3Nafa"
-                        onClick={title === "מ' תא רשויות" ? () => handleRoleClick(role.roleName, role.notes, role.imgSrc) : () => handleRoleClick(role.roleName, role.notes)}
+                        onClick={title === "תא רשויות" ? () => handleRoleClick(role.roleName, role.notes, role.imgSrc) : () => handleRoleClick(role.roleName, role.notes)}
                         >
                         {role.roleName}
                     </div>
@@ -70,7 +70,7 @@ function DiagramStep3Nafa() {
                 alt={selectedItem.name}
                 onClick={handleImageClick}
             />
-            <div className='text-img-nafa'>אפשר להגדיל בלחיצה</div>
+            <div className='text-img-nafa'>אפשר להגדיל את עץ המבנה בלחיצה</div>
 
 
             {selectedItem.explanation.map((explanation, index) => (

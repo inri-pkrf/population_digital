@@ -15,7 +15,7 @@ const mahoz = [
         ],
         explanation: [
             {
-                titleExplanation: "ייעוד מכלול",
+                titleExplanation: "ייעוד מכלול הנדסה",
                 textExplanation:
                     [
                         <>
@@ -61,7 +61,7 @@ const mahoz = [
         ],
         explanation: [
             {
-                titleExplanation: "ייעוד מכלול",
+                titleExplanation: "ייעוד מכלול חומ''ס",
                 textExplanation:
                     [
                         <>
@@ -69,7 +69,7 @@ const mahoz = [
                         </>
                     ],
             }, {
-                titleExplanation: "תפקידי המכלול",
+                titleExplanation: "תפקידי מכלול חומ''ס",
                 textExplanation:
                     [
                         <>
@@ -118,7 +118,7 @@ const mahoz = [
         ],
         explanation: [
             {
-                titleExplanation: "ייעוד מכלול",
+                titleExplanation: "ייעוד מכלול הסברה",
                 textExplanation:
                     [
                         <>
@@ -127,7 +127,7 @@ const mahoz = [
                     ],
             },
             {
-                titleExplanation: "תפקידי המכלול",
+                titleExplanation: "תפקידי מכלול הסברה",
                 textExplanation:
                     [
                         <>
@@ -176,7 +176,7 @@ const mahoz = [
         ],
         explanation: [
             {
-                titleExplanation: "ייעוד מכלול",
+                titleExplanation: "ייעוד מכלול התנהגות",
                 textExplanation:
                     [
                         <>
@@ -185,7 +185,7 @@ const mahoz = [
                     ],
             },
             {
-                titleExplanation: "תפקידי המכלול",
+                titleExplanation: "תפקידי מגלול התנהגות",
                 textExplanation:
                     [
                         <>
@@ -306,7 +306,7 @@ const mahoz = [
         ],
         explanation: [
             {
-                titleExplanation: "ייעוד מכלול",
+                titleExplanation: "ייעוד מכלול רשויות",
                 textExplanation:
                     [
                         <>
@@ -317,7 +317,7 @@ const mahoz = [
                         </>
                     ],
             }, {
-                titleExplanation: "תפקידי המכלול",
+                titleExplanation: "תפקידי מכלול רשויות",
                 textExplanation:
                     [
                         <>
@@ -395,7 +395,7 @@ const mahoz = [
         ],
         explanation: [
             {
-                titleExplanation: "תפקידי המכלול",
+                titleExplanation: "תפקידי מכלול מבצעים",
                 textExplanation:
                     [
                         <>
