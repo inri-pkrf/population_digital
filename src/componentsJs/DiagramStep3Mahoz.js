@@ -72,18 +72,37 @@ function DiagramStep3Mahoz() {
                 className='title-DiagramStep3Mahoz'>
                 {title}
             </div>
+            {/* {title === "מכלול רצ''ת" && (
+                <img
+                    src={`${process.env.PUBLIC_URL}/assests/imgs/left-arrow.png`}
+                    className='arrow-DiagramStep3Mahoz-title'
+                    alt="Arrow"
+                />
+            )} */}
 
             <div className="roles-div-DiagramStep3Mahoz">
                 {selectedItem.roles.map(role => (
-                    <div
-                        key={role.idRole}
-                        className="role-DiagramStep3Mahoz"
-                        onClick={title === "מכלול רצ''ת" ? () => handleRoleClick(role.roleName, role.notes, role.imgSrc) : undefined}
-                    >
-                        {role.roleName}
+                    <div key={role.idRole} className="role-DiagramStep3Mahoz">
+                        <div
+                            onClick={
+                                title === "מכלול רצ''ת"
+                                    ? () => handleRoleClick(role.roleName, role.notes, role.imgSrc)
+                                    : undefined
+                            }
+                        >
+                            {role.roleName}
+                        </div>
+                        {title === "מכלול רצ''ת" && (
+                            <img
+                                src={`${process.env.PUBLIC_URL}/assests/imgs/left-arrow.png`}
+                                className='arrow-DiagramStep3Mahoz-role'
+                                alt="Arrow"
+                            />
+                        )}
                     </div>
                 ))}
             </div>
+
 
             <img
                 src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`}

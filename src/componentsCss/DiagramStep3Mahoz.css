@@ -152,4 +152,20 @@
     transform: rotate(90deg); 
 }
 
+/* .arrow-DiagramStep3Mahoz-title{
+    height: 4vh;
+    width: auto;
+    position: absolute;
+    top: 4.5vh;
+    left: 3vh;
+} */
+
+.arrow-DiagramStep3Mahoz-role{
+    height: 4vh;
+    width: auto;
+    position: absolute;
+    top: 3vh;
+    left: 2vh;
+}
+
 
