@@ -166,8 +166,8 @@ function DiagramStep2() {
 
             <div className='subText-step2'>
                 {selectedOption === 'נפה'
-                    ? "לפניכם עץ מבנה מכלול אוכלוסיייה בנפה. בהמשך הדף יש לבחור את המכלולים לקבלת פירוט הגדרות ומשימות התפקיד."
-                    : "לפניכם עץ מבנה תא אוכלוסיייה במחוז. בהמשך הדף יש לבחור את התאים לקבלת פירוט הגדרות ומשימות התפקיד."
+                    ? "לפניכם עץ מבנה מכלול אוכלוסיייה בנפה. בהמשך הדף יש לבחור את המכלולים השונים לקבלת פירוט אודות ייעוד ותפקידי התא ומשימות בעלי התפקידים."
+                    : "לפניכם עץ מבנה תא אוכלוסיייה במחוז. בהמשך הדף יש לבחור את התאים השונים לקבלת פירוט אודות ייעוד ותפקידי התא ומשימות בעלי התפקידים."
                 }
             </div>
 
@@ -185,7 +185,7 @@ function DiagramStep2() {
                 alt="glass"
             />
 
-            <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow-step2" alt="blackArrow" />
+            {/* <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow-step2" alt="blackArrow" /> */}
 
             <div className='all-diagram'>
                 <div className="line"></div>

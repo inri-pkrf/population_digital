@@ -55,4 +55,22 @@
     transform: translateX(50%);
     direction: rtl;
   }
+
+  .btn-Relations{
+    font-family: 'Karantina', cursive;
+    color: white;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 78vh;
+    width: 38vw;
+    height: 6vh;
+    padding: 1vh;
+    text-align: center;
+    font-size: 10vmin;
+    /* font-weight: bold; */
+    border-radius: 15vw;
+    background-color: #17799d;
+}
+
   

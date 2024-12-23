@@ -10,10 +10,10 @@ function Agamim() {
                 alt="agamim-icon"
             />
             <div className="title-agamim">
-                אגמ"ים ושו"ב
+                אגמי"ם ושו"ב
             </div>
             <div className="subtitle-agamim">
-                לחצו על הקישורים כדי ללמוד עוד
+                לחצו על הקישורים כדי להיכנס למערכות
             </div>
 
             <a
@@ -23,7 +23,7 @@ function Agamim() {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                קישור לפורטל אגמים
+                קישור לפורטל אגמי"ם
             </a>
             <img
                 src={process.env.PUBLIC_URL + '/assests/imgs/agaminLogo.png'}
@@ -38,7 +38,7 @@ function Agamim() {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                קישור לשועל אזרחי
+                קישור לשוע"ל אזרחי
             </a>
             <img
                 src={process.env.PUBLIC_URL + '/assests/imgs/shoalLogo.png'}

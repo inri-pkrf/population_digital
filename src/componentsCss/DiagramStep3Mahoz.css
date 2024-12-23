@@ -6,6 +6,7 @@
     color: grey;
 } */
 
+
 .title-DiagramStep3Mahoz{
     position: absolute;
     right: 3vh;
@@ -23,6 +24,7 @@
     background-color:#fbbc6d;
 }
 
+
 .role-DiagramStep3Mahoz{  
     cursor: pointer;
     text-align: center;
@@ -31,14 +33,14 @@
     position: relative;
     width: 69vw;
     height: 10vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    font-size: 8vw;
+    padding-top: 3vh;
+    font-size: 8.5vw;
     top: 67vh;
     right: -25vw;
     margin-bottom: 2vh;
     background-color: #e69138;
 }
+
 
 .blackArrow1-DiagramStep3Mahoz{
     position: relative;
@@ -47,6 +49,7 @@
     top: 11vh;
     right: -6vh
 }
+
 
 .blackArrow2-DiagramStep3Mahoz{
     position: relative;
@@ -57,11 +60,14 @@
 }
 
 
+
+
 .item-image-DiagramStep3Mahoz{
     position: relative;
     height: auto;
     width: 88vw;
     top: 69vh;}
+
 
 .text-img-mahoz{
     position: relative;
@@ -73,6 +79,7 @@
     width: 60vw;
 }
 
+
 .glass-mahoz{
     position: relative;
     right: -29vw;
@@ -80,6 +87,8 @@
     height: auto;
     width: 7vw;
 }
+
+
 
 
 .explanation-div-DiagramStep3Mahoz{
@@ -91,15 +100,17 @@
     border-radius: 6vw;
 }
 
+
 .explanation-title-DiagramStep3Mahoz{
     font-family: 'Karantina', cursive;
     font-size: 8vw;
-    text-align: right;
-    padding-right: 7vh;
+    text-align: center;
     margin-top: 6vh;
-    padding-top: 1vh;
+    padding-top: 2vh;
     color: rgb(58, 57, 57);
 }
+
+
 
 
 .explanation-text-DiagramStep3Mahoz{
@@ -116,6 +127,7 @@
     padding-bottom: 3vh;
 }
 
+
 /* .step1Btn{
     position: relative;
     top: 71vh;
@@ -131,6 +143,7 @@
     border-radius: 20vw;
 } */
 
+
 .margin{
     position: relative;
     top: 75vh;
@@ -139,18 +152,21 @@
     background-color: transparent;
 }
 
+
 .arrow-icon {
     height: 3vh;
     width: auto;
     position: relative;
-    top: -3.3vh;
-    margin-left: -98px;
+    top: -3.4vh;
+    margin-left: -181px;
     transform: rotate(180deg);
 }
 
+
 .arrow-icon.rotated {
-    transform: rotate(90deg); 
+    transform: rotate(90deg);
 }
+
 
 /* .arrow-DiagramStep3Mahoz-title{
     height: 4vh;
@@ -160,6 +176,7 @@
     left: 3vh;
 } */
 
+
 .arrow-DiagramStep3Mahoz-role{
     height: 4vh;
     width: auto;
@@ -167,5 +184,20 @@
     top: 3vh;
     left: 2vh;
 }
+
+.btn-prev-mahoz{
+    color: #56c3e8;
+    font-size: 5vw;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 5vh;
+    position: relative;
+    top: 75vh;
+}
+
+
+
+
 
 

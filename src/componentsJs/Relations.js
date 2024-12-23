@@ -135,12 +135,13 @@ function Relations() {
                     <div className="sub-intro-rel">
                         לפניך מערכת הצלבה בין המכלולים הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר
                     </div>
-                    <img
+                    <div className='btn-Relations' onClick={handleArrowClick}>התחלה</div>
+                    {/* <img
                         src={process.env.PUBLIC_URL + '/assests/imgs/blackArrow.png'}
                         className="hpArrow-Relations"
                         alt="Arrow"
                         onClick={handleArrowClick}
-                    />
+                    /> */}
                 </div>
             ) : (
                 <div className='Relations-div'>

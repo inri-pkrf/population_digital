@@ -161,3 +161,13 @@
     transform: rotate(90deg); 
 }
 
+.btn-prev-nafa{
+    color: #56c3e8;
+    font-size: 5vw;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 5vh;
+    position: relative;
+    top: 75vh;
+}

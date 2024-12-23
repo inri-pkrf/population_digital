@@ -69,7 +69,7 @@ function DiagramStep3Nafa() {
                 </div>
             ))}
 
-            <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow1-DiagramStep3Nafa" alt="Next arrow" />
+            {/* <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow1-DiagramStep3Nafa" alt="Next arrow" /> */}
 
             <div
                 className='title-DiagramStep3Nafa'
@@ -107,7 +107,7 @@ function DiagramStep3Nafa() {
             </div>
 
 
-            <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow2-DiagramStep3Nafa" alt="Next arrow" />
+            {/* <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow2-DiagramStep3Nafa" alt="Next arrow" /> */}
 
             <img
                 src={selectedItem.src}
@@ -121,7 +121,18 @@ function DiagramStep3Nafa() {
                 className="glass-nafa"
                 alt="glass"
             />
-    
+
+            <div
+                className='btn-prev-nafa'
+                onClick={() => {
+                    navigate('/DiagramStep2', { state: { selectedOption } });
+                    window.scrollTo(0, 0);
+                }}
+            >
+                חזרה לבחירת מכלול
+            </div>
+
+
             <div className='margin'></div>
 
             <PopUp

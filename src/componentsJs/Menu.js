@@ -43,7 +43,7 @@ function Menu() {
                 <li onClick={() => navigate('/operation')}>תהליכים מבצעים
                 </li>
                 <div className='lineMenu'></div>
-                <li onClick={() => navigate('/agamim')}> אגמ"ים ושו"ב
+                <li onClick={() => navigate('/agamim')}> אגמי"ם ושו"ב
                 </li>
                 <div className='lineMenu'></div>
             </ul>

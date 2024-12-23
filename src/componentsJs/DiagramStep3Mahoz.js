@@ -104,7 +104,7 @@ function DiagramStep3Mahoz() {
             </div>
 
 
-            <img
+            {/* <img
                 src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`}
                 className="blackArrow1-DiagramStep3Mahoz"
                 alt="blackArrow"
@@ -114,7 +114,7 @@ function DiagramStep3Mahoz() {
                 src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`}
                 className="blackArrow2-DiagramStep3Mahoz"
                 alt="blackArrow"
-            />
+            /> */}
 
             <img
                 src={selectedItem.src}
@@ -129,6 +129,15 @@ function DiagramStep3Mahoz() {
                 alt="glass"
             />
 
+<div
+                className='btn-prev-mahoz'
+                onClick={() => {
+                    navigate('/DiagramStep2', { state: { selectedOption } });
+                    window.scrollTo(0, 0);
+                }}
+            >
+                חזרה לבחירת מרכז
+            </div>
 
             <div className="margin"></div>
 

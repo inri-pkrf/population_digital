@@ -20,6 +20,12 @@ function StepsBtnDiagram({ currentStep }) {
                     onClick={() => navigate('/DiagramStep1')}
                 >
                     לבחירת מפקדה
+                    {currentStep === 1 && (
+                        <div
+                            className="arrow-down-diagram"
+                            style={{ borderTop: '12px solid #595959' }}
+                        ></div>
+                    )}
                 </div>
 
                 <div
@@ -33,11 +39,12 @@ function StepsBtnDiagram({ currentStep }) {
                     }}
                 >
                     {step2Text}
-                    <div
-                        className="arrow-down-diagram"
-                        id="arrow-down2-diagram"
-                        style={{ borderTop: currentStep >= 2 ? '12px solid #595959' : '12px solid #d9d9d9' }}
-                    ></div>
+                    {currentStep === 2 && (
+                        <div
+                            className="arrow-down-diagram"
+                            style={{ borderTop: '12px solid #595959' }}
+                        ></div>
+                    )}
                 </div>
 
                 <div
@@ -46,11 +53,12 @@ function StepsBtnDiagram({ currentStep }) {
                     style={{ backgroundColor: currentStep === 3 ? '#595959' : '#d9d9d9' }}
                 >
                     {step3Text}
-                    <div
-                        className="arrow-down-diagram"
-                        id="arrow-down3-diagram"
-                        style={{ borderTop: currentStep === 3 ? '12px solid #595959' : '12px solid #d9d9d9' }}
-                    ></div>
+                    {currentStep === 3 && (
+                        <div
+                            className="arrow-down-diagram"
+                            style={{ borderTop: '12px solid #595959' }}
+                        ></div>
+                    )}
                 </div>
             </div>
         </div>
