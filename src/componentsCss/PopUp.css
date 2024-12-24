@@ -71,3 +71,14 @@
 .popup-body-text {
   direction: rtl;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e69138;
+}
+
