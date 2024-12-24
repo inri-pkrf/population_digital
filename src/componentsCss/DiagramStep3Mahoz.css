@@ -1,17 +1,8 @@
-/* .top-message{
-    position: relative;
-    top: 26vh;
-    font-family: 'Heebo', sans-serif;
-    font-size: 3.5vw;
-    color: grey;
-} */
-
-
-.title-DiagramStep3Mahoz{
+.title-DiagramStep3Mahoz {
     position: absolute;
     right: 3vh;
     font-family: 'Karantina', cursive;
-    margin-top: 54vh;
+    margin-top: 47vh;
     cursor: pointer;
     text-align: center;
     color: white;
@@ -19,13 +10,15 @@
     height: 7vh;
     padding-top: 2vh;
     padding-bottom: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 11vw;
     color: white;
-    background-color:#fbbc6d;
+    background-color: #fbbc6d;
 }
 
-
-.role-DiagramStep3Mahoz{  
+.role-DiagramStep3Mahoz {
     cursor: pointer;
     text-align: center;
     color: white;
@@ -33,43 +26,26 @@
     position: relative;
     width: 69vw;
     height: 10vh;
-    padding-top: 3vh;
     font-size: 8.5vw;
-    top: 67vh;
-    right: -25vw;
+    top: 60vh;
+    right: -26vw;
     margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     background-color: #e69138;
 }
 
-
-.blackArrow1-DiagramStep3Mahoz{
-    position: relative;
-    height: auto;
-    width: 17vw;
-    top: 11vh;
-    right: -6vh
-}
-
-
-.blackArrow2-DiagramStep3Mahoz{
-    position: relative;
-    height: auto;
-    width: 17vw;
-    top: 67vh;
-    right: 4vh;
-}
-
-
-
-
-.item-image-DiagramStep3Mahoz{
+.item-image-DiagramStep3Mahoz {
     position: relative;
     height: auto;
     width: 88vw;
-    top: 69vh;}
+    top: 69vh;
+}
 
-
-.text-img-mahoz{
+.text-img-mahoz {
     position: relative;
     right: -19vw;
     top: 71vh;
@@ -79,8 +55,7 @@
     width: 60vw;
 }
 
-
-.glass-mahoz{
+.glass-mahoz {
     position: relative;
     right: -29vw;
     top: 67vh;
@@ -88,10 +63,7 @@
     width: 7vw;
 }
 
-
-
-
-.explanation-div-DiagramStep3Mahoz{
+.explanation-div-DiagramStep3Mahoz {
     position: relative;
     top: 39vh;
     background-color: #d9d9d9;
@@ -100,8 +72,7 @@
     border-radius: 6vw;
 }
 
-
-.explanation-title-DiagramStep3Mahoz{
+.explanation-title-DiagramStep3Mahoz {
     font-family: 'Karantina', cursive;
     font-size: 8vw;
     text-align: center;
@@ -110,10 +81,7 @@
     color: rgb(58, 57, 57);
 }
 
-
-
-
-.explanation-text-DiagramStep3Mahoz{
+.explanation-text-DiagramStep3Mahoz {
     font-family: 'Heebo', sans-serif;
     font-size: 4vw;
     color: rgb(0, 0, 0);
@@ -127,31 +95,13 @@
     padding-bottom: 3vh;
 }
 
-
-/* .step1Btn{
-    position: relative;
-    top: 71vh;
-    left: 5vw;
-    color: white;
-    background-color: #1cb4e3;
-    font-family: 'Karantina', cursive;
-    font-size: 7vmin;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    height: 5vh;
-    width: 46vw;
-    border-radius: 20vw;
-} */
-
-
-.margin{
+.margin {
     position: relative;
     top: 75vh;
     height: 3vh;
     width: 100vw;
     background-color: transparent;
 }
-
 
 .arrow-icon {
     height: 3vh;
@@ -162,30 +112,19 @@
     transform: rotate(180deg);
 }
 
-
 .arrow-icon.rotated {
     transform: rotate(90deg);
 }
 
-
-/* .arrow-DiagramStep3Mahoz-title{
+.arrow-DiagramStep3Mahoz-role {
     height: 4vh;
     width: auto;
     position: absolute;
-    top: 4.5vh;
-    left: 3vh;
-} */
-
-
-.arrow-DiagramStep3Mahoz-role{
-    height: 4vh;
-    width: auto;
-    position: absolute;
-    top: 3vh;
-    left: 2vh;
+    top: 4.1vh;
+    left: 1vh;
 }
 
-.btn-prev-mahoz{
+.btn-prev-mahoz {
     color: #56c3e8;
     font-size: 5vw;
     text-align: center;
@@ -196,8 +135,21 @@
     top: 75vh;
 }
 
+hr.dotted {
+    border: none;
+    border-top: 2px dotted #4e4d4d;
+    width: 40vh;
+    height: 0;
+    padding: 0;
+    position: relative;
+}
 
+.hr1-mahoz {
+    right: 1vw;
+    top: 44vh;
+}
 
-
-
-
+.hr2-mahoz {
+    right: 1vw;
+    top: 64vh;
+}

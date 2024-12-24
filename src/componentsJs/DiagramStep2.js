@@ -4,10 +4,13 @@ import StepsBtnDiagram from "./StepsBtnDiagram";
 import { useLocation, useNavigate } from 'react-router-dom';
 import PopUp from './PopUp';
 
+
 function DiagramStep2() {
     const [isPopupVisible, setPopupVisible] = useState(false);
     const [popupContent, setPopupContent] = useState({ title: '', content: '' });
     const [expandedExplanation, setExpandedExplanation] = useState(null);
+
+
 
 
     const handleBoxClick = (title, content) => {
@@ -15,23 +18,29 @@ function DiagramStep2() {
         setPopupVisible(true);
     };
 
+
     const closePopup = () => {
         setPopupVisible(false);
     };
+
 
     const handleImageClick = () => {
         navigate('/MagnifyPic', { state: { imagePath } });
     };
 
+
     const location = useLocation();
     const navigate = useNavigate();
     const selectedOption = location.state?.selectedOption || '';
+
 
     const imagePath = selectedOption === 'נפה'
         ? `${process.env.PUBLIC_URL}/assests/imgs/nafa/step2Img.svg`
         : `${process.env.PUBLIC_URL}/assests/imgs/mahoz/step2Img.svg`;
 
+
     const color = selectedOption === 'נפה' ? '#1cb4e3' : '#ff9900';
+
 
     const arrMahoz = {
         strings: [
@@ -47,6 +56,7 @@ function DiagramStep2() {
         colors: ["#ff9900", "#e69138", "#fbbc6d"]
     };
 
+
     const arrNafa = {
         strings: [
             'מפקד מכלול אוכלוסייה',
@@ -61,8 +71,10 @@ function DiagramStep2() {
         colors: ["#053859", "#3d7ca5", "#1cb4e3"]
     };
 
+
     const selectedData = selectedOption === 'נפה' ? arrNafa : arrMahoz;
     const [firstColor, secondColor, restColor] = selectedData.colors;
+
 
     const frameContent = (
         <>
@@ -88,14 +100,17 @@ function DiagramStep2() {
         </>
     );
 
+
     const handleFirstFrameClick = () => {
         const title = selectedOption === 'נפה' ? 'מפקד המכלול/סגן' : 'מפקד המרכז / סגן';
         handleBoxClick(title, frameContent);
     };
 
+
     const handleToggleExplanation = (index) => {
         setExpandedExplanation(expandedExplanation === index ? null : index);
     };
+
 
     const explanations = selectedOption === 'נפה' ? [
         {
@@ -129,6 +144,7 @@ function DiagramStep2() {
         }
     ];
 
+
     return (
         <div className="DiagramStep2">
             <StepsBtnDiagram currentStep={2} selectedOption />
@@ -139,6 +155,7 @@ function DiagramStep2() {
                 <span style={{ color }}> ב{selectedOption}</span>
             </div>
 
+
             {explanations.map((explanation, index) => (
                 <div key={index} className="explanation-div-DiagramStep2">
                     <div
@@ -148,6 +165,8 @@ function DiagramStep2() {
                         <div className="explanation-title-DiagramStep2">
                             {explanation.title}
                         </div>
+
+
                         <img
                             src={`${process.env.PUBLIC_URL}/assests/imgs/nextBlack.png`}
                             className={`arrow-icon1 ${expandedExplanation === index ? 'rotated' : ''}`}
@@ -164,12 +183,15 @@ function DiagramStep2() {
                 </div>
             ))}
 
+            <hr className='dotted hr1' />
+
             <div className='subText-step2'>
                 {selectedOption === 'נפה'
                     ? "לפניכם עץ מבנה מכלול אוכלוסיייה בנפה. בהמשך הדף יש לבחור את המכלולים השונים לקבלת פירוט אודות ייעוד ותפקידי התא ומשימות בעלי התפקידים."
                     : "לפניכם עץ מבנה תא אוכלוסיייה במחוז. בהמשך הדף יש לבחור את התאים השונים לקבלת פירוט אודות ייעוד ותפקידי התא ומשימות בעלי התפקידים."
                 }
             </div>
+
 
             <img
                 src={imagePath}
@@ -178,6 +200,7 @@ function DiagramStep2() {
                 onClick={handleImageClick}
             />
 
+
             <div className='text-img'>אפשר להגדיל את עץ המבנה בלחיצה</div>
             <img
                 src={`${process.env.PUBLIC_URL}/assests/imgs/glass.png`}
@@ -185,11 +208,12 @@ function DiagramStep2() {
                 alt="glass"
             />
 
-            {/* <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow-step2" alt="blackArrow" /> */}
+            <hr className='dotted hr2' />
 
             <div className='all-diagram'>
                 <div className="line"></div>
                 <div className="small-line"></div>
+
 
                 <div
                     className='first-frame'
@@ -198,11 +222,12 @@ function DiagramStep2() {
                 >
                     {selectedData.strings[0]}
                     <img
-                            src={`${process.env.PUBLIC_URL}/assests/imgs/left-arrow.png`}
-                            className='arrow-icon1-diagram'
-                            alt="Arrow"
-                        />
+                        src={`${process.env.PUBLIC_URL}/assests/imgs/left-arrow.png`}
+                        className='arrow-icon1-diagram'
+                        alt="Arrow"
+                    />
                 </div>
+
 
                 <div
                     className='second-frame'
@@ -211,11 +236,12 @@ function DiagramStep2() {
                 >
                     {selectedData.strings[1]}
                     <img
-                            src={`${process.env.PUBLIC_URL}/assests/imgs/left-arrow.png`}
-                            className='arrow-icon2-diagram'
-                            alt="Arrow"
-                        />
+                        src={`${process.env.PUBLIC_URL}/assests/imgs/left-arrow.png`}
+                        className='arrow-icon2-diagram'
+                        alt="Arrow"
+                    />
                 </div>
+
 
                 {selectedData.strings.slice(2).map((text, index) => (
                     <div
@@ -237,6 +263,7 @@ function DiagramStep2() {
                 ))}
             </div>
 
+
             <PopUp
                 isVisible={isPopupVisible}
                 onClose={closePopup}
@@ -247,4 +274,8 @@ function DiagramStep2() {
     );
 }
 
+
 export default DiagramStep2;
+
+
+

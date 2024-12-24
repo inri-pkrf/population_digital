@@ -1,7 +1,8 @@
-.title-DiagramStep3Nafa{
+.title-DiagramStep3Nafa {
     position: absolute;
     right: 3vh;
-    margin-top: 50vh;
+    font-family: 'Karantina', cursive;
+    margin-top: 47vh;
     cursor: pointer;
     text-align: center;
     color: white;
@@ -9,13 +10,15 @@
     height: 7vh;
     padding-top: 2vh;
     padding-bottom: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 11vw;
-    font-family: 'Karantina', cursive;
     color: white;
     background-color: #1cb4e3;
 }
 
-.arrow-icon1-DiagramStep3Nafa{
+.arrow-icon1-DiagramStep3Nafa {
     height: 4vh;
     width: auto;
     position: absolute;
@@ -23,75 +26,60 @@
     left: 4vh;
 }
 
-.arrow-icon2-DiagramStep3Nafa{
+.arrow-icon2-DiagramStep3Nafa {
     height: 4vh;
     width: auto;
     position: relative;
-    top: 51.7vh;
-    left: -8vh;
+    top: 54.2vh;
+    left: -11.5vh;
 }
 
-.role-DiagramStep3Nafa{
+.role-DiagramStep3Nafa {
     cursor: pointer;
     text-align: center;
     color: white;
     font-family: 'Karantina', cursive;
     position: relative;
-    width: 41vw;
+    width: 69vw;
     height: 10vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
     font-size: 8vw;
-    padding-left: 8vh;
-    top: 65vh;
-    padding-right: 8vh;
-    right: -25vw;
-    margin-bottom: 2vh;
+    top: 60vh;
+    right: -26vw;
+    margin-bottom: -2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     background-color: #3d7ca5;
 }
 
-
-.blackArrow1-DiagramStep3Nafa{
-    position: relative;
-    height: auto;
-    width: 17vw;
-    top: 45vh;
-}
-
-.blackArrow2-DiagramStep3Nafa{
-    position: relative;
-    height: auto;
-    width: 17vw;
-    top: 66vh;
-}
-
-
-.item-image-DiagramStep3Nafa{
+.item-image-DiagramStep3Nafa {
     position: relative;
     height: auto;
     width: 88vw;
     top: 69vh;
 }
 
-.text-img-nafa{
+.text-img-nafa {
     position: relative;
-    right: -18vw;
-    top: 69vh;
+    right: -19vw;
+    top: 71vh;
     font-family: 'Heebo', sans-serif;
     font-size: 3.5vw;
     color: grey;
     width: 60vw;
 }
 
-.glass-nafa{
+.glass-nafa {
     position: relative;
-    right: -28vw;
-    top: 65vh;
+    right: -29vw;
+    top: 67vh;
     height: auto;
     width: 7vw;
 }
 
-.explanation-div-DiagramStep3Nafa{
+.explanation-div-DiagramStep3Nafa {
     position: relative;
     top: 39vh;
     background-color: #d9d9d9;
@@ -100,18 +88,16 @@
     border-radius: 6vw;
 }
 
-.explanation-title-DiagramStep3Nafa{
+.explanation-title-DiagramStep3Nafa {
     font-family: 'Karantina', cursive;
     font-size: 8vw;
-    text-align: right;
-    padding-right: 7vh;
+    text-align: center;
     margin-top: 6vh;
-    padding-top: 1vh;
+    padding-top: 2vh;
     color: rgb(58, 57, 57);
 }
 
-
-.explanation-text-DiagramStep3Nafa{
+.explanation-text-DiagramStep3Nafa {
     font-family: 'Heebo', sans-serif;
     font-size: 4vw;
     color: rgb(0, 0, 0);
@@ -125,22 +111,7 @@
     padding-bottom: 3vh;
 }
 
-.step1Btn{
-    position: relative;
-    top: 71vh;
-    left: 5vw;
-    color: white;
-    background-color: #1cb4e3;
-    font-family: 'Karantina', cursive;
-    font-size: 7vmin;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    height: 5vh;
-    width: 46vw;
-    border-radius: 20vw;
-}
-
-.margin{
+.margin {
     position: relative;
     top: 75vh;
     height: 3vh;
@@ -152,16 +123,16 @@
     height: 3vh;
     width: auto;
     position: relative;
-    top: -3.3vh;
-    margin-left: -98px;
+    top: -3.4vh;
+    margin-left: -181px;
     transform: rotate(180deg);
 }
 
 .arrow-icon.rotated {
-    transform: rotate(90deg); 
+    transform: rotate(90deg);
 }
 
-.btn-prev-nafa{
+.btn-prev-nafa {
     color: #56c3e8;
     font-size: 5vw;
     text-align: center;
@@ -170,4 +141,23 @@
     margin-bottom: 5vh;
     position: relative;
     top: 75vh;
+}
+
+hr.dotted {
+    border: none;
+    border-top: 2px dotted #4e4d4d;
+    width: 40vh;
+    height: 0;
+    padding: 0;
+    position: relative;
+}
+
+.hr1-nafa {
+    right: 1vw;
+    top: 44vh;
+}
+
+.hr2-nafa {
+    right: 1vw;
+    top: 64vh;
 }

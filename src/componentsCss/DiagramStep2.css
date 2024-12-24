@@ -11,6 +11,8 @@
 }
 
 
+
+
 .explanation-div-DiagramStep2 {
     position: relative;
     top: 55vh;
@@ -22,6 +24,8 @@
 }
 
 
+
+
 .explanation-title-DiagramStep2 {
     font-family: 'Karantina', cursive;
     font-size: 8vw;
@@ -30,6 +34,10 @@
     padding-top: 2vh;
     color: rgb(58, 57, 57);
 }
+
+
+
+
 
 
 
@@ -50,6 +58,8 @@
 }
 
 
+
+
 .arrow-icon1 {
     height: 3vh;
     width: auto;
@@ -61,9 +71,13 @@
 }
 
 
+
+
 .arrow-icon1.rotated {
     transform: rotate(90deg);
 }
+
+
 
 
 .arrow-icon1-diagram {
@@ -75,6 +89,8 @@
 }
 
 
+
+
 .arrow-icon2-diagram {
     height: 4vh;
     width: auto;
@@ -83,6 +99,8 @@
     right: 50%;
     transform: translateX(50%);
 }
+
+
 
 
 .arrow-icon3-diagram {
@@ -96,6 +114,10 @@
 
 
 
+
+
+
+
 .subText-step2 {
     position: relative;
     right: -9vw;
@@ -103,39 +125,41 @@
     font-size: 5vw;
     color: grey;
     text-align: center;
-    top: 62vh;
+    top: 66vh;
     width: 82vw;
     direction: rtl;
 }
 
-
 .stpe2Img {
     position: relative;
     right: 0vw;
-    top: 65vh;
+    top: 71vh;
     height: auto;
     width: 88vw;
 }
 
-
 .text-img {
     position: relative;
     right: -16vw;
-    top: 65vh;
+    top: 71vh;
     font-family: 'Heebo', sans-serif;
     font-size: 3.5vw;
     color: grey;
     width: 60vw;
 }
 
-
+ 
 .glass{
     position: relative;
     right: -28vw;
-    top: 61vh;
+    top: 67vh;
     height: auto;
     width: 7vw;
 }
+
+
+
+
 
 
 
@@ -149,6 +173,8 @@
 }
 
 
+
+
 .all-diagram {
     position: relative;
     width: 100vw;
@@ -158,6 +184,8 @@
     margin-bottom: 31vh;
     height: 130vh;
 }
+
+
 
 
 .line {
@@ -170,6 +198,8 @@
 }
 
 
+
+
 .small-line {
     position: absolute;
     border-left: 2vw solid #595959;
@@ -178,6 +208,8 @@
     left: 43vw;
     top: 23vh;
 }
+
+
 
 
 .first-frame {
@@ -194,6 +226,8 @@
 }
 
 
+
+
 .second-frame {
     width: 36vw;
     height: 14vh;
@@ -206,6 +240,8 @@
     padding-right: 2vh;
     font-size: 8vw;
 }
+
+
 
 
 .frame {
@@ -222,3 +258,22 @@
     left: 15vw;
     font-size: 11vw;
 }
+
+hr.dotted {
+    border: none;
+    border-top: 2px dotted #4e4d4d;
+    width: 40vh;
+    height: 0;
+    padding: 0;
+    position: relative;
+ }
+
+ .hr1{
+    right: 1vw;
+    top: 62vh;
+ }
+
+ .hr2{
+    right: 1vw;
+    top: 73vh;
+ }

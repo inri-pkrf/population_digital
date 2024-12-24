@@ -71,6 +71,8 @@ function DiagramStep3Nafa() {
 
             {/* <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow1-DiagramStep3Nafa" alt="Next arrow" /> */}
 
+            <hr className='dotted hr1-nafa' />
+
             <div
                 className='title-DiagramStep3Nafa'
                 onClick={() => handleRoleClick(selectedItem.name, selectedItem.nameNote)}>
@@ -107,7 +109,8 @@ function DiagramStep3Nafa() {
             </div>
 
 
-            {/* <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow2-DiagramStep3Nafa" alt="Next arrow" /> */}
+
+            <hr className='dotted hr2-nafa' />
 
             <img
                 src={selectedItem.src}

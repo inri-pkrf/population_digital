@@ -68,6 +68,9 @@ function DiagramStep3Mahoz() {
                 </div>
             ))}
 
+            <hr className='dotted hr1-mahoz' />
+
+
             <div
                 className='title-DiagramStep3Mahoz'>
                 {title}
@@ -116,6 +119,8 @@ function DiagramStep3Mahoz() {
                 alt="blackArrow"
             /> */}
 
+            <hr className='dotted hr2-mahoz' />
+
             <img
                 src={selectedItem.src}
                 className="item-image-DiagramStep3Mahoz"
@@ -129,7 +134,7 @@ function DiagramStep3Mahoz() {
                 alt="glass"
             />
 
-<div
+            <div
                 className='btn-prev-mahoz'
                 onClick={() => {
                     navigate('/DiagramStep2', { state: { selectedOption } });
