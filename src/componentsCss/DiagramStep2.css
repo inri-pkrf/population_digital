@@ -57,12 +57,10 @@
     padding-bottom: 2vh;
 }
 
-
-
-
 .arrow-icon1 {
     height: 3vh;
     width: auto;
+    right: 2vw;
     position: relative;
     top: -3.42vh;
     padding-left: -23vw;
@@ -70,15 +68,9 @@
     transform: rotate(180deg);
 }
 
-
-
-
 .arrow-icon1.rotated {
     transform: rotate(90deg);
 }
-
-
-
 
 .arrow-icon1-diagram {
     height: 4vh;
@@ -87,9 +79,6 @@
     top: 4.5vh;
     left: 3vh;
 }
-
-
-
 
 .arrow-icon2-diagram {
     height: 4vh;
@@ -100,9 +89,6 @@
     transform: translateX(50%);
 }
 
-
-
-
 .arrow-icon3-diagram {
     height: 4vh;
     width: auto;
@@ -110,13 +96,6 @@
     top: 3.4vh;
     left: 4vh;
 }
-
-
-
-
-
-
-
 
 .subText-step2 {
     position: relative;

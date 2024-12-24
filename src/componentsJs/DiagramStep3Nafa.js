@@ -69,8 +69,6 @@ function DiagramStep3Nafa() {
                 </div>
             ))}
 
-            {/* <img src={`${process.env.PUBLIC_URL}/assests/imgs/blackArrow.png`} className="blackArrow1-DiagramStep3Nafa" alt="Next arrow" /> */}
-
             <hr className='dotted hr1-nafa' />
 
             <div
@@ -101,14 +99,16 @@ function DiagramStep3Nafa() {
                         </div>
                         <img
                             src={`${process.env.PUBLIC_URL}/assests/imgs/left-arrow.png`}
-                            className="arrow-icon2-DiagramStep3Nafa"
+                            className={`arrow-icon2-DiagramStep3Nafa ${
+                                title === "תא הסברה" ? 'arrow-icon2-hasbara' : ''
+                            } ${
+                                title === "תא הנדסה" ? 'arrow-icon2-handasa' : ''
+                            }`}
                             alt="Arrow"
                         />
                     </div>
                 ))}
             </div>
-
-
 
             <hr className='dotted hr2-nafa' />
 
@@ -134,7 +134,6 @@ function DiagramStep3Nafa() {
             >
                 חזרה לבחירת תאים נוספים
             </div>
-
 
             <div className='margin'></div>
 

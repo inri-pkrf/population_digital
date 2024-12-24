@@ -31,7 +31,24 @@
     width: auto;
     position: relative;
     top: 54.2vh;
-    left: -11.5vh;
+    left: -7.5vh;
+}
+
+.arrow-icon2-hasbara{
+    height: 3vh;
+    width: auto;
+    position: relative;
+    top: 55vh;
+    left: -10.7vh;
+}
+
+
+.arrow-icon2-handasa{
+    height: 2.8vh;
+    width: auto;
+    position: relative;
+    top: 55.5vh;
+    left: -10.5vh;
 }
 
 .role-DiagramStep3Nafa {
