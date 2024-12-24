@@ -122,7 +122,6 @@
   
   .content-page1 {
     height: 52vh;
-    /* overflow-y: auto; */
     position: absolute;
     right: 50%;
     transform: translateX(50%);

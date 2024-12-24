@@ -208,13 +208,13 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
             </div>
 
             <div className='btn-div'>
-                <div className='btn-Interfaces' id='prev-btn-Interfaces' onClick={handlePrev}>לממשק הקודם</div>
                 <div className='btn-Interfaces' id='next-btn-Interfaces' onClick={handleNext}>לממשק הבא</div>
+                <div className='btn-Interfaces' id='prev-btn-Interfaces' onClick={handlePrev}>לממשק הקודם</div>
             </div>
 
             <div className='Interfaces-back'>
                 <div id='stpe1btn-Interfaces' onClick={navigateToStep1}>
-                    חזרה לבחירת מכלול ראשון
+                    חזרה לבחירת מכלול ראשי
                 </div>
             </div>
         </div>

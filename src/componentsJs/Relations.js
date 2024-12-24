@@ -4,9 +4,9 @@ import Interfaces from './Interfaces.js';
 
 
 function Relations() {
-    const [title, setTitle] = useState('בחירת מכלול');
+    const [title, setTitle] = useState('בחירת מכלול/תא ראשי'); // כותרת מעודכנת
     const [titleColor, setTitleColor] = useState('#50565c');
-    const [text, setText] = useState('יש לבחור את המכלול הראשי');
+    const [text, setText] = useState(''); // הסאב טקסט ריק
     const [selectedItemStep1, setSelectedItemStep1] = useState(null);
     const [selectedItemsStep2, setSelectedItemsStep2] = useState(null);
     const [step, setStep] = useState(1);
@@ -55,9 +55,9 @@ function Relations() {
                 setStep(1);
                 setSelectedItemStep1(null);
                 setSelectedItemsStep2(null);
-                setTitle('בחירת מכלול');
+                setTitle('בחירת מכלול/תא ראשי'); // עדכון הכותרת
                 setTitleColor('#50565c');
-                setText('בחירת מכלול/תא'); // טקסט מעודכן לשלב 1
+                setText(''); // מחיקת הסאב טקסט
                 setArrayOfMechlol(initialArray);
                 setStep1Color('rgb(86 195 232)');
                 setStep2Color('rgb(217 217 217)');
@@ -82,6 +82,7 @@ function Relations() {
             }
         }
     };
+    
     
 
     const handleItemClick = (item) => {

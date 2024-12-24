@@ -82,3 +82,10 @@
   background: #e69138;
 }
 
+.small-text{
+  position: absolute;
+  top: 123vw;
+  left: 8vw;
+  font-size: 2vh;
+  color: #595959;
+}

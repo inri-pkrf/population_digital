@@ -34,6 +34,7 @@ const PopUp = ({ isVisible, onClose, title, content, imgSrc }) => {
                         {content}
                     </div>
                 </div>
+                <p className='small-text'> על מנת לקרוא את כל המלל יש לגלול למטה *</p>
             </div>
         </div>
     );
