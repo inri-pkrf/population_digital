@@ -42,8 +42,8 @@
     color: white;
     position: absolute;
     direction: rtl;
-    margin-top: 5vh;
-    width: 79vw;
+    margin-top: 1vh;
+    width: 84vw;
     right: 50%;
     transform: translateX(50%);
   }

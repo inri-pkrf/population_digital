@@ -18,8 +18,7 @@ function Diagram() {
                     מבנה, ייעוד ותפקידי אוכלוסייה במפקדות
                 </div>
                 <div className="sub-intro-diagram">
-                    בחלק זה בלומדה נלמד על עצי המבנה במפקדות. בשלב הראשון ניתן לבחור מפקדה, לאחר הבחירה ניתן ללמוד על המרכז\מכלול ולאחר מכן על מכלול/תא.
-                </div>
+                בחלק זה בלומדה נלמד על מבנה, ייעוד ותפקידי אוכלוסייה במפקדות. בשלב הראשון נדרש לבחור מפקדה (מחוז/נפה) ולאחר מכן להרחיב את הלמידה על המכלולים והתאים השונים.                </div>
                 <div className='btn-Relations' onClick={() => navigate('/DiagramStep1')}>התחלה</div>
                 {/* <img
                     src={process.env.PUBLIC_URL + '/assests/imgs/blackArrow.png'}
