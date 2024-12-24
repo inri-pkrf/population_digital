@@ -41,12 +41,13 @@ function Relations() {
         setSelectedItemStep1(item);
         setTitle(`מכלול ${item}`);
         setTitleColor('#56c3e8');
-        setText('יש לבחור מכלול נוסף, בכדי לצפות בממשקים שלו כחלק מהעבודה השוטפת ');
+        setText('יש לבחור מכלול נוסף שתרצה לבחון את הממש"קים ויחס"ג איתו'); // טקסט מעודכן לשלב 2
         setStep(2);
         setArrayOfMechlol(arrayOfMechlol.filter(mechlol => mechlol !== item));
         setStep1Color('rgb(86 195 232)');
         setStep2Color('rgb(86 195 232)');
     };
+    
 
     const handleStepClick = (stepNumber) => {
         if (stepNumber <= step) {
@@ -56,18 +57,18 @@ function Relations() {
                 setSelectedItemsStep2(null);
                 setTitle('בחירת מכלול');
                 setTitleColor('#50565c');
-                setText('יש לבחור את המכלול הראשי');
+                setText('בחירת מכלול/תא'); // טקסט מעודכן לשלב 1
                 setArrayOfMechlol(initialArray);
-                setStep1Color('rgb(86 195 232)'); // Reset color for Step 1
-                setStep2Color('rgb(217 217 217)'); // Reset color for Step 2
-                setStep3Color('rgb(217 217 217)'); // Reset color for Step 3
-                setNewComponent(false); // Hide the Interfaces component
+                setStep1Color('rgb(86 195 232)');
+                setStep2Color('rgb(217 217 217)');
+                setStep3Color('rgb(217 217 217)');
+                setNewComponent(false);
             } else if (stepNumber === 2) {
                 setStep(2);
-                setStep2Color('rgb(86 195 232)'); // Highlight Step 2 button
+                setStep2Color('rgb(86 195 232)');
                 setStep3Color('rgb(217 217 217)');
-                setNewComponent(false); // Ensure Interfaces is hidden
-                setText('יש לבחור את המכלול הראשי'); // Reset text for Step 2
+                setNewComponent(false);
+                setText('יש לבחור מכלול נוסף שתרצה לבחון את הממש"קים ויחס"ג איתו'); // טקסט מעודכן לשלב 2
                 if (selectedItemStep1) {
                     setTitle(`מכלול ${selectedItemStep1}`);
                 } else {
@@ -76,12 +77,12 @@ function Relations() {
             } else if (stepNumber === 3) {
                 setStep(3);
                 setStep3Color('rgb(86 195 232)');
-
                 setTitle(`ממשק בין ${selectedItemStep1} ו${selectedItemsStep2}`);
                 setTitleColor('#56c3e8');
             }
         }
     };
+    
 
     const handleItemClick = (item) => {
         if (step === 2) {
@@ -133,8 +134,7 @@ function Relations() {
                         יחסי גומלין במרכז ומכלול אוכלוסייה
                     </div>
                     <div className="sub-intro-rel">
-                        לפניך מערכת הצלבה בין המכלולים הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר הסבר
-                    </div>
+                    בפרק זה נלמד על יחסי הגומלין בין המכלולים והתאים השונים באוכלוסייה. עליך לבחור שני מכלולים שתרצה ללמוד מה כל אחד נותן לשני.                    </div>
                     <div className='btn-Relations' onClick={handleArrowClick}>התחלה</div>
                     {/* <img
                         src={process.env.PUBLIC_URL + '/assests/imgs/blackArrow.png'}

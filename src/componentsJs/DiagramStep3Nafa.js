@@ -132,7 +132,7 @@ function DiagramStep3Nafa() {
                     window.scrollTo(0, 0);
                 }}
             >
-                חזרה לבחירת מכלול
+                חזרה לבחירת תאים נוספים
             </div>
 
 

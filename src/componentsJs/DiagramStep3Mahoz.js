@@ -141,8 +141,8 @@ function DiagramStep3Mahoz() {
                     window.scrollTo(0, 0);
                 }}
             >
-                חזרה לבחירת מרכז
-            </div>
+                חזרה לבחירת מכלולים נוספים
+                </div>
 
             <div className="margin"></div>
 

@@ -196,14 +196,14 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
         <div className="Interfaces">
 
             <div className='Interfaces-contect'>
-                <div className='title-Interfaces' id='title2-Interfaces'>{receives} </div>
-                <div className='text-Interfaces' id='text2-Interfaces'>
-                    {itemData ? itemData.connections[0] : ''}
-                </div>
-
                 <div className='title-Interfaces' id='title1-Interfaces'> {give}</div>
                 <div className='text-Interfaces' id='text1-Interfaces'>
                     {itemData ? itemData.connections[1] : ''}
+                </div>
+
+                <div className='title-Interfaces' id='title2-Interfaces'>{receives} </div>
+                <div className='text-Interfaces' id='text2-Interfaces'>
+                    {itemData ? itemData.connections[0] : ''}
                 </div>
             </div>
 

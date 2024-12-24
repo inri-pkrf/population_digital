@@ -202,7 +202,7 @@ const mahoz = [
                         </>
                     ],
             }, {
-                titleExplanation: "תפקידי המרכז",
+                titleExplanation: "תפקידי המכלול",
                 textExplanation:
                     [
                         <>
