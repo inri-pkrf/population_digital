@@ -76,7 +76,7 @@ function DiagramStep2() {
     const [firstColor, secondColor, restColor] = selectedData.colors;
 
 
-    const frameContent = (
+    const frameContentMahoz = (
         <>
             1. פיקוד ושליטה על מכלול האוכלוסייה.<br /><br />
             2. גיבוש תמונת מצב וביצוע הערכת מצב אוכלוסייה.<br /><br />
@@ -100,10 +100,29 @@ function DiagramStep2() {
         </>
     );
 
-    const shulchanContent = (
+    const frameContentNafa = (
+        <>
+            1. פיקוד ושליטה על מכלול האוכלוסייה.<br /><br />
+            2.  גיבוש תמונת מצב וביצוע הערכת מצב אוכלוסייה. <br /><br />
+            3. איתור מגמות מרכזיות במרחב האזרחי ,ולאורן (וכמובן לאור צי"חי מפקד הנפה) - הגדרת צי"חי
+            עבודה למכלול<br /><br />
+            4. אישור המלצות התאים במכלול באשר לפעולות הנדרשות לצורך מענה לאתגרים במרחב האזרחי: <br />
+            א. תכנית לתמיכה בחוסן  <br />
+            ב. דרישה מבצעית לתכנית הסברה <br />
+            ג. תכנית מענה לפערי המיגון והנזקים במרחב <br />
+            ד. תכנית מענה לדרישות ומיצוי יכולות המרחב <br />
+            ה. תכנית מענה לרשות מתקשה <br />
+            ו. תכנית מענה לרשות במשבר אנרגיה <br />
+            ז.תכנית מענה למפונים -מתפנים  <br />
+            <br /> <br />
+            5. הכנת הפורומים הנפתיית- מדיניות התגוננות ומיצוי יכולות המרחב.
+        </>
+    );
+
+
+    const shulchanContentMahoz = (
         <>
             <b> נציג המרכז בשולחן המרכזי</b><br /><br />
-            גוף זה עוסק בריכוז פניות הציבור בעת חירום, יצירת קשר עם נציגי קהילות, העברת מידע מותאם תרבותית ותרגום, ומתן מענה פרטני לצרכים אזרחיים העולים מהשטח.<br /><br />
             1. יהווה קצין הקישור בין מכלול האוכלוסייה לשולחן המרכזי. <br /><br />
             2. ייעוץ למנל"ח בניהול הקרב בתחום האוכלוסייה. <br /><br />
             3. נוכחות מלאה ורציפה בשולחן המרכזי. <br /><br />
@@ -112,11 +131,22 @@ function DiagramStep2() {
         </>
     );
 
+    const shulchanContentNafa = (
+        <>
+            <b>נציג מכלול אוכלוסייה בשולחן המרכזי</b><br /><br />
+            1. יהווה קצין הקישור בין מכלול האוכלוסייה לשולחן המרכזי הנפתי. <br /><br />
+            2. ייעוץ למנל"ח בניהול הקרב בתחום האוכלוסייה. <br /><br />
+            3.  נוכחות מלאה ורציפה בשולחן המרכזי. <br /><br />
+            4.  שיקוף נתוני אוכלוסייה באירועים ע"פ סד"פ. <br /><br />
+            5.  קיום שיח שוטף עם קמב"ץ מכלול האוכלוסייה.
+        </>
+    );
 
-    const handleFirstFrameClick = () => {
-        const title = selectedOption === 'נפה' ? 'מפקד המכלול/סגן' : 'מפקד המרכז / סגן';
-        handleBoxClick(title, frameContent);
-    };
+
+    // const handleFirstFrameClick = () => {
+    //     const title = selectedOption === 'נפה' ? 'מפקד המכלול/סגן' : 'מפקד המרכז / סגן';
+    //     handleBoxClick(title, frameContent);
+    // };
 
 
     const handleToggleExplanation = (index) => {
@@ -233,7 +263,12 @@ function DiagramStep2() {
                 <div
                     className='first-frame'
                     style={{ backgroundColor: firstColor }}
-                    onClick={handleFirstFrameClick}
+                    onClick={() =>
+                        handleBoxClick(
+                            selectedOption === 'נפה' ? 'מפקד המכלול / סגן' : 'מפקד המרכז / סגן',
+                            selectedOption === 'נפה' ? frameContentNafa : frameContentMahoz
+                        )
+                    }
                 >
                     {selectedData.strings[0]}
                     <img
@@ -247,7 +282,12 @@ function DiagramStep2() {
                 <div
                     className='second-frame'
                     style={{ backgroundColor: secondColor }}
-                    onClick={handleFirstFrameClick}
+                    onClick={() =>
+                        handleBoxClick(
+                            selectedOption === 'נפה' ? 'מפקד המכלול / סגן' : 'מפקד המרכז / סגן',
+                            selectedOption === 'נפה' ? frameContentNafa : frameContentMahoz
+                        )
+                    }
                 >
                     {selectedData.strings[1]}
                     <img
@@ -280,9 +320,13 @@ function DiagramStep2() {
 
             <div
                 className='frame last-frame'
-                style={{ backgroundColor: 'orange' }}
-                onClick={() => handleBoxClick('נציג שולחן מרכזי', shulchanContent)}
-            >
+style={{ backgroundColor: selectedOption === 'נפה' ? 'rgb(145 197 213' : 'rgb(243 209 158)' }}
+                onClick={() =>
+                    handleBoxClick(
+                        'נציג שולחן מרכזי',
+                        selectedOption === 'נפה' ? shulchanContentNafa : shulchanContentMahoz
+                    )
+                }        >
                 נ . שולחן מרכזי
                 <img
                     src={`${process.env.PUBLIC_URL}/assests/imgs/left-arrow.png`}
