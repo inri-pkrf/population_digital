@@ -1,0 +1,21 @@
+.btn-back-part1 {
+    margin-top: 20vh;
+    color: #50565c;
+    font-family: 'Heebo', sans-serif;
+    /* text-decoration: underline; */
+    font-size: 5vmin;
+    margin-left: 45vw;
+    width: 50%;
+}
+
+.title2-operation {
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    font-family: 'Karantina', cursive;
+    font-size: 15vw;
+    top: 22vh;
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+}

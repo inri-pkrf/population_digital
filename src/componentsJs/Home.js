@@ -40,7 +40,7 @@ function Home() {
 
                 <div id='line2' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
 
-                <div className="pages-list-item" onClick={() => navigate('/operation')}>
+                <div className="pages-list-item" onClick={() => navigate('/operationPart1')}>
                     <div className="pages-list-content">
                         <div className="pages-list-title-homepage">
                             תהליכים מבצעים

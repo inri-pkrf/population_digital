@@ -40,7 +40,7 @@ function Menu() {
                 <li onClick={() => navigate('/relations')}> יחסי גומלין במרכז ומכלול אוכלוסייה
                 </li>
                 <div className='lineMenu'></div>
-                <li onClick={() => navigate('/operation')}>תהליכים מבצעים
+                <li onClick={() => navigate('/operationPart1')}>תהליכים מבצעים
                 </li>
                 <div className='lineMenu'></div>
                 <li onClick={() => navigate('/agamim')}> אגמי"ם ושו"ב

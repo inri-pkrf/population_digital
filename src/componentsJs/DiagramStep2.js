@@ -11,8 +11,6 @@ function DiagramStep2() {
     const [expandedExplanation, setExpandedExplanation] = useState(null);
 
 
-
-
     const handleBoxClick = (title, content) => {
         setPopupContent({ title, content });
         setPopupVisible(true);
