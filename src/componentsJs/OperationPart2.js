@@ -111,7 +111,7 @@ function OperationPart2() {
             </div>
 
             <h1 className='title2-operation' style={{ color: getTitleColor() }}>
-                תהליך {selectedOption}
+                {selectedOption === 'תהליך מדיניות התגוננות' ? selectedOption : `תהליך ${selectedOption}`}
             </h1>
 
             <div className='accordionItems-div'>
