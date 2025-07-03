@@ -39,7 +39,7 @@
 
 /* אייטם ראשון */
 #item1-operation {
-    background-color: #0047ab;
+    background-color: #235884;
     color: white;
     width: 80%;
     margin: 0 auto 30px auto;
@@ -95,7 +95,7 @@
 
 }
 
-.footer-operation {
+.footer-operation1 {
     width: 100%;
     height: 1vh;
     margin-top: 59vh;

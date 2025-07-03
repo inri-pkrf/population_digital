@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../componentsCss/OperationPart1.css';
 
@@ -8,6 +8,10 @@ function OperationPart1() {
   const handleClick = (selectedOption) => {
     navigate('/OperationPart2', { state: { selectedOption } });
   };
+
+     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
   return (
     <div className="OperationPart1">
@@ -62,7 +66,7 @@ function OperationPart1() {
         </div>
       </div>
 
-      <div className='footer-operation'></div>
+      <div className='footer-operation1'></div>
     </div>
   );
 }
