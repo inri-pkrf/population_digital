@@ -14,7 +14,7 @@
     font-family: 'Karantina', cursive;
     font-size: 15vw;
     top: 22vh;
-    width: 100%;
+    width: 63%;
     text-align: center;
     font-weight: normal;
 }
@@ -86,11 +86,10 @@
 
 .accordion-line {
     margin-bottom: 8px;
-    font-size: 4vw; /* או מה שאתה כבר משתמש בו */
+    font-size: 4vw;
 }
 
 .footer-operation2 {
     width: 100%;
-    height: 1vh;
-    margin-top: 40vh;
+    height: 5vh;
 }

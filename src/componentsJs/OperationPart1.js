@@ -37,7 +37,7 @@ function OperationPart1() {
 
         <div className='sub-items-container'>
           <div className='items-operation sub-item' id='item2-operation' onClick={() => handleClick("רציפות תפקוד")}>
-            רציפות תפקוד
+            רציפות <br/>תפקוד
           </div>
           <div className='items-operation sub-item' id='item3-operation' onClick={() => handleClick("הסברה והנחיית אוכלוסייה")}>
             הסברה והנחיית אוכלוסייה

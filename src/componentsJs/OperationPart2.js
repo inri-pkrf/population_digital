@@ -16,7 +16,7 @@ function OperationPart2() {
     }, []);
 
     const getTitleColor = () => {
-        if (selectedOption === 'הערכת מצב מרחב אזרחי') return '#0047ab';
+        if (selectedOption === 'הערכת מצב מרחב אזרחי') return '#235884';
         if (selectedOption === 'תהליך מדיניות התגוננות') return '#ff9a3c';
         return '#7fa9e8';
     };
