@@ -26,7 +26,7 @@
 #welcome-text-intro {
   color: white;
   font-family: "karantina";
-  font-size: 3.6em;
+  font-size: 3em;
   transform: translateX(50%);
   right: 50%;
   direction: rtl;
@@ -41,7 +41,7 @@
   color: white;
   position: absolute;
   direction: rtl;
-  top: 40vh;
+  top: 41vh;
   width: 84vw;
   right: 50%;
   transform: translateX(50%);
