@@ -78,6 +78,34 @@
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
+.operation-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.image-caption-operation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    margin-top: 1vh;
+    flex-direction: row-reverse;
+}
+
+.text-img-operation {
+    font-size: 3.5vw;
+    color: #444;
+    font-family: 'Heebo', sans-serif;
+}
+
+.glass-icon-operation {
+    width: 5vw;
+    height: auto;
+}
+
 .accordion-list {
     padding-right: 20px;
     margin: 0;

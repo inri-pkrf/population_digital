@@ -18,7 +18,9 @@ const operation = [
             "מערכות הפצה"
         ],
         sources: [],
-        axisImg: [],
+        axisImg: [
+            "/assests/imgs/operation/שקופית1.PNG"
+        ],
         dashboardImgs: [
             "/assests/imgs/operation/agamin3.jpeg"
         ]
@@ -42,7 +44,9 @@ const operation = [
             "משרדי ממשלה",
             'וועדות מל"ח'
         ],
-        axisImg: [],
+        axisImg: [
+            "/assests/imgs/operation/שקופית2.PNG"
+        ],
         dashboardImgs: ["/assests/imgs/operation/agamin3.jpeg"]
     },
     {
@@ -70,7 +74,9 @@ const operation = [
             'הרשות המקומית (ראשי רשויות, מוקד רשותי, וואטספ עירוני, מעגלי שיח, משפיענים ובעלי תפקידים נוספים)',
             'רשת נאמני הסברה ושותפים'
         ],
-        axisImg: [],
+        axisImg: [
+            "/assests/imgs/operation/שקופית5.PNG"
+        ],
         dashboardImgs: []
     },
     {
@@ -93,7 +99,9 @@ const operation = [
             'מוקדים: 104 ונתוני דיגיטל , מוקד 106 רשותי',
             'ציר אורכי'
         ],
-        axisImg: [],
+        axisImg: [
+            "/assests/imgs/operation/שקופית3.PNG"
+        ],
         dashboardImgs: ["/assests/imgs/operation/agamin4.jpeg"]
     },
     {
@@ -115,7 +123,9 @@ const operation = [
             'משרדי ממשלה',
             'מחזיקי חומ"ס'
         ],
-        axisImg: [],
+        axisImg: [
+            "/assests/imgs/operation/שקופית6.PNG"
+        ],
         dashboardImgs: []
     },
     {
@@ -132,7 +142,9 @@ const operation = [
             "משרדי ממשלה",
             "ציר אורכי"
         ],
-        axisImg: [],
+        axisImg: [
+            "/assests/imgs/operation/שקופית4.PNG"
+        ],
         dashboardImgs: ["/assests/imgs/operation/agamin1.jpeg"]
     },
     {
@@ -157,7 +169,9 @@ const operation = [
             'הגנ"א- מדיניות ויכולות',
             'ראשי רשויות',
         ],
-        axisImg: [],
+        axisImg: [
+            "/assests/imgs/operation/שקופית7.PNG"
+        ],
         dashboardImgs: []
     }
 ];
