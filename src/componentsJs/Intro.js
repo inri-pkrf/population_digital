@@ -61,10 +61,9 @@ const Intro = () => {
             className="move-to-center" 
           />
           <h1 id="welcome-text-intro">
-          עזר דיגיטלי 
+          עזר דיגיטלי בתחום 
           <br/>
-          בתחום האוכלוסייה
-          <br/>
+           האוכלוסייה
            במפקדות
           </h1>
           <p id="introduction-sub">
