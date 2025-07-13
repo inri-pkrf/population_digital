@@ -102,7 +102,9 @@ const operation = [
         axisImg: [
             "/assests/imgs/operation/שקופית3.PNG"
         ],
-        dashboardImgs: ["/assests/imgs/operation/agamin4.jpeg"]
+        dashboardImgs: ["/assests/imgs/operation/agamin4.jpeg",
+            "/assests/imgs/operation/shoal1.jpeg"
+        ]
     },
     {
         id: 5,
