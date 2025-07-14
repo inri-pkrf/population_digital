@@ -11,7 +11,7 @@ function Home() {
         <div className="Home">
 
             <div className="title">
-                עזר דיגיטלי בתחום האוכלוסיה במפקדות  
+                עזר דיגיטלי בתחום האוכלוסייה במפקדות  
             </div>
 
             {/* <img src={process.env.PUBLIC_URL + '/assests/imgs/blackArrow.png'} className="blackArrow" id="blackArrow1" alt="blackArrow"></img> */}
