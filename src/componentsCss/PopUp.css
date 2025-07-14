@@ -19,6 +19,7 @@
   left: 8vw;
   width: 80vw;
   overflow: hidden;
+  direction: rtl;
 }
 
 .XBtn {

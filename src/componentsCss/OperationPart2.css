@@ -19,8 +19,38 @@
     font-weight: normal;
 }
 
+.nafaMahozBtns {
+  position: absolute;
+  top: 50vh; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 4vw;
+  z-index: 10;
+}
+
+.btn-operation {
+  font-family: 'Karantina', cursive;
+  font-size: 9vw;
+  color: white;
+  border-radius: 5vw;
+  text-align: center;
+  padding: 1vh 17vw;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.nafa-btn {
+  background-color: #1cb4e3;
+}
+
+.mahoz-btn {
+  background-color: #ff9900;
+}
+
 .accordionItems-div {
-    margin-top: 25vh;
+    margin-top: 38vh;
 }
 
 .accordion-item-operation {

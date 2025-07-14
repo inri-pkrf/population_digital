@@ -22,7 +22,13 @@ const operation = [
             "/assests/imgs/operation/שקופית1.PNG"
         ],
         dashboardImgs: [
-            "/assests/imgs/operation/agamin3.jpeg"
+            "/assests/imgs/operation/shoal3.jpeg"
+        ],
+        popUpNafa: [
+            'חסר תוכן'
+        ],
+        popUpMahoz: [
+            'חסר תוכן'
         ]
     },
     {
@@ -47,7 +53,13 @@ const operation = [
         axisImg: [
             "/assests/imgs/operation/שקופית2.PNG"
         ],
-        dashboardImgs: ["/assests/imgs/operation/agamin3.jpeg"]
+        dashboardImgs: ["/assests/imgs/operation/agamin3.jpeg"],
+        popUpNafa: [
+            'הנפה תגדיר רשויות במיקוד נפתי, תקבע סד״ע ותבנה תוכנית מענה נפתית ותציף פערים לדרג המחוז.'
+        ],
+        popUpMahoz: [
+            'המחוז יגדיר רשות ״במיקוד מחוזי״ גיבוש סד״ע, יבנה תוכנית מענה מחוזית בשיתוף משרדי ממלה מחוזיים, יאתר פערים ויתן מענה ע״ב ועדות מל״ח מחוזית. '
+        ]
     },
     {
         id: 3,
@@ -77,7 +89,13 @@ const operation = [
         axisImg: [
             "/assests/imgs/operation/שקופית5.PNG"
         ],
-        dashboardImgs: []
+        dashboardImgs: [],
+        popUpNafa: [
+            'הנפה תרכז מהיקל"רים את האמור לעיל לכדי תמונת מצב של זיהוי וניתוח מגמות וצרכי המידע כולל אבחון הפערים והמלצות לפעולה.'
+        ],
+        popUpMahoz: [
+            'המחוז ירכז מהנפות ויציג לפיקוד את תמונת המצב זיהוי וניתוח מגמות אזוריות, משברים פוטנציאלים ותכנון מענה ויפעל מול הפיקוד לגיבוש מענה הסברתי מותאם לצרכים.'
+        ]
     },
     {
         id: 4,
@@ -104,6 +122,12 @@ const operation = [
         ],
         dashboardImgs: ["/assests/imgs/operation/agamin4.jpeg",
             "/assests/imgs/operation/shoal1.jpeg"
+        ],
+        popUpNafa: [
+            'ניתוח צורכי אוכלוסייה ע"ב עבודה מול הרשויות המקומיות.'
+        ],
+        popUpMahoz: [
+            'ניתוח צורכי אוכלוסייה ע"ב תאום מול משרדי ממשלה העוסקים בטיפול באוכלוסייה: רווחה, חינוך, וארגוני חירום ועזר (מ"י, קצין אח"ם ורע"ן מתנדבים).'
         ]
     },
     {
@@ -128,7 +152,14 @@ const operation = [
         axisImg: [
             "/assests/imgs/operation/שקופית6.PNG"
         ],
-        dashboardImgs: []
+        dashboardImgs: [
+            "/assests/imgs/operation/shoal2.jpeg"
+        ],
+        popUpNafa: [
+            'ריכוז תמ"צ חומ"ס מול המחזיקים, ביצוע ביקורות בקרב מחזיקי חומ"ס ע"ב תעדוף מחוזי, קבלת פקודת שינוע מהמחוז ואחריות על המעקב על השינוע.'
+        ],
+        popUpMahoz: [
+            'ריכוז תמ"צ חומ"ס באמצעות הנפות, הוצאת צווים למחזיקים, קביעת תעדוף ביקורות, קבלת המידע אודות השינועים המאושרים והפצת פקודה מחוזית מפורטת לשינועים ל24 שעות קדימה.']
     },
     {
         id: 6,
@@ -147,7 +178,13 @@ const operation = [
         axisImg: [
             "/assests/imgs/operation/שקופית4.PNG"
         ],
-        dashboardImgs: ["/assests/imgs/operation/agamin1.jpeg"]
+        dashboardImgs: ["/assests/imgs/operation/agamin1.jpeg"],
+        popUpNafa: [
+            'הנפה תבצע בדיקת התכנות סיוע בין רשויות, מיצוי מענה ברמת הנפה ע״ב כוחות ומשאבים והגדרת סד״ע לסיוע והעלאת דרישה לרמה ממונה.'
+        ],
+        popUpMahoz: [
+            'תהליך מיצוי יכולות והתאמת מענה הוא תהליך מבצעי שנועד לוודא יצירת מענה אופטימלי המושתת על התהליך המתרחש בין המפקדות החל ברשות המקומית וביקל"ר, דרך מפקדת הנפה מפקדת המחוז וכלה במפקדת הפיקוד הרמה הארצית. '
+        ]
     },
     {
         id: 7,
@@ -174,7 +211,16 @@ const operation = [
         axisImg: [
             "/assests/imgs/operation/שקופית7.PNG"
         ],
-        dashboardImgs: []
+        dashboardImgs: [
+            "/assests/imgs/operation/shoal3.jpeg",
+            "/assests/imgs/operation/מדיניות התגוננות.jpeg"
+        ],
+        popUpNafa: [
+            'חסר תוכן'
+        ],
+        popUpMahoz: [
+            'הטמעת מדיניות ההתגוננות שנקבעה ברמה הארצית למימוש הלכה למעשה בקרב הרשויות המקומיות ומשרדי הממשלה וייצוג ההלימה בין המדיניות לשגרת החיים המתקיים בעת חירום בשטחה. '
+        ]
     }
 ];
 

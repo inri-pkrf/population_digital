@@ -2,16 +2,23 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import '../componentsCss/OperationPart2.css';
 import operation from "../data/OperationData";
+import PopUp from './PopUp';
 
 function OperationPart2() {
     const navigate = useNavigate();
     const location = useLocation();
     const selectedOption = location.state?.selectedOption;
-
     const [expanded, setExpanded] = useState(null);
+
+    const [isPopupVisible, setPopupVisible] = useState(false);
+    const [popupContent, setPopupContent] = useState({ title: '', content: '' });
 
     // בניית מערך האקורדיונים
     const selectedData = operation.find(item => item.title === selectedOption);
+
+    const nafaContent = selectedData?.popUpNafa?.[0] || 'לא הוזן תוכן לנפה';
+    const mahozContent = selectedData?.popUpMahoz?.[0] || 'לא הוזן תוכן למחוז';
+
 
     const getTitleColor = () => {
         if (selectedOption === 'הערכת מצב מרחב אזרחי') return '#235884';
@@ -19,16 +26,28 @@ function OperationPart2() {
         return '#7fa9e8';
     };
 
-    const renderImagesArray = (imagesArray, accordionTitle) => {
-        if (Array.isArray(imagesArray) && imagesArray.length > 0) {
-            return imagesArray.map((img, idx) => (
+    const openPopup = (title, content) => {
+        setPopupContent({ title, content });
+        setPopupVisible(true);
+    };
+
+    const closePopup = () => {
+        setPopupVisible(false);
+    };
+
+const renderImagesArray = (imagesArray, accordionTitle) => {
+    if (Array.isArray(imagesArray) && imagesArray.length > 0) {
+        return imagesArray.map((img, idx) => {
+            const isSpecialImage = img === '/assests/imgs/operation/מדיניות התגוננות.jpeg';
+
+            return (
                 <div key={idx} className="image-wrapper-operation">
                     <img
                         src={process.env.PUBLIC_URL + img}
                         alt={`img-${idx}`}
                         className="operation-img"
                         onClick={() => {
-                            // שמירת שם הכותרת ב-sessionStorage לפני הניווט
+                            if (isSpecialImage) return; // לא מאפשר הגדלה
                             sessionStorage.setItem('expandedTitle', accordionTitle);
                             navigate('/MagnifyPic', {
                                 state: {
@@ -37,20 +56,24 @@ function OperationPart2() {
                             });
                         }}
                     />
-                    <div className="image-caption-operation">
-                        <span className="text-img-operation">ניתן להגדיל את התמונה בלחיצה</span>
-                        <img
-                            src={`${process.env.PUBLIC_URL}/assests/imgs/glass.png`}
-                            className="glass-icon-operation"
-                            alt="glass"
-                        />
-                    </div>
+
+                    {!isSpecialImage && (
+                        <div className="image-caption-operation">
+                            <span className="text-img-operation">ניתן להגדיל את התמונה בלחיצה</span>
+                            <img
+                                src={`${process.env.PUBLIC_URL}/assests/imgs/glass.png`}
+                                className="glass-icon-operation"
+                                alt="glass"
+                            />
+                        </div>
+                    )}
                 </div>
-            ));
-        } else {
-            return <div className="accordion-line">לא הוזן</div>;
-        }
-    };
+            );
+        });
+    } else {
+        return <div className="accordion-line">לא הוזן</div>;
+    }
+};
 
     // הגדרת האקורדיונים עם תכני התמונות
     const accordionItemsRaw = [
@@ -114,6 +137,22 @@ function OperationPart2() {
                 {selectedOption === 'תהליך מדיניות התגוננות' ? selectedOption : `תהליך ${selectedOption}`}
             </h1>
 
+            <div className='nafaMahozBtns'>
+                <div
+                    className='btn-operation nafa-btn'
+                    onClick={() => openPopup('הגדרת תהליך נפה:', nafaContent)}
+                >
+                    נפה
+                </div>
+                <div
+                    className='btn-operation mahoz-btn'
+                    onClick={() => openPopup('הגדרת תהליך מחוז:', mahozContent)}
+                >
+                    מחוז
+                </div>
+            </div>
+
+
             <div className='accordionItems-div'>
                 {accordionItems.map((item, index) => (
                     <div key={index} className="accordion-item-operation">
@@ -149,6 +188,13 @@ function OperationPart2() {
                     </div>
                 ))}
             </div>
+
+            <PopUp
+                isVisible={isPopupVisible}
+                onClose={closePopup}
+                title={popupContent.title}
+                content={popupContent.content}
+            />
 
             <div className='footer-operation2'></div>
         </div>
