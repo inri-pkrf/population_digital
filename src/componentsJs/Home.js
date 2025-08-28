@@ -42,7 +42,7 @@ function Home() {
 
                 <div className="pages-list-item" onClick={() => navigate('/operationPart1')}>
                     <div className="pages-list-content">
-                        <div className="pages-list-title-homepage">
+                        <div className="pages-list-title-homepage" id="title-homepage3">
                             תהליכים מבצעים
                         </div>
                         <img src={process.env.PUBLIC_URL + '/assests/imgs/operation-icon.png'} className="pages-list-image-homepage" alt="operation" />
@@ -53,7 +53,7 @@ function Home() {
 
                 <div className="pages-list-item" onClick={() => navigate('/agamim')}>
                     <div className="pages-list-content">
-                        <div className="pages-list-title-homepage">
+                        <div className="pages-list-title-homepage"  id="title-homepage4">
                             אגמ"ים ושו"ב
                         </div>
                         <img src={process.env.PUBLIC_URL + '/assests/imgs/agamim-icon.png'} id='icon-des' className="pages-list-image-homepage" alt="agamim" />

@@ -9,24 +9,19 @@ const Intro = () => {
   const navigate = useNavigate(); 
 
   useEffect(() => {
-    const videoEndTimeout = setTimeout(() => {
-      setIsVideoEnded(true);
-    }, 13000); 
-
-    const introTextTimeout = setTimeout(() => {
-      setShowIntro(true);
-    }, 13050);
-
     const skipButtonTimeout = setTimeout(() => {
       setShowSkipButton(true);
     }, 3500); 
 
     return () => {
-      clearTimeout(videoEndTimeout);
-      clearTimeout(introTextTimeout);
       clearTimeout(skipButtonTimeout);
     };
   }, []);
+
+  const handleVideoEnd = () => {
+    setIsVideoEnded(true);
+    setShowIntro(true);
+  };
 
   const skipVideo = () => {
     setIsVideoEnded(true);
@@ -46,8 +41,14 @@ const Intro = () => {
               &lt;&lt; דלג/י
             </button>
           )}
-          <video className="video-intro" autoPlay muted playsInline>
-            <source src={`${process.env.PUBLIC_URL}/assests/videos/introVid.mp4`} type="video/mp4" />
+          <video 
+            className="video-intro" 
+            autoPlay 
+            muted 
+            playsInline 
+            onEnded={handleVideoEnd} // ✅ ברגע שהסרטון נגמר – להציג את מסך הפתיחה
+          >
+            <source src={`${process.env.PUBLIC_URL}/assests/videos/introVidComp.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </>
@@ -61,13 +62,13 @@ const Intro = () => {
             className="move-to-center" 
           />
           <h1 id="welcome-text-intro">
-          עזר דיגיטלי בתחום 
-          <br/>
-           האוכלוסייה
-           במפקדות
+            עזר דיגיטלי בתחום 
+            <br/>
+            האוכלוסייה במפקדות
           </h1>
           <p id="introduction-sub">
-          ברוכים הבאים ללומדת אוכלוסייה במפקדות! בעזר זה תוכלו להעמיק וללמוד על מבנה, ייעוד ותפקידי מרכז אוכלוסייה במחוז ומכלול אוכלוסייה בנפה ותפקידי בע"ת השונים. בנוסף תלמדו על הממש"קים ויחס"ג בין המכלולים והתאים השונים ועל התהליכים המבצעיים באוכלוסייה.          </p>
+            ברוכים הבאים ללומדת אוכלוסייה במפקדות! בעזר זה תוכלו להעמיק וללמוד על מבנה, ייעוד ותפקידי מרכז אוכלוסייה במחוז ומכלול אוכלוסייה בנפה ותפקידי בע"ת השונים. בנוסף תלמדו על הממש"קים ויחס"ג בין המכלולים והתאים השונים ועל התהליכים המבצעיים באוכלוסייה.
+          </p>
           <img
             src={`${process.env.PUBLIC_URL}/assests/imgs/whiteArrow.png`}
             className="hpArrow-intro"

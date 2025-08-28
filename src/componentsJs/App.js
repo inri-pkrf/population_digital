@@ -1,11 +1,12 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import '../componentsCss/App.css';
 
 import Home from "./Home";
 import Intro from "./Intro";
 import Header from "./Header";
 import Menu from "./Menu";
+import Navbar from "./Navbar";
 import Diagram from "./Diagram";
 import DiagramStep1 from "./DiagramStep1";
 import DiagramStep2 from "./DiagramStep2";
@@ -17,15 +18,19 @@ import OperationPart1 from "./OperationPart1";
 import OperationPart2 from "./OperationPart2";
 import Agamim from "./Agamim";
 
-
 function App() {
+    const location = useLocation();
+
     return (
         <div className="App">
-            <Header />
+            {/* Header יוצג בכל מקום חוץ מאשר ב־Intro */}
+            {location.pathname !== "/" && <Header />}
+
             <Routes>
                 <Route path="/" element={<Intro />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/menu" element={<Menu />} />
+                <Route path="/navbar" element={<Navbar />} />
                 <Route path="/Diagram" element={<Diagram />} />
                 <Route path="/DiagramStep1" element={<DiagramStep1 />} />
                 <Route path="/DiagramStep2" element={<DiagramStep2 />} />
@@ -41,7 +46,6 @@ function App() {
     );
 }
 
-
 function AppWrapper() {
     return (
         <Router>
@@ -49,6 +53,5 @@ function AppWrapper() {
         </Router>
     );
 }
-
 
 export default AppWrapper;
