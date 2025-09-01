@@ -1,74 +1,158 @@
-.agamim-icon{
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
-    width: 17vw;
-    height: auto;
-    margin-top: 15vh;
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+    .agamim-icon {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        width: 17vw;
+        height: auto;
+        margin-top: 15vh;
+    }
+
+    .title-agamim {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        font-family: 'Karantina', cursive;
+        font-size: 15vw;
+        margin-top: 27vh;
+        width: 100%;
+        text-align: center;
+        color: #50565c;
+
+    }
+
+    .subtitle-agamim {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        font-family: 'Assistant';
+        font-size: 5vw;
+        color: grey;
+        text-align: center;
+        margin-top: 38vh;
+        width: 82vw;
+        direction: rtl;
+    }
+
+    .items {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        font-family: 'Assistant';
+        font-size: 5vw;
+        color: rgb(86, 195, 232);
+        text-decoration: underline;
+    }
+
+    #item1 {
+        margin-top: 58vh;
+
+    }
+
+    #item2 {
+        margin-top: 67vh;
+
+    }
+
+    .agaminLogo {
+        position: absolute;
+        /* transform: translateX(50%); */
+        /* right: 50%; */
+        width: 12vw;
+        height: auto;
+        margin-top: 56vh;
+        right: 7vh;
+    }
+
+    .shoalLogo {
+        position: absolute;
+        /* transform: translateX(50%); */
+        /* right: 50%; */
+        width: 14vw;
+        height: auto;
+        margin-top: 66vh;
+        right: 7vh;
+    }
+
 }
 
-.title-agamim{
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
-    font-family: 'Karantina', cursive;
-    font-size: 15vw;
-    margin-top: 27vh;
-    width: 100%;
-    text-align: center;
-    color: #50565c;
+/* Desktop */
+@media screen and (min-width: 1025px) {
 
-}
+        .agamim-icon {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        width: 5vw;
+        height: auto;
+        margin-top: 15vh;
+    }
 
-.subtitle-agamim{
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
-    font-family: 'Heebo', sans-serif;
-    font-size: 5vw;
-    color: grey;
-    text-align: center;
-    margin-top: 38vh;
-    width: 82vw;
-    direction: rtl;
-}
+    .title-agamim {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        font-family: 'Karantina', cursive;
+        font-size: 7vw;
+        margin-top: 25vh;
+        width: 100%;
+        text-align: center;
+        color: #50565c;
 
-.items{
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
-    font-family: 'Heebo', sans-serif;
-    font-size: 5vw;
-    color: rgb(86, 195, 232);
-    text-decoration: underline;
-}
+    }
 
-#item1{
-    margin-top: 58vh;
+    .subtitle-agamim {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        font-family: 'Assistant';
+        font-size: 2.5vw;
+        color: grey;
+        text-align: center;
+        margin-top: 40vh;
+        width: 82vw;
+        direction: rtl;
+    }
 
-}
+    .items {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        font-family: 'Assistant';
+        font-size: 3vw;
+        color: rgb(86, 195, 232);
+        text-decoration: underline;
+    }
 
-#item2{
-    margin-top: 67vh;
+    #item1 {
+        margin-top: 58vh;
 
-}
+    }
 
-.agaminLogo{
-    position: absolute;
-    /* transform: translateX(50%); */
-    /* right: 50%; */
-    width: 12vw;
-    height: auto;
-    margin-top: 56vh;
-    right: 7vh;
-}
+    #item2 {
+        margin-top: 73vh;
 
-.shoalLogo{
-    position: absolute;
-    /* transform: translateX(50%); */
-    /* right: 50%; */
-    width: 14vw;
-    height: auto;
-    margin-top: 66vh;
-    right: 7vh;
+    }
+
+    .agaminLogo {
+        position: absolute;
+        /* transform: translateX(50%); */
+        /* right: 50%; */
+        width: 6vw;
+        height: auto;
+        margin-top: 56vh;
+        right: 53vh;
+    }
+
+    .shoalLogo {
+        position: absolute;
+        /* transform: translateX(50%); */
+        /* right: 50%; */
+          width: 7vw;
+        height: auto;
+        margin-top: 72vh;
+        right: 53vh;
+    }
 }

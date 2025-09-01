@@ -9,9 +9,9 @@ function OperationPart1() {
     navigate('/OperationPart2', { state: { selectedOption } });
   };
 
-     useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="OperationPart1">
@@ -37,7 +37,10 @@ function OperationPart1() {
 
         <div className='sub-items-container'>
           <div className='items-operation sub-item' id='item2-operation' onClick={() => handleClick("רציפות תפקוד")}>
-            רציפות <br/>תפקוד
+            {/* מובייל – עם ירידת שורה */}
+            <span className="mobile-only">רציפות<br />תפקוד</span>
+            {/* מחשב – בלי ירידת שורה */}
+            <span className="desktop-only">רציפות תפקוד</span>
           </div>
           <div className='items-operation sub-item' id='item3-operation' onClick={() => handleClick("הסברה והנחיית אוכלוסייה")}>
             הסברה והנחיית אוכלוסייה

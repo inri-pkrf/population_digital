@@ -1,138 +1,305 @@
-.operation-icon {
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
-    width: 17vw;
-    height: auto;
-    top: 15vh;
-}
+/* Mobile */
+@media screen and (max-width: 768px) {
 
-.title-operation {
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
-    font-family: 'Karantina', cursive;
-    font-size: 15vw;
-    top: 27vh;
-    width: 100%;
-    text-align: center;
-    color: #50565c;
-}
-
-.subtitle-operation {
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
-    font-family: 'Heebo', sans-serif;
-    font-size: 5vw;
-    color: grey;
-    text-align: center;
-    margin-top: 38vh;
-    width: 82vw;
-    direction: rtl;
-}
-
-.items-div {
-    position: relative;
-    top: 55vh;
-}
-
-/* אייטם ראשון */
-#item1-operation {
-    background-color: #235884;
-    color: white;
-    width: 80%;
-    margin: 0 auto 30px auto;
-    padding: 15px;
-    border-radius: 12px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Heebo', sans-serif;
-}
-
-/* עיצוב קבוצת הסאב־אייטמים */
-.sub-items-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    margin-bottom: 30px;
-}
-
-
-.items-operation.sub-item {
-    background-color: #7fa9e8;
-    color: #002c6e;
-    width: 35%;
-    height: 10%;
-    aspect-ratio: 2.5 / 1;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Heebo', sans-serif;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    height: 9vh;
-}
-
-/* אייטם חמישי יהיה במרכז בשורה השלישית */
-#item6-operation {
-    aspect-ratio: 4 / 1;
-    height: 9vh;
-}
-
-/* אייטם אחרון - כתום */
-#item7-operation {
-    background-color: #ff9a3c;
-    color: white;
-    width: 80%;
-    margin: 30px auto 0 auto;
-    padding: 15px;
-    border-radius: 12px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Heebo', sans-serif;
-
-}
-
-.footer-operation1 {
-    width: 100%;
-    height: 1vh;
-    margin-top: 59vh;
-}
-
-.separator-operation {
-    width: 100%;
-    text-align: center;
-    margin: 30px 0;
-    position: relative;
-}
-
-/* קו גלי */
-.wave-line {
-    background: repeating-linear-gradient(90deg,
-            #ccc,
-            #ccc 10px,
-            transparent 10px,
-            transparent 20px);
-    height: 4px;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 2px;
-    background-size: 20px 4px;
-    animation: wave 2s infinite linear;
-}
-
-/* אנימציית גלים קלה */
-@keyframes wave {
-    0% {
-        background-position: 0 0;
+    .operation-icon {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        width: 17vw;
+        height: auto;
+        top: 15vh;
     }
 
-    100% {
-        background-position: 40px 0;
+    .title-operation {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        font-family: 'Karantina', cursive;
+        font-size: 15vw;
+        top: 27vh;
+        width: 100%;
+        text-align: center;
+        color: #50565c;
     }
+
+    .subtitle-operation {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+    font-family: 'Assistant';
+        font-size: 5vw;
+        color: grey;
+        text-align: center;
+        margin-top: 38vh;
+        width: 82vw;
+        direction: rtl;
+    }
+
+    .items-div {
+        position: relative;
+        top: 55vh;
+    }
+
+    /* אייטם ראשון */
+    #item1-operation {
+        background-color: #235884;
+        color: white;
+        width: 80%;
+        margin: 0 auto 30px auto;
+        padding: 15px;
+        border-radius: 12px;
+        font-size: 20px;
+        font-weight: bold;
+    font-family: 'Assistant';
+    }
+
+    /* עיצוב קבוצת הסאב־אייטמים */
+    .sub-items-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 30px;
+    }
+
+
+    .items-operation.sub-item {
+        background-color: #7fa9e8;
+        color: #002c6e;
+        width: 35%;
+        height: 10%;
+        aspect-ratio: 2.5 / 1;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    font-family: 'Assistant';
+        padding-left: 3vw;
+        padding-right: 3vw;
+        height: 9vh;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    /* אייטם חמישי יהיה במרכז בשורה השלישית */
+    #item6-operation {
+        aspect-ratio: 4 / 1;
+        height: 9vh;
+    }
+
+    /* אייטם אחרון - כתום */
+    #item7-operation {
+        background-color: #ff9a3c;
+        color: white;
+        width: 80%;
+        margin: 30px auto 0 auto;
+        padding: 15px;
+        border-radius: 12px;
+        font-size: 20px;
+        font-weight: bold;
+    font-family: 'Assistant';
+
+    }
+
+    .footer-operation1 {
+        width: 100%;
+        height: 1vh;
+        margin-top: 59vh;
+    }
+
+    .separator-operation {
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
+        position: relative;
+    }
+
+    /* קו גלי */
+    .wave-line {
+        background: repeating-linear-gradient(90deg,
+                #ccc,
+                #ccc 10px,
+                transparent 10px,
+                transparent 20px);
+        height: 4px;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 2px;
+        background-size: 20px 4px;
+        animation: wave 2s infinite linear;
+    }
+
+    /* אנימציית גלים קלה */
+    @keyframes wave {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: 40px 0;
+        }
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+
+    .operation-icon {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        width: 5vw;
+        height: auto;
+        margin-top: 15vh;
+    }
+
+    .title-operation {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        font-family: 'Karantina', cursive;
+        font-size: 7vw;
+        margin-top: 25vh;
+        width: 100%;
+        text-align: center;
+        color: #50565c;
+    }
+
+    .subtitle-operation {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        font-family: 'Assistant';
+        font-size: 2.5vw;
+        color: grey;
+        text-align: center;
+        margin-top: 38vh;
+        width: 82vw;
+        direction: rtl;
+    }
+
+    .items-div {
+        position: relative;
+        top: 50vh;
+        width: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* אייטם ראשון */
+    #item1-operation {
+        background-color: #235884;
+        color: white;
+        width: 90%;
+        margin: 0 auto 30px auto;
+        padding: 17px;
+        border-radius: 12px;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: 'Assistant';
+        height: 5vh;
+    }
+
+    /* עיצוב קבוצת הסאב־אייטמים */
+    .sub-items-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 30px;
+    }
+
+
+    .items-operation.sub-item {
+        background-color: #7fa9e8;
+        color: #002c6e;
+        width: 35%;
+        height: 10%;
+        aspect-ratio: 2.5 / 1;
+        border-radius: 10px;
+        font-size: 2rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Assistant';
+        padding-left: 3vw;
+        padding-right: 3vw;
+        height: 9vh;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    .desktop-only {
+        display: inline;
+    }
+
+    /* אייטם חמישי יהיה במרכז בשורה השלישית */
+    #item6-operation {
+        aspect-ratio: 4 / 1;
+        height: 9vh;
+    }
+
+    /* אייטם אחרון - כתום */
+    #item7-operation {
+        background-color: #ff9a3c;
+        color: white;
+        width: 80%;
+        margin: 30px auto 0 auto;
+        padding: 15px;
+        border-radius: 12px;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: 'Assistant';
+        height: 5vh;
+
+    }
+
+    .footer-operation1 {
+        width: 100%;
+        height: 1vh;
+        margin-top: 59vh;
+    }
+
+    .separator-operation {
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
+        position: relative;
+    }
+
+    /* קו גלי */
+    .wave-line {
+        background: repeating-linear-gradient(90deg,
+                #ccc,
+                #ccc 10px,
+                transparent 10px,
+                transparent 20px);
+        height: 4px;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 2px;
+        background-size: 20px 4px;
+        animation: wave 2s infinite linear;
+    }
+
+    /* אנימציית גלים קלה */
+    @keyframes wave {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: 40px 0;
+        }
+    }
+
+
 }

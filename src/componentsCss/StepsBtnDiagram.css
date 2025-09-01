@@ -1,4 +1,7 @@
-.all-steps-diagram {
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+  .all-steps-diagram {
     position: absolute;
     right: 50%;
     transform: translateX(50%);
@@ -8,7 +11,7 @@
     direction: rtl;
     margin-top: 16vh;
   }
-  
+
   .btn-steps-diagram {
     width: 15vh;
     height: 4vh;
@@ -16,7 +19,7 @@
     margin-left: 0vw;
     padding-top: 1vh;
     text-align: center;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Assistant';
     color: white;
     transition: background-color 0.3s;
     font-weight: bold;
@@ -24,9 +27,9 @@
     margin-top: 10vh;
   }
 
-  .step1-diagram{
+  .step1-diagram {
     text-align: center;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Assistant';
     color: white;
     transition: background-color 0.3s;
     font-weight: bold;
@@ -50,3 +53,66 @@
     top: 0vh;
     right: 10vw;
   }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  .all-steps-diagram {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    width: 73vw;
+    justify-content: center;
+    direction: rtl;
+    margin-top: 14vh;
+  }
+
+  .btn-steps-diagram {
+        width: 13vh;
+        height: 3.5vh;
+        margin-right: 0.5vw;
+        margin-left: 1vw;
+        padding-top: 0.5vh;
+        text-align: center;
+        font-family: 'Assistant';
+        color: white;
+        transition: background-color 0.3s;
+        font-weight: bold;
+        background-color: #d9d9d9;
+        margin-top: 7vh;
+        font-size: 1.5rem;
+        cursor: pointer;
+  }
+
+  .step1-diagram {
+   text-align: center;
+        font-family: 'Assistant';
+        color: white;
+        transition: background-color 0.3s;
+        font-weight: bold;
+        background-color: #175a85;
+        width: 16vw;
+        height: 3vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        font-size: 1.5rem;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        cursor: pointer;
+    }
+
+  .arrow-down-diagram {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #d9d9d9;
+    position: relative;
+    top: 0.5vh;
+    right: 3.5vw;
+  }
+
+}

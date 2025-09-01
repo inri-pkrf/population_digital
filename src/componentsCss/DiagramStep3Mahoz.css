@@ -1,155 +1,324 @@
-.title-DiagramStep3Mahoz {
-    position: absolute;
-    right: 3vh;
-    font-family: 'Karantina', cursive;
-    margin-top: 47vh;
-    cursor: pointer;
-    text-align: center;
-    color: white;
-    width: 69vw;
-    height: 7vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 11vw;
-    color: white;
-    background-color: #fbbc6d;
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .title-DiagramStep3Mahoz {
+        position: absolute;
+        right: 3vh;
+        font-family: 'Karantina', cursive;
+        margin-top: 47vh;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        width: 69vw;
+        height: 7vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11vw;
+        color: white;
+        background-color: #fbbc6d;
+    }
+
+    .role-DiagramStep3Mahoz {
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        font-family: 'Karantina', cursive;
+        position: relative;
+        width: 69vw;
+        height: 10vh;
+        font-size: 8.5vw;
+        top: 60vh;
+        right: -26vw;
+        margin-bottom: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        background-color: #e69138;
+    }
+
+    .item-image-DiagramStep3Mahoz {
+        position: relative;
+        height: auto;
+        width: 88vw;
+        top: 69vh;
+    }
+
+    .text-img-mahoz {
+        position: relative;
+        right: -19vw;
+        top: 71vh;
+        font-family: 'Assistant';
+        font-size: 3.5vw;
+        color: grey;
+        width: 60vw;
+    }
+
+    .glass-mahoz {
+        position: relative;
+        right: -29vw;
+        top: 67vh;
+        height: auto;
+        width: 7vw;
+    }
+
+    .explanation-div-DiagramStep3Mahoz {
+        position: relative;
+        top: 39vh;
+        background-color: #d9d9d9;
+        width: 90vw;
+        right: -5vw;
+        border-radius: 6vw;
+    }
+
+    .explanation-title-DiagramStep3Mahoz {
+        font-family: 'Karantina', cursive;
+        font-size: 8vw;
+        text-align: center;
+        margin-top: 6vh;
+        padding-top: 2vh;
+        color: rgb(58, 57, 57);
+    }
+
+    .explanation-text-DiagramStep3Mahoz {
+        font-family: 'Assistant';
+        font-size: 4vw;
+        color: rgb(0, 0, 0);
+        direction: rtl;
+        padding-right: 4vh;
+        padding-left: 4vh;
+        text-align: right;
+        top: 2vh;
+        position: relative;
+        line-height: 5vh;
+        padding-bottom: 3vh;
+    }
+
+    .margin {
+        position: relative;
+        top: 75vh;
+        height: 3vh;
+        width: 100vw;
+        background-color: transparent;
+    }
+
+    .arrow-icon {
+        height: 3vh;
+        width: auto;
+        position: relative;
+        top: -3.4vh;
+        margin-left: -181px;
+        transform: rotate(180deg);
+    }
+
+    .arrow-icon.rotated {
+        transform: rotate(90deg);
+    }
+
+    .arrow-DiagramStep3Mahoz-role {
+        height: 4vh;
+        width: auto;
+        position: absolute;
+        top: 4.1vh;
+        left: 1vh;
+    }
+
+    .btn-prev-mahoz {
+        color: #56c3e8;
+        font-size: 5vw;
+        text-align: center;
+        text-decoration: underline;
+        font-family: 'Assistant';
+        margin-bottom: 5vh;
+        position: relative;
+        top: 75vh;
+    }
+
+    hr.dotted {
+        border: none;
+        border-top: 2px dotted #4e4d4d;
+        width: 40vh;
+        height: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .hr1-mahoz {
+        right: 1vw;
+        top: 44vh;
+    }
+
+    .hr2-mahoz {
+        right: 1vw;
+        top: 64vh;
+    }
 }
 
-.role-DiagramStep3Mahoz {
-    cursor: pointer;
-    text-align: center;
-    color: white;
-    font-family: 'Karantina', cursive;
-    position: relative;
-    width: 69vw;
-    height: 10vh;
-    font-size: 8.5vw;
-    top: 60vh;
-    right: -26vw;
-    margin-bottom: 2vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    background-color: #e69138;
-}
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .title-DiagramStep3Mahoz {
+     position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Karantina', cursive;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        width: 18vw;
+        height: auto;
+        padding: 2vh 2vw;
+        display: flex
+;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vw;
+        background-color: #fbbc6d;
+        border-radius: 1vw;
+        margin-top: 42vh;
+    }
 
-.item-image-DiagramStep3Mahoz {
-    position: relative;
-    height: auto;
-    width: 88vw;
-    top: 69vh;
-}
+    .role-DiagramStep3Mahoz {
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        font-family: 'Karantina', cursive;
+        position: relative;
+        width: 20vw;
+        height: auto;
+        font-size: 2vw;
+        top: 55vh;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5vh 1vw;
+        background-color: #e69138;
+        border-radius: 0.5vw;
+    }
 
-.text-img-mahoz {
-    position: relative;
-    right: -19vw;
-    top: 71vh;
-    font-family: 'Heebo', sans-serif;
-    font-size: 3.5vw;
-    color: grey;
-    width: 60vw;
-}
+    .item-image-DiagramStep3Mahoz {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: 67vh;
+        height: auto;
+        width: 40vw;
+        cursor: pointer;
+    }
 
-.glass-mahoz {
-    position: relative;
-    right: -29vw;
-    top: 67vh;
-    height: auto;
-    width: 7vw;
-}
+    .text-img-mahoz {
+        display: block;
+        margin: 1vh auto;
+        position: relative;
+        top: 69vh;
+        font-family: 'Assistant';
+        font-size: 1.2vw;
+        color: grey;
+        width: 30vw;
+        text-align: center;
+    }
 
-.explanation-div-DiagramStep3Mahoz {
-    position: relative;
-    top: 39vh;
-    background-color: #d9d9d9;
-    width: 90vw;
-    right: -5vw;
-    border-radius: 6vw;
-}
+    .glass-mahoz {
+             display: block;
+        margin: 0 auto;
+        position: relative;
+        top: 64vh;
+        width: 2vw;
+        height: auto;
+        left: 9.5vw;
+    }
 
-.explanation-title-DiagramStep3Mahoz {
-    font-family: 'Karantina', cursive;
-    font-size: 8vw;
-    text-align: center;
-    margin-top: 6vh;
-    padding-top: 2vh;
-    color: rgb(58, 57, 57);
-}
+    .explanation-div-DiagramStep3Mahoz {
+        position: relative;
+        top: 34vh;
+        background-color: #d9d9d9;
+        width: 28vw;
+        margin: 0 auto;
+        border-radius: 1vw;
+        cursor: pointer;
+    }
 
-.explanation-text-DiagramStep3Mahoz {
-    font-family: 'Heebo', sans-serif;
-    font-size: 4vw;
-    color: rgb(0, 0, 0);
-    direction: rtl;
-    padding-right: 4vh;
-    padding-left: 4vh;
-    text-align: right;
-    top: 2vh;
-    position: relative;
-    line-height: 5vh;
-    padding-bottom: 3vh;
-}
+    .explanation-title-DiagramStep3Mahoz {
+        font-family: 'Karantina', cursive;
+        font-size: 2.5vw;
+        text-align: center;
+        margin-top: 3vh;
+        padding-top: 2vh;
+        color: rgb(58, 57, 57);
+        padding-bottom: 0vh;
+        height: 3vh;
+    }
 
-.margin {
-    position: relative;
-    top: 75vh;
-    height: 3vh;
-    width: 100vw;
-    background-color: transparent;
-}
+    .explanation-text-DiagramStep3Mahoz {
+        font-family: 'Assistant';
+        font-size: 1.2vw;
+        color: rgb(0, 0, 0);
+        direction: rtl;
+        padding: 2vh 2vw;
+        text-align: right;
+        line-height: 1.8em;
+    }
 
-.arrow-icon {
-    height: 3vh;
-    width: auto;
-    position: relative;
-    top: -3.4vh;
-    margin-left: -181px;
-    transform: rotate(180deg);
-}
+    .margin {
+        position: relative;
+        top: 68vh;
+        height: 5vh;
+        width: 100%;
+        background-color: transparent;
+    }
 
-.arrow-icon.rotated {
-    transform: rotate(90deg);
-}
+    .arrow-icon {
+        height: 3vh;
+        width: auto;
+        position: relative;
+        top: -2vh;
+        margin-left: -16vw;
+        transform: rotate(180deg);
+    }
 
-.arrow-DiagramStep3Mahoz-role {
-    height: 4vh;
-    width: auto;
-    position: absolute;
-    top: 4.1vh;
-    left: 1vh;
-}
+    .arrow-icon.rotated {
+        transform: rotate(90deg);
+    }
 
-.btn-prev-mahoz {
-    color: #56c3e8;
-    font-size: 5vw;
-    text-align: center;
-    text-decoration: underline;
-    font-family: 'Heebo', sans-serif;
-    margin-bottom: 5vh;
-    position: relative;
-    top: 75vh;
-}
+    .arrow-DiagramStep3Mahoz-role {
+        height: 2.5vh;
+        width: auto;
+        position: absolute;
+        top: 2vh;
+        left: 1vw;
+    }
 
-hr.dotted {
-    border: none;
-    border-top: 2px dotted #4e4d4d;
-    width: 40vh;
-    height: 0;
-    padding: 0;
-    position: relative;
-}
+    .btn-prev-mahoz {
+              color: #56c3e8;
+        font-size: 1.5vw;
+        text-align: center;
+        text-decoration: underline;
+        font-family: 'Assistant';
+        margin-bottom: 5vh;
+        position: relative;
+        top: 70vh;
+        cursor: pointer;
+    }
 
-.hr1-mahoz {
-    right: 1vw;
-    top: 44vh;
-}
+    hr.dotted {
+        border: none;
+        border-top: 2px dotted #4e4d4d;
+        width: 50vw;
+        height: 0;
+        margin: 0 auto;
+        position: relative;
+    }
 
-.hr2-mahoz {
-    right: 1vw;
-    top: 64vh;
+    .hr1-mahoz {
+        top: 39vh;
+    }
+
+    .hr2-mahoz {
+        top: 62vh;
+    }
 }

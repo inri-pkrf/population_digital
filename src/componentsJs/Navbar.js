@@ -6,7 +6,7 @@ function Navbar() {
     const navigate = useNavigate();
     const location = useLocation();
 
-    const isActive = (path) => location.pathname === path;
+    const isActive = (path) => location.pathname.startsWith(path);
 
     const handleNavigate = (path) => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -35,7 +35,7 @@ function Navbar() {
                     יחסי גומלין במרכז ומכלול אוכלוסייה
                 </li>
                 <li
-                    className={isActive('/operationPart1') ? 'active' : ''}
+                    className={isActive('/operationPart1') || isActive('/operationPart2') ? 'active' : ''}
                     onClick={() => handleNavigate('/operationPart1')}
                 >
                     תהליכים מבצעים

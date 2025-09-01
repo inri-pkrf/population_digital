@@ -1,270 +1,470 @@
-.title-DiagramStep2 {
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
-    font-family: 'Karantina', cursive;
-    font-size: 14vw;
-    top: 42vh;
-    width: 100%;
-    text-align: center;
-    color: #50565c;
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .title-DiagramStep2 {
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        font-family: 'Karantina', cursive;
+        font-size: 14vw;
+        top: 42vh;
+        width: 100%;
+        text-align: center;
+        color: #50565c;
+    }
+
+    .explanation-div-DiagramStep2 {
+        position: relative;
+        top: 55vh;
+        background-color: #d9d9d9;
+        width: 90vw;
+        right: -5vw;
+        margin-bottom: -1vw;
+        border-radius: 6vw;
+    }
+
+    .explanation-title-DiagramStep2 {
+        font-family: 'Karantina', cursive;
+        font-size: 8vw;
+        text-align: center;
+        margin-top: 7vh;
+        padding-top: 2vh;
+        color: rgb(58, 57, 57);
+    }
+
+    .explanation-text-DiagramStep2 {
+        font-family: 'Assistant';
+        font-size: 4vw;
+        color: rgb(0, 0, 0);
+        direction: rtl;
+        padding-right: 4vh;
+        padding-left: 4vh;
+        text-align: right;
+        top: 2vh;
+        position: relative;
+        line-height: 5vh;
+        padding-bottom: 2vh;
+    }
+
+    .arrow-icon1 {
+        height: 3vh;
+        width: auto;
+        right: 2vw;
+        position: relative;
+        top: -3.42vh;
+        padding-left: -23vw;
+        margin-left: -230px;
+        transform: rotate(180deg);
+    }
+
+    .arrow-icon1.rotated {
+        transform: rotate(90deg);
+    }
+
+    .arrow-icon1-diagram {
+        height: 4vh;
+        width: auto;
+        position: absolute;
+        top: 4.5vh;
+        left: 3vh;
+    }
+
+    .arrow-icon2-diagram {
+        height: 4vh;
+        width: auto;
+        position: absolute;
+        top: 11vh;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .arrow-icon3-diagram {
+        height: 4vh;
+        width: auto;
+        position: absolute;
+        top: 3.4vh;
+        left: 4vh;
+    }
+
+    .subText-step2 {
+        position: relative;
+        right: -9vw;
+        font-family: 'Assistant';
+        font-size: 5vw;
+        color: grey;
+        text-align: center;
+        top: 66vh;
+        width: 82vw;
+        direction: rtl;
+    }
+
+    .stpe2Img {
+        position: relative;
+        right: 0vw;
+        top: 71vh;
+        height: auto;
+        width: 88vw;
+    }
+
+    .text-img {
+        position: relative;
+        right: -16vw;
+        top: 71vh;
+        font-family: 'Assistant';
+        font-size: 3.5vw;
+        color: grey;
+        width: 60vw;
+    }
+
+
+    .glass {
+        position: relative;
+        right: -28vw;
+        top: 67vh;
+        height: auto;
+        width: 7vw;
+    }
+
+    .blackArrow-step2 {
+        position: relative;
+        right: 0vw;
+        top: 73vh;
+        height: auto;
+        width: 17vw;
+    }
+
+    .all-diagram {
+        position: relative;
+        width: 100vw;
+        font-family: 'Karantina', cursive;
+        color: white;
+        top: 77vh;
+        margin-bottom: 31vh;
+        height: 130vh;
+    }
+
+    .line {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        border-left: 2vw solid #595959;
+        height: 119vh;
+        top: 2vh;
+    }
+
+    .small-line {
+        position: absolute;
+        border-left: 2vw solid #595959;
+        height: 6vh;
+        transform: rotate(90deg);
+        left: 43vw;
+        top: 23vh;
+    }
+
+    .first-frame {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 72vw;
+        height: 10vh;
+        padding-top: 3vh;
+        padding-bottom: 1vh;
+        text-align: right;
+        font-size: 11.5vw;
+        padding-right: 4vh;
+    }
+
+    .second-frame {
+        width: 36vw;
+        height: 14vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        text-align: center;
+        position: relative;
+        left: 3vw;
+        top: 19vh;
+        padding-right: 2vh;
+        font-size: 8vw;
+    }
+
+    .frame {
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        position: relative;
+        width: 69vw;
+        height: 7vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        margin-bottom: 4vh;
+        top: 25vh;
+        left: 15vw;
+        font-size: 11vw;
+    }
+
+    hr.dotted {
+        border: none;
+        border-top: 2px dotted #4e4d4d;
+        width: 40vh;
+        height: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .hr1 {
+        right: 1vw;
+        top: 62vh;
+    }
+
+    .hr2 {
+        right: 1vw;
+        top: 73vh;
+    }
+
+    .last-frame {
+        font-family: 'Karantina', cursive;
+        color: white;
+        margin-top: 55vh;
+    }
+
+    .footer-DiagramStep2 {
+        width: 100%;
+        height: 1vh;
+        margin-top: 40vh;
+    }
 }
 
 
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .title-DiagramStep2 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Karantina', cursive;
+        font-size: 4vw;
+        top: 37vh;
+        width: 60%;
+        text-align: center;
+        color: #50565c;
+    }
 
+    .explanation-div-DiagramStep2 {
+        position: relative;
+        top: 45vh;
+        background-color: #d9d9d9;
+        width: 40vw;
+        margin: 0 auto;
+        cursor: pointer;
+        border-radius: 1vw;
+    }
 
-.explanation-div-DiagramStep2 {
-    position: relative;
-    top: 55vh;
-    background-color: #d9d9d9;
-    width: 90vw;
-    right: -5vw;
-    margin-bottom: -1vw;
-    border-radius: 6vw;
-}
+    .explanation-title-DiagramStep2 {
+        font-family: 'Karantina', cursive;
+        font-size: 2.5vw;
+        text-align: center;
+        margin-top: 3vh;
+        padding-top: 2vh;
+        color: rgb(58, 57, 57);
+        padding-bottom: 2vh;
+    }
 
+    .explanation-text-DiagramStep2 {
+        font-family: 'Assistant';
+        font-size: 1.5vw;
+        color: rgb(0, 0, 0);
+        direction: rtl;
+        padding: 2vh 3vw;
+        text-align: right;
+        line-height: 1.8em;
+    }
 
+    .arrow-icon1 {
+        height: 3vh;
+        width: auto;
+        position: absolute;
+        right: 30vw;
+        top: 2.5vh;
+        transform: rotate(180deg);
+    }
 
+    .arrow-icon1.rotated {
+        transform: rotate(90deg);
+    }
 
-.explanation-title-DiagramStep2 {
-    font-family: 'Karantina', cursive;
-    font-size: 8vw;
-    text-align: center;
-    margin-top: 7vh;
-    padding-top: 2vh;
-    color: rgb(58, 57, 57);
-}
+    .arrow-icon1-diagram {
+        height: 4vh;
+        width: auto;
+        position: absolute;
+        top: 3vh;
+        left: 5vw;
+    }
 
+    .arrow-icon2-diagram {
+        height: 4vh;
+        width: auto;
+        position: absolute;
+        top: 2.3vh;
+        left: 0.5vw;
+    }
 
+    .arrow-icon3-diagram {
+        height: 3vh;
+        width: auto;
+        position: absolute;
+        top: 3vh;
+        left: 3vw;
+    }
 
+    .subText-step2 {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Assistant';
+        font-size: 2vw;
+        color: grey;
+        text-align: center;
+        top: 56vh;
+        width: 50vw;
+        direction: rtl;
+    }
 
+    .stpe2Img {
+        display: block;
+        margin: 0 auto;
+        top: 60vh;
+        position: relative;
+        height: auto;
+        width: 50vw;
+        cursor: pointer;
+    }
 
+    .text-img {
+        display: block;
+        margin: 1vh auto;
+        position: relative;
+        top: 64vh;
+        font-family: 'Assistant';
+        font-size: 1.8vw;
+        color: grey;
+        width: 36vw;
+        text-align: center;
+    }
 
+    .glass {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: 58vh;
+        width: 3vw;
+        height: auto;
+        left: 14vw;
+    }
 
+    .blackArrow-step2 {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: 42vh;
+        width: 7vw;
+        height: auto;
+    }
 
-.explanation-text-DiagramStep2 {
+    .all-diagram {
+        position: relative;
+        width: 100%;
+        font-family: 'Karantina', cursive;
+        color: white;
+        top: 65vh;
+        margin-bottom: 20vh;
+    }
 
-    font-family: 'Heebo', sans-serif;
-    font-size: 4vw;
-    color: rgb(0, 0, 0);
-    direction: rtl;
-    padding-right: 4vh;
-    padding-left: 4vh;
-    text-align: right;
-    top: 2vh;
-    position: relative;
-    line-height: 5vh;
-    padding-bottom: 2vh;
-}
+    .line {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 0.5vw solid #595959;
+        height: 90vh;
+        top: 5vh;
+    }
 
-.arrow-icon1 {
-    height: 3vh;
-    width: auto;
-    right: 2vw;
-    position: relative;
-    top: -3.42vh;
-    padding-left: -23vw;
-    margin-left: -230px;
-    transform: rotate(180deg);
-}
+    .small-line {
+        position: absolute;
+        border-left: 0.5vw solid #595959;
+        height: 3vh;
+        transform: rotate(90deg);
+        left: 49%;
+        top: 19vh;
+    }
 
-.arrow-icon1.rotated {
-    transform: rotate(90deg);
-}
+    .first-frame {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30vw;
+        height: auto;
+        padding: 2vh 2vw;
+        text-align: center;
+        font-size: 3.5vw;
+        cursor: pointer;
+    }
 
-.arrow-icon1-diagram {
-    height: 4vh;
-    width: auto;
-    position: absolute;
-    top: 4.5vh;
-    left: 3vh;
-}
+    .second-frame {
+        width: 20vw;
+        height: 5vh;
+        padding: 1vh;
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-105%);
+        top: 16.5vh;
+        font-size: 2.5vw;
+        cursor: pointer;
+        padding-top: 2vh;
+    }
 
-.arrow-icon2-diagram {
-    height: 4vh;
-    width: auto;
-    position: absolute;
-    top: 11vh;
-    right: 50%;
-    transform: translateX(50%);
-}
+    .frame {
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        position: relative;
+        width: 25vw;
+        height: 5vh;
+        padding: 1.5vh 1vw;
+        margin: 2vh auto;
+        top: 20vh;
+        font-size: 2.5vw;
+        cursor: pointer;
+    }
 
-.arrow-icon3-diagram {
-    height: 4vh;
-    width: auto;
-    position: absolute;
-    top: 3.4vh;
-    left: 4vh;
-}
+    hr.dotted {
+        border: none;
+        border-top: 2px dotted #4e4d4d;
+        width: 88vh;
+        height: 0;
+        margin: 0 auto;
+        position: relative;
+        /* top: 52vh; */
+    }
 
-.subText-step2 {
-    position: relative;
-    right: -9vw;
-    font-family: 'Heebo', sans-serif;
-    font-size: 5vw;
-    color: grey;
-    text-align: center;
-    top: 66vh;
-    width: 82vw;
-    direction: rtl;
-}
+    .hr1 {
+        top: 52vh;
+    }
 
-.stpe2Img {
-    position: relative;
-    right: 0vw;
-    top: 71vh;
-    height: auto;
-    width: 88vw;
-}
+    .hr2 {
+        top: 62vh;
+    }
 
-.text-img {
-    position: relative;
-    right: -16vw;
-    top: 71vh;
-    font-family: 'Heebo', sans-serif;
-    font-size: 3.5vw;
-    color: grey;
-    width: 60vw;
-}
+    .last-frame {
+        font-family: 'Karantina', cursive;
+        color: white;
+        margin-top: 70vh;
+        text-align: center;
+        font-size: 2.5vw;
+    }
 
-
-.glass {
-    position: relative;
-    right: -28vw;
-    top: 67vh;
-    height: auto;
-    width: 7vw;
-}
-
-
-
-
-
-
-
-
-.blackArrow-step2 {
-    position: relative;
-    right: 0vw;
-    top: 73vh;
-    height: auto;
-    width: 17vw;
-}
-
-
-
-
-.all-diagram {
-    position: relative;
-    width: 100vw;
-    font-family: 'Karantina', cursive;
-    color: white;
-    top: 77vh;
-    margin-bottom: 31vh;
-    height: 130vh;
-}
-
-
-
-
-.line {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    border-left: 2vw solid #595959;
-    height: 119vh;
-    top: 2vh;
-}
-
-
-
-
-.small-line {
-    position: absolute;
-    border-left: 2vw solid #595959;
-    height: 6vh;
-    transform: rotate(90deg);
-    left: 43vw;
-    top: 23vh;
-}
-
-
-
-
-.first-frame {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    width: 72vw;
-    height: 10vh;
-    padding-top: 3vh;
-    padding-bottom: 1vh;
-    text-align: right;
-    font-size: 11.5vw;
-    padding-right: 4vh;
-}
-
-
-
-
-.second-frame {
-    width: 36vw;
-    height: 14vh;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    text-align: center;
-    position: relative;
-    left: 3vw;
-    top: 19vh;
-    padding-right: 2vh;
-    font-size: 8vw;
-}
-
-
-
-
-.frame {
-    cursor: pointer;
-    text-align: center;
-    color: white;
-    position: relative;
-    width: 69vw;
-    height: 7vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    margin-bottom: 4vh;
-    top: 25vh;
-    left: 15vw;
-    font-size: 11vw;
-}
-
-hr.dotted {
-    border: none;
-    border-top: 2px dotted #4e4d4d;
-    width: 40vh;
-    height: 0;
-    padding: 0;
-    position: relative;
-}
-
-.hr1 {
-    right: 1vw;
-    top: 62vh;
-}
-
-.hr2 {
-    right: 1vw;
-    top: 73vh;
-}
-
-.last-frame {
-    font-family: 'Karantina', cursive;
-    color: white;
-    margin-top: 55vh;
-}
-
-.footer-DiagramStep2 {
-    width: 100%;
-    height: 1vh;
-    margin-top: 40vh;
+    .footer-DiagramStep2 {
+        width: 100%;
+        height: 5vh;
+        margin-top: 20vh;
+    }
 }
