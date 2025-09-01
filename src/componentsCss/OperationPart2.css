@@ -161,21 +161,23 @@
 @media screen and (min-width: 1025px) {
 
       .btn-back-part1 {
-        margin-top: 20vh;
         color: #50565c;
         font-family: 'Assistant';
-        font-size: 5vmin;
-        margin-left: 45vw;
-        width: 50%;
+        font-size: 3vmin;
+        position: absolute;
+        top: 15vh;
+        right: 4vw;
+        text-decoration: underline;
+        cursor: pointer;
     }
 
     .title2-operation {
-        position: absolute;
+             position: absolute;
         transform: translateX(50%);
         right: 50%;
         font-family: 'Karantina', cursive;
-        font-size: 15vw;
-        top: 37vh;
+        font-size: 6vw;
+        top: 15vh;
         width: 63%;
         text-align: center;
         font-weight: normal;
@@ -183,21 +185,21 @@
 
     .nafaMahozBtns {
         position: absolute;
-        top: 50vh;
+        top: 37vh;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
-        gap: 4vw;
+        gap: 2vw;
         z-index: 10;
     }
 
     .btn-operation {
         font-family: 'Karantina', cursive;
-        font-size: 9vw;
+        font-size: 3vw;
         color: white;
         border-radius: 5vw;
         text-align: center;
-        padding: 1vh 17vw;
+        padding: 1vh 4vw;
         cursor: pointer;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
@@ -212,16 +214,18 @@
     }
 
     .accordionItems-div {
-        margin-top: 38vh;
+        margin-top: 50vh;
     }
 
     .accordion-item-operation {
         position: relative;
         background-color: #d9d9d9;
-        width: 90vw;
+        width: 36vw;
         right: -5vw;
         border-radius: 6vw;
         margin-bottom: 3vh;
+         left: 50%;
+        transform: translateX(-50%);
     }
 
     .accordion-header-operation {
@@ -229,7 +233,7 @@
         justify-content: center;
         align-items: center;
         font-family: 'Karantina', cursive;
-        font-size: 8vw;
+        font-size: 2.5vw;
         color: rgb(58, 57, 57);
         text-align: center;
         margin-top: 6vh;
@@ -288,13 +292,13 @@
     }
 
     .text-img-operation {
-        font-size: 3.5vw;
+     font-size: 1.2vw;
         color: #444;
         font-family: 'Assistant';
     }
 
     .glass-icon-operation {
-        width: 5vw;
+        width: 2vw;
         height: auto;
     }
 
@@ -306,7 +310,7 @@
 
     .accordion-line {
         margin-bottom: 8px;
-        font-size: 4vw;
+        font-size: 1.2vw;
     }
 
     .footer-operation2 {

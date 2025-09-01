@@ -26,7 +26,7 @@
         position: absolute;
         transform: translateX(50%);
         right: 50%;
-    font-family: 'Assistant';
+        font-family: 'Assistant';
         font-size: 5vw;
         color: grey;
         text-align: center;
@@ -50,7 +50,7 @@
         border-radius: 12px;
         font-size: 20px;
         font-weight: bold;
-    font-family: 'Assistant';
+        font-family: 'Assistant';
     }
 
     /* עיצוב קבוצת הסאב־אייטמים */
@@ -75,7 +75,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    font-family: 'Assistant';
+        font-family: 'Assistant';
         padding-left: 3vw;
         padding-right: 3vw;
         height: 9vh;
@@ -101,7 +101,7 @@
         border-radius: 12px;
         font-size: 20px;
         font-weight: bold;
-    font-family: 'Assistant';
+        font-family: 'Assistant';
 
     }
 
@@ -203,6 +203,7 @@
         font-weight: bold;
         font-family: 'Assistant';
         height: 5vh;
+        cursor: pointer;
     }
 
     /* עיצוב קבוצת הסאב־אייטמים */
@@ -231,6 +232,7 @@
         padding-left: 3vw;
         padding-right: 3vw;
         height: 9vh;
+        cursor: pointer;
     }
 
     .mobile-only {
@@ -259,6 +261,7 @@
         font-weight: bold;
         font-family: 'Assistant';
         height: 5vh;
+        cursor: pointer;
 
     }
 

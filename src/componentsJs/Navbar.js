@@ -6,7 +6,9 @@ function Navbar() {
     const navigate = useNavigate();
     const location = useLocation();
 
-    const isActive = (path) => location.pathname.startsWith(path);
+    const isActivePath = (paths) => {
+        return paths.some((path) => location.pathname.startsWith(path));
+    };
 
     const handleNavigate = (path) => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -17,31 +19,40 @@ function Navbar() {
         <nav className="navbar-container">
             <ul className="navbar-list">
                 <li
-                    className={isActive('/home') ? 'active' : ''}
+                    className={isActivePath(['/home']) ? 'active' : ''}
                     onClick={() => handleNavigate('/home')}
                 >
                     עמוד הבית
                 </li>
                 <li
-                    className={isActive('/Diagram') ? 'active' : ''}
+                    className={isActivePath([
+                        '/Diagram',
+                        '/DiagramStep1',
+                        '/DiagramStep2',
+                        '/DiagramStep3Nafa',
+                        '/DiagramStep3Mahoz'
+                    ]) ? 'active' : ''}
                     onClick={() => handleNavigate('/Diagram')}
                 >
                     מבנה, ייעוד ותפקידי אוכלוסייה במפקדות
                 </li>
                 <li
-                    className={isActive('/relations') ? 'active' : ''}
+                    className={isActivePath(['/relations']) ? 'active' : ''}
                     onClick={() => handleNavigate('/relations')}
                 >
                     יחסי גומלין במרכז ומכלול אוכלוסייה
                 </li>
+             <li
+    className={isActivePath([
+        '/operationPart1',
+        '/OperationPart2'
+    ]) ? 'active' : ''}
+    onClick={() => handleNavigate('/operationPart1')}
+>
+    תהליכים מבצעים
+</li>
                 <li
-                    className={isActive('/operationPart1') || isActive('/operationPart2') ? 'active' : ''}
-                    onClick={() => handleNavigate('/operationPart1')}
-                >
-                    תהליכים מבצעים
-                </li>
-                <li
-                    className={isActive('/agamim') ? 'active' : ''}
+                    className={isActivePath(['/agamim']) ? 'active' : ''}
                     onClick={() => handleNavigate('/agamim')}
                 >
                     אגמ"ים ושו"ב
@@ -50,6 +61,5 @@ function Navbar() {
         </nav>
     );
 }
-
 
 export default Navbar;
