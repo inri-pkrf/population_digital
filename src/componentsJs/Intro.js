@@ -1,27 +1,54 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 import '../componentsCss/Intro.css';
 
 const Intro = () => {
   const [isVideoEnded, setIsVideoEnded] = useState(false);
   const [showIntro, setShowIntro] = useState(false);
   const [showSkipButton, setShowSkipButton] = useState(false);
-  const navigate = useNavigate(); 
+  const [videoSrc, setVideoSrc] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const skipButtonTimeout = setTimeout(() => {
-      setShowSkipButton(true);
-    }, 3500); 
+    const handleResize = () => {
+      if (window.innerWidth >= 769) {
+        setVideoSrc(`${process.env.PUBLIC_URL}/assests/videos/introVidComp.mp4`);
+      } else {
+        setVideoSrc(`${process.env.PUBLIC_URL}/assests/videos/introVid.mp4`);
+      }
+    };
 
+    // Initial check on mount
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on unmount
     return () => {
-      clearTimeout(skipButtonTimeout);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  const handleVideoEnd = () => {
-    setIsVideoEnded(true);
-    setShowIntro(true);
-  };
+  useEffect(() => {
+    const videoEndTimeout = setTimeout(() => {
+      setIsVideoEnded(true);
+    }, 13000);
+
+    const introTextTimeout = setTimeout(() => {
+      setShowIntro(true);
+    }, 13050);
+
+    const skipButtonTimeout = setTimeout(() => {
+      setShowSkipButton(true);
+    }, 3500);
+
+    return () => {
+      clearTimeout(videoEndTimeout);
+      clearTimeout(introTextTimeout);
+      clearTimeout(skipButtonTimeout);
+    };
+  }, []);
 
   const skipVideo = () => {
     setIsVideoEnded(true);
@@ -29,41 +56,37 @@ const Intro = () => {
   };
 
   const goToHome = () => {
-    navigate('/home'); 
+    navigate('/home');
   };
 
   return (
     <div id="intro">
-      {!isVideoEnded && (
-        <>
-          {showSkipButton && (
-            <button className="skip" onClick={skipVideo}>
-              &lt;&lt; דלג/י
-            </button>
-          )}
-          <video 
-            className="video-intro" 
-            autoPlay 
-            muted 
-            playsInline 
-            onEnded={handleVideoEnd} // ✅ ברגע שהסרטון נגמר – להציג את מסך הפתיחה
-          >
-            <source src={`${process.env.PUBLIC_URL}/assests/videos/introVidComp.mp4`} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </>
-      )}
+       {!isVideoEnded && (
+                <>
+                    {showSkipButton && (
+                        <button className="skip" onClick={skipVideo}>
+                            &lt;&lt; דלג/י
+                        </button>
+                    )}
+                    {videoSrc && (
+                        <video className="video-intro" autoPlay muted playsInline>
+                            <source src={videoSrc} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    )}
+                </>
+            )}
       {showIntro && (
         <div className="intro-text-slide-in">
-          <img 
-            src={`${process.env.PUBLIC_URL}/assests/imgs/whiteLogo.png`} 
-            alt="White Logo" 
-            id="logo-white" 
-            className="move-to-center" 
+          <img
+            src={`${process.env.PUBLIC_URL}/assests/imgs/whiteLogo.png`}
+            alt="White Logo"
+            id="logo-white"
+            className="move-to-center"
           />
           <h1 id="welcome-text-intro">
-            עזר דיגיטלי בתחום 
-            <br/>
+            עזר דיגיטלי בתחום
+            <br />
             האוכלוסייה במפקדות
           </h1>
           <p id="introduction-sub">
@@ -73,7 +96,7 @@ const Intro = () => {
             src={`${process.env.PUBLIC_URL}/assests/imgs/whiteArrow.png`}
             className="hpArrow-intro"
             alt="Arrow"
-            onClick={goToHome} 
+            onClick={goToHome}
           />
         </div>
       )}
